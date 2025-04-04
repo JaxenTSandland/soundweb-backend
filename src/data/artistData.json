@@ -1,0 +1,1275 @@
+[
+  {
+    "id": "1",
+    "name": "Adele",
+    "genres": [
+      "pop",
+      "soul"
+    ],
+    "popularity": 92,
+    "spotifyUrl": "https://open.spotify.com/artist/1",
+    "color": "#40cbdd",
+    "x": 538.3333333333333,
+    "y": 488.8181818181818
+  },
+  {
+    "id": "2",
+    "name": "Ed Sheeran",
+    "genres": [
+      "pop",
+      "folk"
+    ],
+    "popularity": 90,
+    "spotifyUrl": "https://open.spotify.com/artist/2",
+    "color": "#40cbdd",
+    "x": 508.0,
+    "y": 470.77272727272725
+  },
+  {
+    "id": "3",
+    "name": "Kendrick Lamar",
+    "genres": [
+      "hip hop",
+      "rap"
+    ],
+    "popularity": 88,
+    "spotifyUrl": "https://open.spotify.com/artist/3",
+    "color": "#7e4ddf",
+    "x": 718.0,
+    "y": 289.0909090909091
+  },
+  {
+    "id": "4",
+    "name": "Taylor Swift",
+    "genres": [
+      "pop",
+      "country"
+    ],
+    "popularity": 95,
+    "spotifyId": "06HL4z0CvFAxyc27GXpf02",
+    "color": "#40cbdd",
+    "x": 504.0,
+    "y": 407.5227272727273
+  },
+  {
+    "id": "5",
+    "name": "Drake",
+    "genres": [
+      "hip hop",
+      "r&b"
+    ],
+    "popularity": 93,
+    "spotifyUrl": "https://open.spotify.com/artist/5",
+    "color": "#7e4ddf",
+    "x": 668.3333333333334,
+    "y": 297.54545454545456
+  },
+  {
+    "id": "6",
+    "name": "Billie Eilish",
+    "genres": [
+      "alternative",
+      "pop"
+    ],
+    "popularity": 89,
+    "spotifyUrl": "https://open.spotify.com/artist/6",
+    "color": "#cccccc",
+    "x": 522.0,
+    "y": 227.13636363636363
+  },
+  {
+    "id": "7",
+    "name": "The Weeknd",
+    "genres": [
+      "r&b",
+      "pop"
+    ],
+    "popularity": 91,
+    "spotifyUrl": "https://open.spotify.com/artist/7",
+    "color": "#487ade",
+    "x": 567.3333333333334,
+    "y": 255.3409090909091
+  },
+  {
+    "id": "8",
+    "name": "Bruno Mars",
+    "genres": [
+      "funk",
+      "pop"
+    ],
+    "popularity": 87,
+    "spotifyUrl": "https://open.spotify.com/artist/8",
+    "color": "#5e8ae2",
+    "x": 567.3333333333334,
+    "y": 336.1363636363636
+  },
+  {
+    "id": "9",
+    "name": "Imagine Dragons",
+    "genres": [
+      "rock",
+      "pop"
+    ],
+    "popularity": 85,
+    "spotifyUrl": "https://open.spotify.com/artist/9",
+    "color": "#67e486",
+    "x": 448.6666666666667,
+    "y": 376.1136363636363
+  },
+  {
+    "id": "10",
+    "name": "Doja Cat",
+    "genres": [
+      "pop",
+      "rap"
+    ],
+    "popularity": 86,
+    "spotifyUrl": "https://open.spotify.com/artist/10",
+    "color": "#40cbdd",
+    "x": 617.0,
+    "y": 246.88636363636363
+  },
+  {
+    "id": "11",
+    "name": "Aphex Twin",
+    "genres": [
+      "idm",
+      "ambient"
+    ],
+    "popularity": 65,
+    "spotifyUrl": "https://open.spotify.com/artist/11",
+    "color": "#cccccc",
+    "x": 156.0,
+    "y": 689.4090909090909
+  },
+  {
+    "id": "12",
+    "name": "Béla Fleck",
+    "genres": [
+      "bluegrass",
+      "jazz"
+    ],
+    "popularity": 50,
+    "spotifyUrl": "https://open.spotify.com/artist/12",
+    "color": "#7cc4e8",
+    "x": 578.3333333333333,
+    "y": 789.75
+  },
+  {
+    "id": "13",
+    "name": "Rammstein",
+    "genres": [
+      "industrial",
+      "metal"
+    ],
+    "popularity": 78,
+    "spotifyUrl": "https://open.spotify.com/artist/13",
+    "color": "#48de4b",
+    "x": 240.66666666666669,
+    "y": 340.8636363636364
+  },
+  {
+    "id": "14",
+    "name": "Hilary Hahn",
+    "genres": [
+      "classical",
+      "violin"
+    ],
+    "popularity": 55,
+    "spotifyUrl": "https://open.spotify.com/artist/14",
+    "color": "#c8eea3",
+    "x": 278.0,
+    "y": 982.7272727272727
+  },
+  {
+    "id": "15",
+    "name": "Fela Kuti",
+    "genres": [
+      "afrobeat",
+      "funk"
+    ],
+    "popularity": 70,
+    "spotifyUrl": "https://open.spotify.com/artist/15",
+    "color": "#816fe5",
+    "x": 652.3333333333334,
+    "y": 518.7954545454546
+  },
+  {
+    "id": "16",
+    "name": "Enya",
+    "genres": [
+      "new age",
+      "celtic"
+    ],
+    "popularity": 72,
+    "spotifyUrl": "https://open.spotify.com/artist/16",
+    "color": "#aae881",
+    "x": 300.33333333333337,
+    "y": 716.6363636363637
+  },
+  {
+    "id": "17",
+    "name": "Thundercat",
+    "genres": [
+      "jazz fusion",
+      "neo soul"
+    ],
+    "popularity": 73,
+    "spotifyUrl": "https://open.spotify.com/artist/17",
+    "color": "#85e9e7",
+    "x": 506.00000000000006,
+    "y": 693.5227272727273
+  },
+  {
+    "id": "18",
+    "name": "System of a Down",
+    "genres": [
+      "alternative metal",
+      "nu metal"
+    ],
+    "popularity": 84,
+    "spotifyUrl": "https://open.spotify.com/artist/18",
+    "color": "#bfdf4d",
+    "x": 213.66666666666666,
+    "y": 288.7045454545455
+  },
+  {
+    "id": "19",
+    "name": "Ali Farka Touré",
+    "genres": [
+      "malian blues",
+      "world"
+    ],
+    "popularity": 60,
+    "spotifyUrl": "https://open.spotify.com/artist/19",
+    "color": "#6f9fe5",
+    "x": 581.3333333333333,
+    "y": 596.2272727272727
+  },
+  {
+    "id": "20",
+    "name": "Yiruma",
+    "genres": [
+      "solo piano",
+      "neoclassical"
+    ],
+    "popularity": 74,
+    "spotifyUrl": "https://open.spotify.com/artist/20",
+    "color": "#cccccc"
+  },
+  {
+    "id": "21",
+    "name": "Deadmau5",
+    "genres": [
+      "electronic",
+      "progressive house"
+    ],
+    "popularity": 79,
+    "color": "#cccccc",
+    "x": 480.6666666666667,
+    "y": 94.95454545454545
+  },
+  {
+    "id": "22",
+    "name": "Bon Iver",
+    "genres": [
+      "indie folk",
+      "experimental"
+    ],
+    "popularity": 76,
+    "color": "#78e7a1",
+    "x": 370.66666666666663,
+    "y": 661.3409090909091
+  },
+  {
+    "id": "23",
+    "name": "John Coltrane",
+    "genres": [
+      "jazz",
+      "bebop"
+    ],
+    "popularity": 68,
+    "color": "#96b9ec",
+    "x": 604.6666666666667,
+    "y": 882.1818181818182
+  },
+  {
+    "id": "24",
+    "name": "Slipknot",
+    "genres": [
+      "metal",
+      "nu metal"
+    ],
+    "popularity": 83,
+    "color": "#e1cd5a",
+    "x": 183.0,
+    "y": 335.5
+  },
+  {
+    "id": "25",
+    "name": "Daft Punk",
+    "genres": [
+      "french house",
+      "electronic"
+    ],
+    "popularity": 88,
+    "color": "#cccccc"
+  },
+  {
+    "id": "26",
+    "name": "Gorillaz",
+    "genres": [
+      "alternative",
+      "trip hop"
+    ],
+    "popularity": 86,
+    "color": "#cccccc",
+    "x": 578.6666666666666,
+    "y": 205.9090909090909
+  },
+  {
+    "id": "27",
+    "name": "Johnny Cash",
+    "genres": [
+      "country",
+      "americana"
+    ],
+    "popularity": 81,
+    "color": "#6fe5d9",
+    "x": 486.0,
+    "y": 587.909090909091
+  },
+  {
+    "id": "28",
+    "name": "Björk",
+    "genres": [
+      "experimental",
+      "art pop"
+    ],
+    "popularity": 74,
+    "color": "#78e77f",
+    "x": 372.66666666666663,
+    "y": 549.9545454545454
+  },
+  {
+    "id": "29",
+    "name": "Arctic Monkeys",
+    "genres": [
+      "indie rock",
+      "garage rock"
+    ],
+    "popularity": 89,
+    "color": "#70e25e",
+    "x": 288.3333333333333,
+    "y": 432.43181818181813
+  },
+  {
+    "id": "30",
+    "name": "Erykah Badu",
+    "genres": [
+      "neo soul",
+      "r&b"
+    ],
+    "popularity": 72,
+    "color": "#74dce6",
+    "x": 563.6666666666667,
+    "y": 454.56818181818187
+  },
+  {
+    "id": "31",
+    "name": "Tycho",
+    "genres": [
+      "ambient",
+      "chillwave"
+    ],
+    "popularity": 70,
+    "color": "#e8e07c",
+    "x": 277.66666666666663,
+    "y": 487.7954545454545
+  },
+  {
+    "id": "32",
+    "name": "Camila Cabello",
+    "genres": [
+      "pop",
+      "latin pop"
+    ],
+    "popularity": 85,
+    "color": "#40cbdd",
+    "x": 536.3333333333333,
+    "y": 257.1136363636364
+  },
+  {
+    "id": "33",
+    "name": "Nine Inch Nails",
+    "genres": [
+      "industrial",
+      "rock"
+    ],
+    "popularity": 80,
+    "color": "#48de4b",
+    "x": 357.0,
+    "y": 400.6136363636363
+  },
+  {
+    "id": "34",
+    "name": "Norah Jones",
+    "genres": [
+      "jazz",
+      "soft rock"
+    ],
+    "popularity": 77,
+    "color": "#96b9ec",
+    "x": 510.3333333333333,
+    "y": 683.5227272727273
+  },
+  {
+    "id": "35",
+    "name": "Shakira",
+    "genres": [
+      "latin pop",
+      "dance"
+    ],
+    "popularity": 87,
+    "color": "#48b1de",
+    "x": 550.6666666666666,
+    "y": 287.09090909090907
+  },
+  {
+    "id": "36",
+    "name": "Tyler, The Creator",
+    "genres": [
+      "hip hop",
+      "alternative hip hop"
+    ],
+    "popularity": 84,
+    "color": "#7e4ddf",
+    "x": 687.6666666666667,
+    "y": 411.7954545454546
+  },
+  {
+    "id": "37",
+    "name": "Muse",
+    "genres": [
+      "alternative rock",
+      "space rock"
+    ],
+    "popularity": 82,
+    "color": "#8ce25e",
+    "x": 251.66666666666666,
+    "y": 476.25
+  },
+  {
+    "id": "38",
+    "name": "Tame Impala",
+    "genres": [
+      "psychedelic rock",
+      "indie"
+    ],
+    "popularity": 88,
+    "color": "#78e7a4",
+    "x": 402.6666666666667,
+    "y": 633.8636363636364
+  },
+  {
+    "id": "39",
+    "name": "Sufjan Stevens",
+    "genres": [
+      "indie folk",
+      "baroque pop"
+    ],
+    "popularity": 71,
+    "color": "#78e7a1",
+    "x": 384.0,
+    "y": 626.0454545454546
+  },
+  {
+    "id": "40",
+    "name": "Childish Gambino",
+    "genres": [
+      "hip hop",
+      "funk"
+    ],
+    "popularity": 86,
+    "color": "#7e4ddf",
+    "x": 668.3333333333334,
+    "y": 378.3409090909091
+  },
+  {
+    "id": "41",
+    "name": "Radiohead",
+    "genres": [
+      "alternative",
+      "art rock"
+    ],
+    "popularity": 89,
+    "color": "#cccccc",
+    "x": 347.3333333333333,
+    "y": 587.909090909091
+  },
+  {
+    "id": "42",
+    "name": "Fleetwood Mac",
+    "genres": [
+      "classic rock",
+      "soft rock"
+    ],
+    "popularity": 90,
+    "color": "#74e6b6",
+    "x": 425.3333333333333,
+    "y": 543.0681818181818
+  },
+  {
+    "id": "43",
+    "name": "Hans Zimmer",
+    "genres": [
+      "film score",
+      "classical"
+    ],
+    "popularity": 75,
+    "color": "#cccccc",
+    "x": 253.33333333333334,
+    "y": 987.7272727272726
+  },
+  {
+    "id": "44",
+    "name": "Portishead",
+    "genres": [
+      "trip hop",
+      "electronica"
+    ],
+    "popularity": 67,
+    "color": "#4094dd",
+    "x": 561.6666666666666,
+    "y": 204.8409090909091
+  },
+  {
+    "id": "45",
+    "name": "Boards of Canada",
+    "genres": [
+      "ambient",
+      "idm"
+    ],
+    "popularity": 65,
+    "color": "#e8e07c",
+    "x": 156.0,
+    "y": 689.4090909090909
+  },
+  {
+    "id": "46",
+    "name": "Lana Del Rey",
+    "genres": [
+      "dream pop",
+      "indie pop"
+    ],
+    "popularity": 87,
+    "color": "#b6e25e",
+    "x": 303.3333333333333,
+    "y": 487.9545454545455
+  },
+  {
+    "id": "47",
+    "name": "Mac Miller",
+    "genres": [
+      "hip hop",
+      "pop rap"
+    ],
+    "popularity": 84,
+    "color": "#7e4ddf",
+    "x": 709.6666666666667,
+    "y": 275.8863636363636
+  },
+  {
+    "id": "48",
+    "name": "Systema Solar",
+    "genres": [
+      "cumbia",
+      "latin alternative"
+    ],
+    "popularity": 62,
+    "color": "#ab67e4",
+    "x": 635.3333333333334,
+    "y": 393.90909090909093
+  },
+  {
+    "id": "49",
+    "name": "Nujabes",
+    "genres": [
+      "jazz hop",
+      "lo-fi"
+    ],
+    "popularity": 78,
+    "color": "#cccccc",
+    "x": 296.6666666666667,
+    "y": 553.0454545454545
+  },
+  {
+    "id": "50",
+    "name": "João Gilberto",
+    "genres": [
+      "bossa nova",
+      "brazilian jazz"
+    ],
+    "popularity": 66,
+    "color": "#85cbe9",
+    "x": 559.6666666666667,
+    "y": 777.590909090909
+  },
+  {
+    "id": "51",
+    "name": "Kacey Musgraves",
+    "genres": [
+      "country pop",
+      "alt-country"
+    ],
+    "popularity": 79,
+    "color": "#48de5c",
+    "x": 358.0,
+    "y": 290.6363636363636
+  },
+  {
+    "id": "52",
+    "name": "FKA twigs",
+    "genres": [
+      "art pop",
+      "experimental r&b"
+    ],
+    "popularity": 74,
+    "color": "#5ee291",
+    "x": 448.33333333333337,
+    "y": 446.7045454545454
+  },
+  {
+    "id": "53",
+    "name": "Skrillex",
+    "genres": [
+      "dubstep",
+      "edm"
+    ],
+    "popularity": 85,
+    "color": "#3bcfdc",
+    "x": 513.0,
+    "y": 159.77272727272728
+  },
+  {
+    "id": "54",
+    "name": "Ravi Shankar",
+    "genres": [
+      "indian classical",
+      "sitar"
+    ],
+    "popularity": 63,
+    "color": "#92ebd7",
+    "x": 434.33333333333337,
+    "y": 809.590909090909
+  },
+  {
+    "id": "55",
+    "name": "Mitski",
+    "genres": [
+      "indie rock",
+      "art pop"
+    ],
+    "popularity": 82,
+    "color": "#70e25e",
+    "x": 356.0,
+    "y": 443.9090909090909
+  },
+  {
+    "id": "56",
+    "name": "Weyes Blood",
+    "genres": [
+      "baroque pop",
+      "dream pop"
+    ],
+    "popularity": 73,
+    "color": "#6fe58b",
+    "x": 298.66666666666663,
+    "y": 527.5454545454545
+  },
+  {
+    "id": "57",
+    "name": "Arooj Aftab",
+    "genres": [
+      "ambient",
+      "sufi"
+    ],
+    "popularity": 61,
+    "color": "#e8e07c",
+    "x": 321.66666666666663,
+    "y": 637.25
+  },
+  {
+    "id": "58",
+    "name": "Kaytranada",
+    "genres": [
+      "house",
+      "electronic"
+    ],
+    "popularity": 80,
+    "color": "#732ad9",
+    "x": 738.6666666666667,
+    "y": 62.68181818181819
+  },
+  {
+    "id": "59",
+    "name": "Phoebe Bridgers",
+    "genres": [
+      "indie folk",
+      "emo folk"
+    ],
+    "popularity": 84,
+    "color": "#78e7a1",
+    "x": 395.3333333333333,
+    "y": 659.6363636363637
+  },
+  {
+    "id": "60",
+    "name": "Black Midi",
+    "genres": [
+      "math rock",
+      "experimental rock"
+    ],
+    "popularity": 69,
+    "color": "#73e467",
+    "x": 308.0,
+    "y": 549.1363636363636
+  },
+  {
+    "id": "61",
+    "name": "BADBADNOTGOOD",
+    "genres": [
+      "jazz fusion",
+      "instrumental hip hop"
+    ],
+    "popularity": 70,
+    "color": "#85e9e7",
+    "x": 551.6666666666667,
+    "y": 533.9318181818182
+  },
+  {
+    "id": "62",
+    "name": "Jacob Collier",
+    "genres": [
+      "jazz",
+      "experimental pop"
+    ],
+    "popularity": 76,
+    "color": "#96b9ec",
+    "x": 478.66666666666663,
+    "y": 706.1590909090909
+  },
+  {
+    "id": "63",
+    "name": "King Gizzard & The Lizard Wizard",
+    "genres": [
+      "psych rock",
+      "garage rock"
+    ],
+    "popularity": 75,
+    "color": "#cccccc",
+    "x": 264.0,
+    "y": 413.9090909090909
+  },
+  {
+    "id": "64",
+    "name": "ZHU",
+    "genres": [
+      "deep house",
+      "electronic"
+    ],
+    "popularity": 78,
+    "color": "#c82ad9",
+    "x": 817.3333333333334,
+    "y": 50.95454545454545
+  },
+  {
+    "id": "65",
+    "name": "Jessie Ware",
+    "genres": [
+      "disco",
+      "soul"
+    ],
+    "popularity": 74,
+    "color": "#5599e1",
+    "x": 571.0,
+    "y": 572.75
+  },
+  {
+    "id": "66",
+    "name": "Rosalía",
+    "genres": [
+      "reggaeton",
+      "flamenco pop"
+    ],
+    "popularity": 90,
+    "color": "#a737db",
+    "x": 782.0,
+    "y": 140.3181818181818
+  },
+  {
+    "id": "67",
+    "name": "Janelle Monáe",
+    "genres": [
+      "afrofuturism",
+      "funk pop"
+    ],
+    "popularity": 79,
+    "color": "#62b4e3",
+    "x": 669.0,
+    "y": 327.0
+  },
+  {
+    "id": "68",
+    "name": "Yves Tumor",
+    "genres": [
+      "experimental",
+      "noise pop"
+    ],
+    "popularity": 68,
+    "color": "#78e77f",
+    "x": 285.3333333333333,
+    "y": 573.2727272727273
+  },
+  {
+    "id": "69",
+    "name": "Charlotte Gainsbourg",
+    "genres": [
+      "chanson",
+      "indie pop"
+    ],
+    "popularity": 66,
+    "color": "#85e7e9",
+    "x": 443.0,
+    "y": 624.8636363636365
+  },
+  {
+    "id": "70",
+    "name": "Alina Baraz",
+    "genres": [
+      "r&b",
+      "electropop"
+    ],
+    "popularity": 72,
+    "color": "#487ade",
+    "x": 566.6666666666667,
+    "y": 259.9318181818182
+  },
+  {
+    "id": "71",
+    "name": "King Princess",
+    "genres": [
+      "indie pop",
+      "lgbtq+ pop"
+    ],
+    "popularity": 74,
+    "color": "#67e48a",
+    "x": 382.0,
+    "y": 513.2727272727274
+  },
+  {
+    "id": "72",
+    "name": "Snail Mail",
+    "genres": [
+      "indie rock",
+      "lo-fi rock"
+    ],
+    "popularity": 71,
+    "color": "#70e25e",
+    "x": 312.66666666666663,
+    "y": 450.95454545454544
+  },
+  {
+    "id": "73",
+    "name": "Sampa the Great",
+    "genres": [
+      "afrofusion",
+      "hip hop"
+    ],
+    "popularity": 69,
+    "color": "#cccccc",
+    "x": 724.0,
+    "y": 311.54545454545456
+  },
+  {
+    "id": "74",
+    "name": "Parcels",
+    "genres": [
+      "nu disco",
+      "funk pop"
+    ],
+    "popularity": 75,
+    "color": "#682eda",
+    "x": 748.6666666666666,
+    "y": 123.70454545454544
+  },
+  {
+    "id": "75",
+    "name": "Yola",
+    "genres": [
+      "soul",
+      "americana"
+    ],
+    "popularity": 66,
+    "color": "#85c9e9",
+    "x": 554.6666666666666,
+    "y": 750.5
+  },
+  {
+    "id": "76",
+    "name": "Mdou Moctar",
+    "genres": [
+      "tuareg rock",
+      "world"
+    ],
+    "popularity": 64,
+    "color": "#cccccc",
+    "x": 562.0,
+    "y": 603.9545454545454
+  },
+  {
+    "id": "77",
+    "name": "Sevdaliza",
+    "genres": [
+      "trip hop",
+      "avant-garde pop"
+    ],
+    "popularity": 70,
+    "color": "#4094dd",
+    "x": 578.6666666666666,
+    "y": 205.9090909090909
+  },
+  {
+    "id": "78",
+    "name": "IDLES",
+    "genres": [
+      "punk rock",
+      "post-punk"
+    ],
+    "popularity": 76,
+    "color": "#cccccc",
+    "x": 328.0,
+    "y": 426.22727272727275
+  },
+  {
+    "id": "79",
+    "name": "Rina Sawayama",
+    "genres": [
+      "alt pop",
+      "experimental pop"
+    ],
+    "popularity": 79,
+    "color": "#cccccc",
+    "x": 356.6666666666667,
+    "y": 527.6818181818181
+  },
+  {
+    "id": "80",
+    "name": "Christine and the Queens",
+    "genres": [
+      "french pop",
+      "synth pop"
+    ],
+    "popularity": 73,
+    "color": "#5ee2cc",
+    "x": 474.0,
+    "y": 447.95454545454544
+  },
+  {
+    "id": "81",
+    "name": "Arlo Parks",
+    "genres": [
+      "bedroom pop",
+      "indie soul"
+    ],
+    "popularity": 77,
+    "color": "#5ee2ce",
+    "x": 555.0,
+    "y": 386.70454545454544
+  },
+  {
+    "id": "82",
+    "name": "Japanese Breakfast",
+    "genres": [
+      "dream pop",
+      "shoegaze"
+    ],
+    "popularity": 78,
+    "color": "#b6e25e",
+    "x": 197.33333333333331,
+    "y": 444.97727272727275
+  },
+  {
+    "id": "83",
+    "name": "Omar Apollo",
+    "genres": [
+      "r&b",
+      "indie pop"
+    ],
+    "popularity": 80,
+    "color": "#487ade",
+    "x": 497.33333333333337,
+    "y": 398.409090909091
+  },
+  {
+    "id": "84",
+    "name": "Burna Boy",
+    "genres": [
+      "afrobeats",
+      "dancehall"
+    ],
+    "popularity": 89,
+    "color": "#7855e1",
+    "x": 726.6666666666667,
+    "y": 417.45454545454544
+  },
+  {
+    "id": "85",
+    "name": "Remi Wolf",
+    "genres": [
+      "funk pop",
+      "bedroom pop"
+    ],
+    "popularity": 74,
+    "color": "#a13bdc",
+    "x": 626.0,
+    "y": 312.1136363636364
+  },
+  {
+    "id": "86",
+    "name": "Beabadoobee",
+    "genres": [
+      "indie rock",
+      "grunge pop"
+    ],
+    "popularity": 79,
+    "color": "#70e25e",
+    "x": 263.3333333333333,
+    "y": 343.70454545454544
+  },
+  {
+    "id": "87",
+    "name": "Tkay Maidza",
+    "genres": [
+      "hip hop",
+      "alt pop"
+    ],
+    "popularity": 68,
+    "color": "#7e4ddf",
+    "x": 724.0,
+    "y": 311.54545454545456
+  },
+  {
+    "id": "88",
+    "name": "Jai Paul",
+    "genres": [
+      "indietronica",
+      "experimental r&b"
+    ],
+    "popularity": 66,
+    "color": "#44deb0",
+    "x": 474.33333333333337,
+    "y": 345.1590909090909
+  },
+  {
+    "id": "89",
+    "name": "Bomba Estéreo",
+    "genres": [
+      "electro cumbia",
+      "latin alternative"
+    ],
+    "popularity": 75,
+    "color": "#cccccc",
+    "x": 510.0,
+    "y": 267.81818181818187
+  },
+  {
+    "id": "90",
+    "name": "Clairo",
+    "genres": [
+      "bedroom pop",
+      "indie pop"
+    ],
+    "popularity": 83,
+    "color": "#5ee2ce",
+    "x": 429.66666666666663,
+    "y": 479.47727272727275
+  },
+  {
+    "id": "91",
+    "name": "Polo & Pan",
+    "genres": [
+      "french electronic",
+      "house"
+    ],
+    "popularity": 72,
+    "color": "#cccccc",
+    "x": 738.6666666666667,
+    "y": 62.68181818181819
+  },
+  {
+    "id": "92",
+    "name": "The HU",
+    "genres": [
+      "folk metal",
+      "mongolian rock"
+    ],
+    "popularity": 70,
+    "color": "#debb48",
+    "x": 129.33333333333331,
+    "y": 272.8181818181818
+  },
+  {
+    "id": "93",
+    "name": "Bishop Briggs",
+    "genres": [
+      "alt pop",
+      "indie rock"
+    ],
+    "popularity": 74,
+    "color": "#cccccc",
+    "x": 312.66666666666663,
+    "y": 450.95454545454544
+  },
+  {
+    "id": "94",
+    "name": "Altın Gün",
+    "genres": [
+      "anatolian rock",
+      "psychedelic"
+    ],
+    "popularity": 69,
+    "color": "#cccccc"
+  },
+  {
+    "id": "95",
+    "name": "Jorja Smith",
+    "genres": [
+      "neo soul",
+      "r&b"
+    ],
+    "popularity": 85,
+    "color": "#74dce6",
+    "x": 563.6666666666667,
+    "y": 454.56818181818187
+  },
+  {
+    "id": "96",
+    "name": "Denzel Curry",
+    "genres": [
+      "hip hop",
+      "trap"
+    ],
+    "popularity": 82,
+    "color": "#7e4ddf",
+    "x": 716.6666666666667,
+    "y": 280.27272727272725
+  },
+  {
+    "id": "97",
+    "name": "Tash Sultana",
+    "genres": [
+      "indie",
+      "psychedelic rock"
+    ],
+    "popularity": 77,
+    "color": "#cccccc",
+    "x": 402.6666666666667,
+    "y": 633.8636363636364
+  },
+  {
+    "id": "98",
+    "name": "Mahmood",
+    "genres": [
+      "italian pop",
+      "r&b"
+    ],
+    "popularity": 71,
+    "color": "#5ae1e1",
+    "x": 556.6666666666667,
+    "y": 354.0
+  },
+  {
+    "id": "99",
+    "name": "ROSALÍA",
+    "genres": [
+      "reggaeton",
+      "flamenco"
+    ],
+    "popularity": 90,
+    "color": "#a737db",
+    "x": 692.0,
+    "y": 477.9545454545455
+  },
+  {
+    "id": "100",
+    "name": "L'Impératrice",
+    "genres": [
+      "french disco",
+      "synth pop"
+    ],
+    "popularity": 70,
+    "color": "#cccccc"
+  },
+  {
+    "id": "101",
+    "name": "Lovejoy",
+    "genres": [
+      "indie rock",
+      "british indie"
+    ],
+    "popularity": 78,
+    "color": "#70e25e",
+    "x": 312.66666666666663,
+    "y": 450.95454545454544
+  },
+  {
+    "id": "102",
+    "name": "Cigarettes After Sex",
+    "genres": [
+      "dream pop",
+      "slowcore"
+    ],
+    "popularity": 85,
+    "color": "#b6e25e",
+    "x": 267.66666666666663,
+    "y": 552.2045454545455
+  },
+  {
+    "id": "103",
+    "name": "Wilbur Soot",
+    "genres": [
+      "indie pop",
+      "alt z"
+    ],
+    "popularity": 73,
+    "color": "#67e48a",
+    "x": 469.0,
+    "y": 454.1136363636364
+  },
+  {
+    "id": "104",
+    "name": "Oliver Tree",
+    "genres": [
+      "alternative",
+      "electropop"
+    ],
+    "popularity": 80,
+    "color": "#cccccc",
+    "x": 520.6666666666667,
+    "y": 236.3181818181818
+  },
+  {
+    "id": "105",
+    "name": "Noah Kahan",
+    "genres": [
+      "folk pop",
+      "indie folk"
+    ],
+    "spotifyId": "2RQXRUsr4IW1f3mKyKsy4B",
+    "popularity": 88,
+    "color": "#cccccc",
+    "x": 395.3333333333333,
+    "y": 659.6363636363637
+  }
+]
