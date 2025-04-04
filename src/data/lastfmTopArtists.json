@@ -1,0 +1,7502 @@
+[
+  {
+    "name": "Kendrick Lamar",
+    "mbid": "381086ea-f511-4aba-bdf9-71c753dc5077",
+    "url": "https://www.last.fm/music/Kendrick+Lamar"
+  },
+  {
+    "name": "Lady Gaga",
+    "mbid": "650e7db6-b795-4eb5-a702-5ea2fc46c848",
+    "url": "https://www.last.fm/music/Lady+Gaga"
+  },
+  {
+    "name": "The Weeknd",
+    "mbid": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
+    "url": "https://www.last.fm/music/The+Weeknd"
+  },
+  {
+    "name": "Tyler, the Creator",
+    "mbid": "f6beac20-5dfe-4d1f-ae02-0b0a740aafd6",
+    "url": "https://www.last.fm/music/Tyler,+the+Creator"
+  },
+  {
+    "name": "Billie Eilish",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Billie+Eilish"
+  },
+  {
+    "name": "Chappell Roan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chappell+Roan"
+  },
+  {
+    "name": "Charli XCX",
+    "mbid": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
+    "url": "https://www.last.fm/music/Charli+XCX"
+  },
+  {
+    "name": "Kanye West",
+    "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
+    "url": "https://www.last.fm/music/Kanye+West"
+  },
+  {
+    "name": "Radiohead",
+    "mbid": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+    "url": "https://www.last.fm/music/Radiohead"
+  },
+  {
+    "name": "Ariana Grande",
+    "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+    "url": "https://www.last.fm/music/Ariana+Grande"
+  },
+  {
+    "name": "Rihanna",
+    "mbid": "db36a76f-4cdf-43ac-8cd0-5e48092d2bae",
+    "url": "https://www.last.fm/music/Rihanna"
+  },
+  {
+    "name": "Sabrina Carpenter",
+    "mbid": "1882fe91-cdd9-49c9-9956-8e06a3810bd4",
+    "url": "https://www.last.fm/music/Sabrina+Carpenter"
+  },
+  {
+    "name": "Lana Del Rey",
+    "mbid": "b7539c32-53e7-4908-bda3-81449c367da6",
+    "url": "https://www.last.fm/music/Lana+Del+Rey"
+  },
+  {
+    "name": "Drake",
+    "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+    "url": "https://www.last.fm/music/Drake"
+  },
+  {
+    "name": "Taylor Swift",
+    "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+    "url": "https://www.last.fm/music/Taylor+Swift"
+  },
+  {
+    "name": "Arctic Monkeys",
+    "mbid": "ada7a83c-e3e1-40f1-93f9-3e73dbc9298a",
+    "url": "https://www.last.fm/music/Arctic+Monkeys"
+  },
+  {
+    "name": "SZA",
+    "mbid": "272989c8-5535-492d-a25c-9f58803e027f",
+    "url": "https://www.last.fm/music/SZA"
+  },
+  {
+    "name": "Playboi Carti",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Playboi+Carti"
+  },
+  {
+    "name": "Frank Ocean",
+    "mbid": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "url": "https://www.last.fm/music/Frank+Ocean"
+  },
+  {
+    "name": "Doechii",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Doechii"
+  },
+  {
+    "name": "Paramore",
+    "mbid": "728ea90d-279b-4201-a8c4-597830883150",
+    "url": "https://www.last.fm/music/Paramore"
+  },
+  {
+    "name": "Travis Scott",
+    "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+    "url": "https://www.last.fm/music/Travis+Scott"
+  },
+  {
+    "name": "Gorillaz",
+    "mbid": "e21857d5-3256-4547-afb3-4b6ded592596",
+    "url": "https://www.last.fm/music/Gorillaz"
+  },
+  {
+    "name": "Coldplay",
+    "mbid": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+    "url": "https://www.last.fm/music/Coldplay"
+  },
+  {
+    "name": "Doja Cat",
+    "mbid": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+    "url": "https://www.last.fm/music/Doja+Cat"
+  },
+  {
+    "name": "Olivia Rodrigo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Olivia+Rodrigo"
+  },
+  {
+    "name": "Tame Impala",
+    "mbid": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
+    "url": "https://www.last.fm/music/Tame+Impala"
+  },
+  {
+    "name": "Mitski",
+    "mbid": "fa58cf24-0e44-421d-8519-8bf461dcfaa5",
+    "url": "https://www.last.fm/music/Mitski"
+  },
+  {
+    "name": "Clairo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Clairo"
+  },
+  {
+    "name": "Beyoncé",
+    "mbid": "859d0860-d480-4efd-970c-c05d5f1776b8",
+    "url": "https://www.last.fm/music/Beyonc%C3%A9"
+  },
+  {
+    "name": "Childish Gambino",
+    "mbid": "7fb57fba-a6ef-44c2-abab-2fa3bdee607e",
+    "url": "https://www.last.fm/music/Childish+Gambino"
+  },
+  {
+    "name": "Future",
+    "mbid": "9f1195cf-9900-45db-bf9c-21c205672ae0",
+    "url": "https://www.last.fm/music/Future"
+  },
+  {
+    "name": "A$AP Rocky",
+    "mbid": "25b7b584-d952-4662-a8b9-dd8cdfbfeb64",
+    "url": "https://www.last.fm/music/A$AP+Rocky"
+  },
+  {
+    "name": "Bruno Mars",
+    "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
+    "url": "https://www.last.fm/music/Bruno+Mars"
+  },
+  {
+    "name": "The Neighbourhood",
+    "mbid": "97b8d224-5660-419c-8dff-4b3bf0c33983",
+    "url": "https://www.last.fm/music/The+Neighbourhood"
+  },
+  {
+    "name": "The Smiths",
+    "mbid": "40f5d9e4-2de7-4f2d-ad41-e31a9a9fea27",
+    "url": "https://www.last.fm/music/The+Smiths"
+  },
+  {
+    "name": "Katy Perry",
+    "mbid": "122d63fc-8671-43e4-9752-34e846d62a9c",
+    "url": "https://www.last.fm/music/Katy+Perry"
+  },
+  {
+    "name": "Nirvana",
+    "mbid": "9282c8b4-ca0b-4c6b-b7e3-4f7762dfc4d6",
+    "url": "https://www.last.fm/music/Nirvana"
+  },
+  {
+    "name": "beabadoobee",
+    "mbid": "",
+    "url": "https://www.last.fm/music/beabadoobee"
+  },
+  {
+    "name": "Linkin Park",
+    "mbid": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
+    "url": "https://www.last.fm/music/Linkin+Park"
+  },
+  {
+    "name": "Steve Lacy",
+    "mbid": "ca9766a0-1c30-43e6-a213-bac1334efc4a",
+    "url": "https://www.last.fm/music/Steve+Lacy"
+  },
+  {
+    "name": "TV Girl",
+    "mbid": "38f0c7ac-46eb-49ca-b3ab-c785ccd05a60",
+    "url": "https://www.last.fm/music/TV+Girl"
+  },
+  {
+    "name": "Fleetwood Mac",
+    "mbid": "bd13909f-1c29-4c27-a874-d4aaf27c5b1a",
+    "url": "https://www.last.fm/music/Fleetwood+Mac"
+  },
+  {
+    "name": "Deftones",
+    "mbid": "7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+    "url": "https://www.last.fm/music/Deftones"
+  },
+  {
+    "name": "Kali Uchis",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kali+Uchis"
+  },
+  {
+    "name": "The Beatles",
+    "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+    "url": "https://www.last.fm/music/The+Beatles"
+  },
+  {
+    "name": "Mac DeMarco",
+    "mbid": "f2492c31-54a8-4347-a1fc-f81f72873bbf",
+    "url": "https://www.last.fm/music/Mac+DeMarco"
+  },
+  {
+    "name": "The Marías",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Mar%C3%ADas"
+  },
+  {
+    "name": "Justin Bieber",
+    "mbid": "e0140a67-e4d1-4f13-8a01-364355bee46e",
+    "url": "https://www.last.fm/music/Justin+Bieber"
+  },
+  {
+    "name": "Mac Miller",
+    "mbid": "a0e8a1b1-5f8f-475a-a253-17415c17d0ff",
+    "url": "https://www.last.fm/music/Mac+Miller"
+  },
+  {
+    "name": "Kendrick Lamar",
+    "mbid": "381086ea-f511-4aba-bdf9-71c753dc5077",
+    "url": "https://www.last.fm/music/Kendrick+Lamar"
+  },
+  {
+    "name": "Lady Gaga",
+    "mbid": "650e7db6-b795-4eb5-a702-5ea2fc46c848",
+    "url": "https://www.last.fm/music/Lady+Gaga"
+  },
+  {
+    "name": "The Weeknd",
+    "mbid": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
+    "url": "https://www.last.fm/music/The+Weeknd"
+  },
+  {
+    "name": "Tyler, the Creator",
+    "mbid": "f6beac20-5dfe-4d1f-ae02-0b0a740aafd6",
+    "url": "https://www.last.fm/music/Tyler,+the+Creator"
+  },
+  {
+    "name": "Billie Eilish",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Billie+Eilish"
+  },
+  {
+    "name": "Chappell Roan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chappell+Roan"
+  },
+  {
+    "name": "Charli XCX",
+    "mbid": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
+    "url": "https://www.last.fm/music/Charli+XCX"
+  },
+  {
+    "name": "Kanye West",
+    "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
+    "url": "https://www.last.fm/music/Kanye+West"
+  },
+  {
+    "name": "Radiohead",
+    "mbid": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+    "url": "https://www.last.fm/music/Radiohead"
+  },
+  {
+    "name": "Ariana Grande",
+    "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+    "url": "https://www.last.fm/music/Ariana+Grande"
+  },
+  {
+    "name": "Rihanna",
+    "mbid": "db36a76f-4cdf-43ac-8cd0-5e48092d2bae",
+    "url": "https://www.last.fm/music/Rihanna"
+  },
+  {
+    "name": "Sabrina Carpenter",
+    "mbid": "1882fe91-cdd9-49c9-9956-8e06a3810bd4",
+    "url": "https://www.last.fm/music/Sabrina+Carpenter"
+  },
+  {
+    "name": "Lana Del Rey",
+    "mbid": "b7539c32-53e7-4908-bda3-81449c367da6",
+    "url": "https://www.last.fm/music/Lana+Del+Rey"
+  },
+  {
+    "name": "Drake",
+    "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+    "url": "https://www.last.fm/music/Drake"
+  },
+  {
+    "name": "Taylor Swift",
+    "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+    "url": "https://www.last.fm/music/Taylor+Swift"
+  },
+  {
+    "name": "Arctic Monkeys",
+    "mbid": "ada7a83c-e3e1-40f1-93f9-3e73dbc9298a",
+    "url": "https://www.last.fm/music/Arctic+Monkeys"
+  },
+  {
+    "name": "SZA",
+    "mbid": "272989c8-5535-492d-a25c-9f58803e027f",
+    "url": "https://www.last.fm/music/SZA"
+  },
+  {
+    "name": "Playboi Carti",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Playboi+Carti"
+  },
+  {
+    "name": "Frank Ocean",
+    "mbid": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "url": "https://www.last.fm/music/Frank+Ocean"
+  },
+  {
+    "name": "Doechii",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Doechii"
+  },
+  {
+    "name": "Paramore",
+    "mbid": "728ea90d-279b-4201-a8c4-597830883150",
+    "url": "https://www.last.fm/music/Paramore"
+  },
+  {
+    "name": "Travis Scott",
+    "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+    "url": "https://www.last.fm/music/Travis+Scott"
+  },
+  {
+    "name": "Gorillaz",
+    "mbid": "e21857d5-3256-4547-afb3-4b6ded592596",
+    "url": "https://www.last.fm/music/Gorillaz"
+  },
+  {
+    "name": "Coldplay",
+    "mbid": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+    "url": "https://www.last.fm/music/Coldplay"
+  },
+  {
+    "name": "Doja Cat",
+    "mbid": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+    "url": "https://www.last.fm/music/Doja+Cat"
+  },
+  {
+    "name": "Olivia Rodrigo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Olivia+Rodrigo"
+  },
+  {
+    "name": "Tame Impala",
+    "mbid": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
+    "url": "https://www.last.fm/music/Tame+Impala"
+  },
+  {
+    "name": "Mitski",
+    "mbid": "fa58cf24-0e44-421d-8519-8bf461dcfaa5",
+    "url": "https://www.last.fm/music/Mitski"
+  },
+  {
+    "name": "Clairo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Clairo"
+  },
+  {
+    "name": "Beyoncé",
+    "mbid": "859d0860-d480-4efd-970c-c05d5f1776b8",
+    "url": "https://www.last.fm/music/Beyonc%C3%A9"
+  },
+  {
+    "name": "Future",
+    "mbid": "9f1195cf-9900-45db-bf9c-21c205672ae0",
+    "url": "https://www.last.fm/music/Future"
+  },
+  {
+    "name": "Childish Gambino",
+    "mbid": "7fb57fba-a6ef-44c2-abab-2fa3bdee607e",
+    "url": "https://www.last.fm/music/Childish+Gambino"
+  },
+  {
+    "name": "Bruno Mars",
+    "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
+    "url": "https://www.last.fm/music/Bruno+Mars"
+  },
+  {
+    "name": "A$AP Rocky",
+    "mbid": "25b7b584-d952-4662-a8b9-dd8cdfbfeb64",
+    "url": "https://www.last.fm/music/A$AP+Rocky"
+  },
+  {
+    "name": "The Neighbourhood",
+    "mbid": "97b8d224-5660-419c-8dff-4b3bf0c33983",
+    "url": "https://www.last.fm/music/The+Neighbourhood"
+  },
+  {
+    "name": "Katy Perry",
+    "mbid": "122d63fc-8671-43e4-9752-34e846d62a9c",
+    "url": "https://www.last.fm/music/Katy+Perry"
+  },
+  {
+    "name": "The Smiths",
+    "mbid": "40f5d9e4-2de7-4f2d-ad41-e31a9a9fea27",
+    "url": "https://www.last.fm/music/The+Smiths"
+  },
+  {
+    "name": "Nirvana",
+    "mbid": "9282c8b4-ca0b-4c6b-b7e3-4f7762dfc4d6",
+    "url": "https://www.last.fm/music/Nirvana"
+  },
+  {
+    "name": "beabadoobee",
+    "mbid": "",
+    "url": "https://www.last.fm/music/beabadoobee"
+  },
+  {
+    "name": "Linkin Park",
+    "mbid": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
+    "url": "https://www.last.fm/music/Linkin+Park"
+  },
+  {
+    "name": "Steve Lacy",
+    "mbid": "ca9766a0-1c30-43e6-a213-bac1334efc4a",
+    "url": "https://www.last.fm/music/Steve+Lacy"
+  },
+  {
+    "name": "TV Girl",
+    "mbid": "38f0c7ac-46eb-49ca-b3ab-c785ccd05a60",
+    "url": "https://www.last.fm/music/TV+Girl"
+  },
+  {
+    "name": "Fleetwood Mac",
+    "mbid": "bd13909f-1c29-4c27-a874-d4aaf27c5b1a",
+    "url": "https://www.last.fm/music/Fleetwood+Mac"
+  },
+  {
+    "name": "Deftones",
+    "mbid": "7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+    "url": "https://www.last.fm/music/Deftones"
+  },
+  {
+    "name": "Kali Uchis",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kali+Uchis"
+  },
+  {
+    "name": "The Beatles",
+    "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+    "url": "https://www.last.fm/music/The+Beatles"
+  },
+  {
+    "name": "Mac DeMarco",
+    "mbid": "f2492c31-54a8-4347-a1fc-f81f72873bbf",
+    "url": "https://www.last.fm/music/Mac+DeMarco"
+  },
+  {
+    "name": "The Marías",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Mar%C3%ADas"
+  },
+  {
+    "name": "Justin Bieber",
+    "mbid": "e0140a67-e4d1-4f13-8a01-364355bee46e",
+    "url": "https://www.last.fm/music/Justin+Bieber"
+  },
+  {
+    "name": "Britney Spears",
+    "mbid": "45a663b5-b1cb-4a91-bff6-2bef7bbfdd76",
+    "url": "https://www.last.fm/music/Britney+Spears"
+  },
+  {
+    "name": "Mac Miller",
+    "mbid": "a0e8a1b1-5f8f-475a-a253-17415c17d0ff",
+    "url": "https://www.last.fm/music/Mac+Miller"
+  },
+  {
+    "name": "Michael Jackson",
+    "mbid": "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
+    "url": "https://www.last.fm/music/Michael+Jackson"
+  },
+  {
+    "name": "Hozier",
+    "mbid": "b4691384-50c3-4afd-9988-51d3ec5db65d",
+    "url": "https://www.last.fm/music/Hozier"
+  },
+  {
+    "name": "Tate McRae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Tate+McRae"
+  },
+  {
+    "name": "Eminem",
+    "mbid": "b95ce3ff-3d05-4e87-9e01-c97b66af13d4",
+    "url": "https://www.last.fm/music/Eminem"
+  },
+  {
+    "name": "Don Toliver",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Don+Toliver"
+  },
+  {
+    "name": "Queen",
+    "mbid": "420ca290-76c5-41af-999e-564d7c71f1a7",
+    "url": "https://www.last.fm/music/Queen"
+  },
+  {
+    "name": "Maroon 5",
+    "mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
+    "url": "https://www.last.fm/music/Maroon+5"
+  },
+  {
+    "name": "Post Malone",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Post+Malone"
+  },
+  {
+    "name": "Jennie",
+    "mbid": "d32de3a1-01f0-430e-859a-72307724041c",
+    "url": "https://www.last.fm/music/Jennie"
+  },
+  {
+    "name": "Calvin Harris",
+    "mbid": "8dd98bdc-80ec-4e93-8509-2f46bafc09a7",
+    "url": "https://www.last.fm/music/Calvin+Harris"
+  },
+  {
+    "name": "Harry Styles",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Harry+Styles"
+  },
+  {
+    "name": "The Strokes",
+    "mbid": "f181961b-20f7-459e-89de-920ef03c7ed0",
+    "url": "https://www.last.fm/music/The+Strokes"
+  },
+  {
+    "name": "LIL UZI VERT",
+    "mbid": "",
+    "url": "https://www.last.fm/music/LIL+UZI+VERT"
+  },
+  {
+    "name": "Lorde",
+    "mbid": "8e494408-8620-4c6a-82c2-c2ca4a1e4f12",
+    "url": "https://www.last.fm/music/Lorde"
+  },
+  {
+    "name": "Selena Gomez",
+    "mbid": "e4bc69e2-a064-4f93-ada1-f7f209cc1cc3",
+    "url": "https://www.last.fm/music/Selena+Gomez"
+  },
+  {
+    "name": "The Cure",
+    "mbid": "69ee3720-a7cb-4402-b48d-a02c366f2bcf",
+    "url": "https://www.last.fm/music/The+Cure"
+  },
+  {
+    "name": "Dua Lipa",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Dua+Lipa"
+  },
+  {
+    "name": "Cigarettes After Sex",
+    "mbid": "34557d8f-ee4a-44ab-ae6e-49bb8ac604d0",
+    "url": "https://www.last.fm/music/Cigarettes+After+Sex"
+  },
+  {
+    "name": "Red Hot Chili Peppers",
+    "mbid": "8bfac288-ccc5-448d-9573-c33ea2aa5c30",
+    "url": "https://www.last.fm/music/Red+Hot+Chili+Peppers"
+  },
+  {
+    "name": "Green Day",
+    "mbid": "084308bd-1654-436f-ba03-df6697104e19",
+    "url": "https://www.last.fm/music/Green+Day"
+  },
+  {
+    "name": "pinkpantheress",
+    "mbid": "",
+    "url": "https://www.last.fm/music/pinkpantheress"
+  },
+  {
+    "name": "Gracie Abrams",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Gracie+Abrams"
+  },
+  {
+    "name": "The Cranberries",
+    "mbid": "c98d40fd-f6cf-4b26-883e-eaa515ee2851",
+    "url": "https://www.last.fm/music/The+Cranberries"
+  },
+  {
+    "name": "J. Cole",
+    "mbid": "875203e1-8e58-4b86-8dcb-7190faf411c5",
+    "url": "https://www.last.fm/music/J.+Cole"
+  },
+  {
+    "name": "Bad Bunny",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Bad+Bunny"
+  },
+  {
+    "name": "Metro Boomin",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Metro+Boomin"
+  },
+  {
+    "name": "Pink Floyd",
+    "mbid": "83d91898-7763-47d7-b03b-b92132375c47",
+    "url": "https://www.last.fm/music/Pink+Floyd"
+  },
+  {
+    "name": "System of a Down",
+    "mbid": "cc0b7089-c08d-4c10-b6b0-873582c17fd6",
+    "url": "https://www.last.fm/music/System+of+a+Down"
+  },
+  {
+    "name": "Nicki Minaj",
+    "mbid": "1036b808-f58c-4a3e-b461-a2c4492ecf1b",
+    "url": "https://www.last.fm/music/Nicki+Minaj"
+  },
+  {
+    "name": "My Chemical Romance",
+    "mbid": "c07f0676-9143-4217-8a9f-4c26bd636f13",
+    "url": "https://www.last.fm/music/My+Chemical+Romance"
+  },
+  {
+    "name": "Miley Cyrus",
+    "mbid": "7e9bd05a-117f-4cce-87bc-e011527a8b18",
+    "url": "https://www.last.fm/music/Miley+Cyrus"
+  },
+  {
+    "name": "21 Savage",
+    "mbid": "",
+    "url": "https://www.last.fm/music/21+Savage"
+  },
+  {
+    "name": "Joji",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Joji"
+  },
+  {
+    "name": "Adele",
+    "mbid": "cc2c9c3c-b7bc-4b8b-84d8-4fbd8779e493",
+    "url": "https://www.last.fm/music/Adele"
+  },
+  {
+    "name": "Jay-Z",
+    "mbid": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+    "url": "https://www.last.fm/music/Jay-Z"
+  },
+  {
+    "name": "David Guetta",
+    "mbid": "302bd7b9-d012-4360-897a-93b00c855680",
+    "url": "https://www.last.fm/music/David+Guetta"
+  },
+  {
+    "name": "d4vd",
+    "mbid": "",
+    "url": "https://www.last.fm/music/d4vd"
+  },
+  {
+    "name": "Twenty One Pilots",
+    "mbid": "a6c6897a-7415-4f8d-b5a5-3a5e05f3be67",
+    "url": "https://www.last.fm/music/Twenty+One+Pilots"
+  },
+  {
+    "name": "ABBA",
+    "mbid": "d87e52c5-bb8d-4da8-b941-9f4928627dc8",
+    "url": "https://www.last.fm/music/ABBA"
+  },
+  {
+    "name": "Lisa",
+    "mbid": "fde67432-278f-4a41-9e2f-0d1b35d8a3dc",
+    "url": "https://www.last.fm/music/Lisa"
+  },
+  {
+    "name": "Justin Timberlake",
+    "mbid": "596ffa74-3d08-44ef-b113-765d43d12738",
+    "url": "https://www.last.fm/music/Justin+Timberlake"
+  },
+  {
+    "name": "xxxtentacion",
+    "mbid": "",
+    "url": "https://www.last.fm/music/xxxtentacion"
+  },
+  {
+    "name": "Kesha",
+    "mbid": "fab34286-b8e1-4879-bce3-194e1358fbd2",
+    "url": "https://www.last.fm/music/Kesha"
+  },
+  {
+    "name": "The Smashing Pumpkins",
+    "mbid": "ba0d6274-db14-4ef5-b28d-657ebde1a396",
+    "url": "https://www.last.fm/music/The+Smashing+Pumpkins"
+  },
+  {
+    "name": "Daft Punk",
+    "mbid": "056e4f3e-d505-4dad-8ec1-d04f521cbb56",
+    "url": "https://www.last.fm/music/Daft+Punk"
+  },
+  {
+    "name": "LE SSERAFIM",
+    "mbid": "",
+    "url": "https://www.last.fm/music/LE+SSERAFIM"
+  },
+  {
+    "name": "Pitbull",
+    "mbid": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+    "url": "https://www.last.fm/music/Pitbull"
+  },
+  {
+    "name": "Imogen Heap",
+    "mbid": "328d146c-79f1-4eb6-9e40-8ee5710c14e5",
+    "url": "https://www.last.fm/music/Imogen+Heap"
+  },
+  {
+    "name": "Panic! at the Disco",
+    "mbid": "b9472588-93f3-4922-a1a2-74082cdf9ce8",
+    "url": "https://www.last.fm/music/Panic%21+at+the+Disco"
+  },
+  {
+    "name": "MGMT",
+    "mbid": "c485632c-b784-4ee9-8ea1-c5fb365681fc",
+    "url": "https://www.last.fm/music/MGMT"
+  },
+  {
+    "name": "Elton John",
+    "mbid": "b83bc61f-8451-4a5d-8b8e-7e9ed295e822",
+    "url": "https://www.last.fm/music/Elton+John"
+  },
+  {
+    "name": "Baby Keem",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Baby+Keem"
+  },
+  {
+    "name": "Lil Wayne",
+    "mbid": "ac9a487a-d9d2-4f27-bb23-0f4686488345",
+    "url": "https://www.last.fm/music/Lil+Wayne"
+  },
+  {
+    "name": "Black Eyed Peas",
+    "mbid": "d5be5333-4171-427e-8e12-732087c6b78e",
+    "url": "https://www.last.fm/music/Black+Eyed+Peas"
+  },
+  {
+    "name": "The Killers",
+    "mbid": "95e1ead9-4d31-4808-a7ac-32c3614c116b",
+    "url": "https://www.last.fm/music/The+Killers"
+  },
+  {
+    "name": "Daniel Caesar",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Daniel+Caesar"
+  },
+  {
+    "name": "Nelly Furtado",
+    "mbid": "13655113-cd16-4b43-9dca-cadbbf26ee05",
+    "url": "https://www.last.fm/music/Nelly+Furtado"
+  },
+  {
+    "name": "David Bowie",
+    "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+    "url": "https://www.last.fm/music/David+Bowie"
+  },
+  {
+    "name": "Beach House",
+    "mbid": "d5cc67b8-1cc4-453b-96e8-44487acdebea",
+    "url": "https://www.last.fm/music/Beach+House"
+  },
+  {
+    "name": "Conan Gray",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Conan+Gray"
+  },
+  {
+    "name": "OutKast",
+    "mbid": "73fdb566-a9b1-494c-9f32-51768ec9fd27",
+    "url": "https://www.last.fm/music/OutKast"
+  },
+  {
+    "name": "Weezer",
+    "mbid": "6fe07aa5-fec0-4eca-a456-f29bff451b04",
+    "url": "https://www.last.fm/music/Weezer"
+  },
+  {
+    "name": "Fall Out Boy",
+    "mbid": "516cef4d-0718-4007-9939-f9b38af3f784",
+    "url": "https://www.last.fm/music/Fall+Out+Boy"
+  },
+  {
+    "name": "bôa",
+    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+    "url": "https://www.last.fm/music/b%C3%B4a"
+  },
+  {
+    "name": "Marina",
+    "mbid": "fe0ad4d4-391b-4f43-b02f-4d2ed0ab2b5e",
+    "url": "https://www.last.fm/music/Marina"
+  },
+  {
+    "name": "Brent Faiyaz",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Brent+Faiyaz"
+  },
+  {
+    "name": "Sade",
+    "mbid": "67930b3e-e00b-469f-8c74-fd69f20522ec",
+    "url": "https://www.last.fm/music/Sade"
+  },
+  {
+    "name": "Billy Joel",
+    "mbid": "64b94289-9474-4d43-8c93-918ccc1920d1",
+    "url": "https://www.last.fm/music/Billy+Joel"
+  },
+  {
+    "name": "Foo Fighters",
+    "mbid": "67f66c07-6e61-4026-ade5-7e782fad3a5d",
+    "url": "https://www.last.fm/music/Foo+Fighters"
+  },
+  {
+    "name": "One Direction",
+    "mbid": "3fedf601-0039-4ba4-af53-7b6d1ff5b69a",
+    "url": "https://www.last.fm/music/One+Direction"
+  },
+  {
+    "name": "Phoebe Bridgers",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Phoebe+Bridgers"
+  },
+  {
+    "name": "Men I Trust",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Men+I+Trust"
+  },
+  {
+    "name": "Rosé",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ros%C3%A9"
+  },
+  {
+    "name": "Madonna",
+    "mbid": "79239441-bfd5-4981-a70c-55c3f15c1287",
+    "url": "https://www.last.fm/music/Madonna"
+  },
+  {
+    "name": "PARTYNEXTDOOR",
+    "mbid": "f23ef341-33bd-47c1-b83c-846a78581f05",
+    "url": "https://www.last.fm/music/PARTYNEXTDOOR"
+  },
+  {
+    "name": "Laufey",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Laufey"
+  },
+  {
+    "name": "Troye Sivan",
+    "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+    "url": "https://www.last.fm/music/Troye+Sivan"
+  },
+  {
+    "name": "Cage the Elephant",
+    "mbid": "b41b38d4-ef3e-4f37-8c75-cfe9af999696",
+    "url": "https://www.last.fm/music/Cage+the+Elephant"
+  },
+  {
+    "name": "Ed Sheeran",
+    "mbid": "b8a7c51f-362c-4dcb-a259-bc6e0095f0a6",
+    "url": "https://www.last.fm/music/Ed+Sheeran"
+  },
+  {
+    "name": "Avril Lavigne",
+    "mbid": "0103c1cc-4a09-4a5d-a344-56ad99a77193",
+    "url": "https://www.last.fm/music/Avril+Lavigne"
+  },
+  {
+    "name": "Faye Webster",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Faye+Webster"
+  },
+  {
+    "name": "Metallica",
+    "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+    "url": "https://www.last.fm/music/Metallica"
+  },
+  {
+    "name": "Lil Tecca",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Tecca"
+  },
+  {
+    "name": "The 1975",
+    "mbid": "5b6ebfe0-f72b-4902-bba9-74c8af0f1af0",
+    "url": "https://www.last.fm/music/The+1975"
+  },
+  {
+    "name": "Shakira",
+    "mbid": "bf24ca37-25f4-4e34-9aec-460b94364cfc",
+    "url": "https://www.last.fm/music/Shakira"
+  },
+  {
+    "name": "Alex G",
+    "mbid": "b9e306aa-5f93-4f50-9dd1-335526e33c1a",
+    "url": "https://www.last.fm/music/Alex+G"
+  },
+  {
+    "name": "Juice WRLD",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Juice+WRLD"
+  },
+  {
+    "name": "Imagine Dragons",
+    "mbid": "012151a8-0f9a-44c9-997f-ebd68b5389f9",
+    "url": "https://www.last.fm/music/Imagine+Dragons"
+  },
+  {
+    "name": "Kid Cudi",
+    "mbid": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
+    "url": "https://www.last.fm/music/Kid+Cudi"
+  },
+  {
+    "name": "NewJeans",
+    "mbid": "",
+    "url": "https://www.last.fm/music/NewJeans"
+  },
+  {
+    "name": "The Police",
+    "mbid": "9e0e2b01-41db-4008-bd8b-988977d6019a",
+    "url": "https://www.last.fm/music/The+Police"
+  },
+  {
+    "name": "Muse",
+    "mbid": "fd857293-5ab8-40de-b29e-55a69d4e4d0f",
+    "url": "https://www.last.fm/music/Muse"
+  },
+  {
+    "name": "BTS",
+    "mbid": "0d79fe8e-ba27-4859-bb8c-2f255f346853",
+    "url": "https://www.last.fm/music/BTS"
+  },
+  {
+    "name": "The Kid Laroi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Kid+Laroi"
+  },
+  {
+    "name": "Halsey",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Halsey"
+  },
+  {
+    "name": "Slipknot",
+    "mbid": "ceb7b6be-1dbb-4d80-b157-5588bc884764",
+    "url": "https://www.last.fm/music/Slipknot"
+  },
+  {
+    "name": "Tears for Fears",
+    "mbid": "7c7f9c94-dee8-4903-892b-6cf44652e2de",
+    "url": "https://www.last.fm/music/Tears+for+Fears"
+  },
+  {
+    "name": "Megan Thee Stallion",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Megan+Thee+Stallion"
+  },
+  {
+    "name": "Lil Yachty",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Yachty"
+  },
+  {
+    "name": "Jeff Buckley",
+    "mbid": "e6e879c0-3d56-4f12-b3c5-3ce459661a8e",
+    "url": "https://www.last.fm/music/Jeff+Buckley"
+  },
+  {
+    "name": "Mazzy Star",
+    "mbid": "c48d4327-8122-4286-af66-05e1ee6ac4d8",
+    "url": "https://www.last.fm/music/Mazzy+Star"
+  },
+  {
+    "name": "Gunna",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Gunna"
+  },
+  {
+    "name": "Djo",
+    "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+    "url": "https://www.last.fm/music/Djo"
+  },
+  {
+    "name": "Usher",
+    "mbid": "3414d446-735a-443c-931f-10634f57e5b9",
+    "url": "https://www.last.fm/music/Usher"
+  },
+  {
+    "name": "Gigi Perez",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Gigi+Perez"
+  },
+  {
+    "name": "Dominic Fike",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Dominic+Fike"
+  },
+  {
+    "name": "Oasis",
+    "mbid": "ecf9f3a3-35e9-4c58-acaa-e707fba45060",
+    "url": "https://www.last.fm/music/Oasis"
+  },
+  {
+    "name": "LIL PEEP",
+    "mbid": "",
+    "url": "https://www.last.fm/music/LIL+PEEP"
+  },
+  {
+    "name": "Pixies",
+    "mbid": "b6b2bb8d-54a9-491f-9607-7b546023b433",
+    "url": "https://www.last.fm/music/Pixies"
+  },
+  {
+    "name": "The Rolling Stones",
+    "mbid": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+    "url": "https://www.last.fm/music/The+Rolling+Stones"
+  },
+  {
+    "name": "Tory Lanez",
+    "mbid": "5b8ec72b-9e39-4a06-a2bf-964166b92a71",
+    "url": "https://www.last.fm/music/Tory+Lanez"
+  },
+  {
+    "name": "Wallows",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Wallows"
+  },
+  {
+    "name": "Girl In Red",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Girl+In+Red"
+  },
+  {
+    "name": "MF DOOM",
+    "mbid": "188711ed-c99b-439c-844a-ca831f63a727",
+    "url": "https://www.last.fm/music/MF+DOOM"
+  },
+  {
+    "name": "Led Zeppelin",
+    "mbid": "d6e0e274-8e19-44ce-b5b2-52c12f8a674a",
+    "url": "https://www.last.fm/music/Led+Zeppelin"
+  },
+  {
+    "name": "Grimes",
+    "mbid": "7e5a2a59-6d9f-4a17-b7c2-e1eedb7bd222",
+    "url": "https://www.last.fm/music/Grimes"
+  },
+  {
+    "name": "Florence + the Machine",
+    "mbid": "5fee3020-513b-48c2-b1f7-4681b01db0c6",
+    "url": "https://www.last.fm/music/Florence+%252B+the+Machine"
+  },
+  {
+    "name": "Cocteau Twins",
+    "mbid": "000fc734-b7e1-4a01-92d1-f544261b43f5",
+    "url": "https://www.last.fm/music/Cocteau+Twins"
+  },
+  {
+    "name": "Chase Atlantic",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chase+Atlantic"
+  },
+  {
+    "name": "Big Thief",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Big+Thief"
+  },
+  {
+    "name": "Frank Sinatra",
+    "mbid": "197450cd-0124-4164-b723-3c22dd16494d",
+    "url": "https://www.last.fm/music/Frank+Sinatra"
+  },
+  {
+    "name": "TWICE",
+    "mbid": "d594ff3d-d3ca-4d2e-bb6a-a7dada9af0c5",
+    "url": "https://www.last.fm/music/TWICE"
+  },
+  {
+    "name": "¥$",
+    "mbid": "",
+    "url": "https://www.last.fm/music/%C2%A5$"
+  },
+  {
+    "name": "Bring Me the Horizon",
+    "mbid": "074e3847-f67f-49f9-81f1-8c8cea147e8e",
+    "url": "https://www.last.fm/music/Bring+Me+the+Horizon"
+  },
+  {
+    "name": "yeat",
+    "mbid": "",
+    "url": "https://www.last.fm/music/yeat"
+  },
+  {
+    "name": "Gwen Stefani",
+    "mbid": "2e41ae9c-afd2-4f20-8f1e-17281ce9b472",
+    "url": "https://www.last.fm/music/Gwen+Stefani"
+  },
+  {
+    "name": "Slowdive",
+    "mbid": "a16371b9-7d36-497a-a9d4-42b0a0440c5e",
+    "url": "https://www.last.fm/music/Slowdive"
+  },
+  {
+    "name": "2Pac",
+    "mbid": "382f1005-e9ab-4684-afd4-0bdae4ee37f2",
+    "url": "https://www.last.fm/music/2Pac"
+  },
+  {
+    "name": "Empire of the Sun",
+    "mbid": "ac7e838c-3d95-47c2-92a9-81767ad7c217",
+    "url": "https://www.last.fm/music/Empire+of+the+Sun"
+  },
+  {
+    "name": "Amy Winehouse",
+    "mbid": "dfe9a7c4-8cf2-47f4-9dcb-d233c2b86ec3",
+    "url": "https://www.last.fm/music/Amy+Winehouse"
+  },
+  {
+    "name": "The Cardigans",
+    "mbid": "3e55d51d-687f-4a9d-af96-2fabccf802e5",
+    "url": "https://www.last.fm/music/The+Cardigans"
+  },
+  {
+    "name": "The Notorious B.I.G.",
+    "mbid": "d5d97b2b-b83b-4976-814a-056d9076c8c3",
+    "url": "https://www.last.fm/music/The+Notorious+B.I.G."
+  },
+  {
+    "name": "Chief Keef",
+    "mbid": "9118f524-be76-4eaf-875c-ccf15e2a2ad6",
+    "url": "https://www.last.fm/music/Chief+Keef"
+  },
+  {
+    "name": "Pierce The Veil",
+    "mbid": "8ed919fb-eaee-45a1-ba99-b3ede9ca5f1d",
+    "url": "https://www.last.fm/music/Pierce+The+Veil"
+  },
+  {
+    "name": "Korn",
+    "mbid": "ac865b2e-bba8-4f5a-8756-dd40d5e39f46",
+    "url": "https://www.last.fm/music/Korn"
+  },
+  {
+    "name": "aespa",
+    "mbid": "",
+    "url": "https://www.last.fm/music/aespa"
+  },
+  {
+    "name": "Limp Bizkit",
+    "mbid": "8f9d6bb2-dba4-4cca-9967-cc02b9f4820c",
+    "url": "https://www.last.fm/music/Limp+Bizkit"
+  },
+  {
+    "name": "Shawn Mendes",
+    "mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
+    "url": "https://www.last.fm/music/Shawn+Mendes"
+  },
+  {
+    "name": "MAGDALENA BAY",
+    "mbid": "",
+    "url": "https://www.last.fm/music/MAGDALENA+BAY"
+  },
+  {
+    "name": "Bob Dylan",
+    "mbid": "72c536dc-7137-4477-a521-567eeb840fa8",
+    "url": "https://www.last.fm/music/Bob+Dylan"
+  },
+  {
+    "name": "Evanescence",
+    "mbid": "f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+    "url": "https://www.last.fm/music/Evanescence"
+  },
+  {
+    "name": "Noah Kahan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Noah+Kahan"
+  },
+  {
+    "name": "Trippie Redd",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Trippie+Redd"
+  },
+  {
+    "name": "Young Thug",
+    "mbid": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+    "url": "https://www.last.fm/music/Young+Thug"
+  },
+  {
+    "name": "50 Cent",
+    "mbid": "8e68819d-71be-4e7d-b41d-f1df81b01d3f",
+    "url": "https://www.last.fm/music/50+Cent"
+  },
+  {
+    "name": "The Goo Goo Dolls",
+    "mbid": "e2c00c56-8365-4160-9f40-a64682917633",
+    "url": "https://www.last.fm/music/The+Goo+Goo+Dolls"
+  },
+  {
+    "name": "Sufjan Stevens",
+    "mbid": "01d3c51b-9b98-418a-8d8e-37f6fab59d8c",
+    "url": "https://www.last.fm/music/Sufjan+Stevens"
+  },
+  {
+    "name": "Chris Brown",
+    "mbid": "c234fa42-e6a6-443e-937e-2f4b073538a3",
+    "url": "https://www.last.fm/music/Chris+Brown"
+  },
+  {
+    "name": "Blood Orange",
+    "mbid": "e43daa78-3cf3-4cf9-bc27-af4d4e675a02",
+    "url": "https://www.last.fm/music/Blood+Orange"
+  },
+  {
+    "name": "Kate Bush",
+    "mbid": "4b585938-f271-45e2-b19a-91c634b5e396",
+    "url": "https://www.last.fm/music/Kate+Bush"
+  },
+  {
+    "name": "5 Seconds of Summer",
+    "mbid": "830e5c4e-6b7d-431d-86ab-00c751281dc5",
+    "url": "https://www.last.fm/music/5+Seconds+of+Summer"
+  },
+  {
+    "name": "blink-182",
+    "mbid": "0743b15a-3c32-48c8-ad58-cb325350befa",
+    "url": "https://www.last.fm/music/blink-182"
+  },
+  {
+    "name": "Demi Lovato",
+    "mbid": "faf4cefb-036c-4c88-b93a-5b03dd0a0e6b",
+    "url": "https://www.last.fm/music/Demi+Lovato"
+  },
+  {
+    "name": "Alice in Chains",
+    "mbid": "4bd95eea-b9f6-4d70-a36c-cfea77431553",
+    "url": "https://www.last.fm/music/Alice+in+Chains"
+  },
+  {
+    "name": "AdriAnne Lenker",
+    "mbid": "763cb144-afdb-471e-bd86-d4f5b9b58641",
+    "url": "https://www.last.fm/music/AdriAnne+Lenker"
+  },
+  {
+    "name": "Eyedress",
+    "mbid": "0b619a94-481c-40ac-abae-85f33f2b1588",
+    "url": "https://www.last.fm/music/Eyedress"
+  },
+  {
+    "name": "Lil Nas X",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Nas+X"
+  },
+  {
+    "name": "Ken Carson",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ken+Carson"
+  },
+  {
+    "name": "Lil Baby",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Baby"
+  },
+  {
+    "name": "Melanie Martinez",
+    "mbid": "0df563ec-1a79-486e-a46d-5b9862a40311",
+    "url": "https://www.last.fm/music/Melanie+Martinez"
+  },
+  {
+    "name": "Miguel",
+    "mbid": "f5c1f728-4bf0-48d6-aa2b-1d2e36e2cd56",
+    "url": "https://www.last.fm/music/Miguel"
+  },
+  {
+    "name": "Daryl Hall & John Oates",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Daryl+Hall+&+John+Oates"
+  },
+  {
+    "name": "Ravyn Lenae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ravyn+Lenae"
+  },
+  {
+    "name": "Flo Rida",
+    "mbid": "4593d49a-7f67-46ba-9ec0-126bd676286f",
+    "url": "https://www.last.fm/music/Flo+Rida"
+  },
+  {
+    "name": "Jack Harlow",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jack+Harlow"
+  },
+  {
+    "name": "Camila Cabello",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Camila+Cabello"
+  },
+  {
+    "name": "Blur",
+    "mbid": "ba853904-ae25-4ebb-89d6-c44cfbd71bd2",
+    "url": "https://www.last.fm/music/Blur"
+  },
+  {
+    "name": "Suki Waterhouse",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Suki+Waterhouse"
+  },
+  {
+    "name": "OneRepublic",
+    "mbid": "c33c2065-b1c3-4406-b066-d33a9e2ea71a",
+    "url": "https://www.last.fm/music/OneRepublic"
+  },
+  {
+    "name": "Guns N' Roses",
+    "mbid": "eeb1195b-f213-4ce1-b28c-8565211f8e43",
+    "url": "https://www.last.fm/music/Guns+N%27+Roses"
+  },
+  {
+    "name": "Glass Animals",
+    "mbid": "20395131-fbde-43ce-b141-b700cfdae99c",
+    "url": "https://www.last.fm/music/Glass+Animals"
+  },
+  {
+    "name": "Crystal Castles",
+    "mbid": "b1570544-93ab-4b2b-8398-131735394202",
+    "url": "https://www.last.fm/music/Crystal+Castles"
+  },
+  {
+    "name": "Foster the People",
+    "mbid": "e0e1a584-dd0a-4bd1-88d1-c4c62895039d",
+    "url": "https://www.last.fm/music/Foster+the+People"
+  },
+  {
+    "name": "Addison Rae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Addison+Rae"
+  },
+  {
+    "name": "The Chainsmokers",
+    "mbid": "91a81925-92f9-4fc9-b897-93cf01226282",
+    "url": "https://www.last.fm/music/The+Chainsmokers"
+  },
+  {
+    "name": "FKA twigs",
+    "mbid": "1e4e9db7-5068-4a9c-bdd0-5777e47172c8",
+    "url": "https://www.last.fm/music/FKA+twigs"
+  },
+  {
+    "name": "Lola Young",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lola+Young"
+  },
+  {
+    "name": "Denzel Curry",
+    "mbid": "5f95440d-7737-4a36-9bcf-c05337f7129b",
+    "url": "https://www.last.fm/music/Denzel+Curry"
+  },
+  {
+    "name": "Black Sabbath",
+    "mbid": "5182c1d9-c7d2-4dad-afa0-ccfeada921a8",
+    "url": "https://www.last.fm/music/Black+Sabbath"
+  },
+  {
+    "name": "Kodak Black",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kodak+Black"
+  },
+  {
+    "name": "Lord Huron",
+    "mbid": "51c76d97-0635-433c-b26d-66beb81657f8",
+    "url": "https://www.last.fm/music/Lord+Huron"
+  },
+  {
+    "name": "Zayn",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Zayn"
+  },
+  {
+    "name": "Three Days Grace",
+    "mbid": "fabb37f8-eb2a-4cc1-a72a-b56935bbb72d",
+    "url": "https://www.last.fm/music/Three+Days+Grace"
+  },
+  {
+    "name": "Fetty Wap",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Fetty+Wap"
+  },
+  {
+    "name": "Bon Iver",
+    "mbid": "437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+    "url": "https://www.last.fm/music/Bon+Iver"
+  },
+  {
+    "name": "Depeche Mode",
+    "mbid": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+    "url": "https://www.last.fm/music/Depeche+Mode"
+  },
+  {
+    "name": "Mariah Carey",
+    "mbid": "494e8d09-f85b-4543-892f-a5096aed1cd4",
+    "url": "https://www.last.fm/music/Mariah+Carey"
+  },
+  {
+    "name": "Marshmello",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Marshmello"
+  },
+  {
+    "name": "Bryson Tiller",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Bryson+Tiller"
+  },
+  {
+    "name": "Talking Heads",
+    "mbid": "a94a7155-c79d-4409-9fcf-220cb0e4dc3a",
+    "url": "https://www.last.fm/music/Talking+Heads"
+  },
+  {
+    "name": "The Offspring",
+    "mbid": "23a03e33-a603-404e-bcbf-2c00159d7067",
+    "url": "https://www.last.fm/music/The+Offspring"
+  },
+  {
+    "name": "Rex Orange County",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rex+Orange+County"
+  },
+  {
+    "name": "Aphex Twin",
+    "mbid": "f22942a1-6f70-4f48-866e-238cb2308fbd",
+    "url": "https://www.last.fm/music/Aphex+Twin"
+  },
+  {
+    "name": "Pharrell Williams",
+    "mbid": "149f91ef-1287-46da-9a8e-87fee02f1471",
+    "url": "https://www.last.fm/music/Pharrell+Williams"
+  },
+  {
+    "name": "Joey Bada$$",
+    "mbid": "9757ae7d-44b1-4d63-81ce-b463fe27b9ae",
+    "url": "https://www.last.fm/music/Joey+Bada$$"
+  },
+  {
+    "name": "Ethel Cain",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ethel+Cain"
+  },
+  {
+    "name": "Ellie Goulding",
+    "mbid": "33ca19f4-18c8-4411-98df-ac23890ce9f5",
+    "url": "https://www.last.fm/music/Ellie+Goulding"
+  },
+  {
+    "name": "bbno$",
+    "mbid": "",
+    "url": "https://www.last.fm/music/bbno$"
+  },
+  {
+    "name": "Lucki",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lucki"
+  },
+  {
+    "name": "Pearl Jam",
+    "mbid": "83b9cbe7-9857-49e2-ab8e-b57b01038103",
+    "url": "https://www.last.fm/music/Pearl+Jam"
+  },
+  {
+    "name": "Fiona Apple",
+    "mbid": "a9ee533f-8871-4f62-a6bb-91eb264abc90",
+    "url": "https://www.last.fm/music/Fiona+Apple"
+  },
+  {
+    "name": "Mother Mother",
+    "mbid": "69681b02-05b8-4685-80cb-e98983b7a96f",
+    "url": "https://www.last.fm/music/Mother+Mother"
+  },
+  {
+    "name": "VACATIONS",
+    "mbid": "9a86e17f-b554-4c0f-a797-6f07b181c8d6",
+    "url": "https://www.last.fm/music/VACATIONS"
+  },
+  {
+    "name": "AC/DC",
+    "mbid": "66c662b6-6e2f-4930-8610-912e24c63ed1",
+    "url": "https://www.last.fm/music/AC%2FDC"
+  },
+  {
+    "name": "$uicideboy$",
+    "mbid": "",
+    "url": "https://www.last.fm/music/$uicideboy$"
+  },
+  {
+    "name": "Kings of Leon",
+    "mbid": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
+    "url": "https://www.last.fm/music/Kings+of+Leon"
+  },
+  {
+    "name": "Red Velvet",
+    "mbid": "4f0cb3b7-6c06-4317-ae35-ddf3106a17ee",
+    "url": "https://www.last.fm/music/Red+Velvet"
+  },
+  {
+    "name": "Avicii",
+    "mbid": "c85cfd6b-b1e9-4a50-bd55-eb725f04f7d5",
+    "url": "https://www.last.fm/music/Avicii"
+  },
+  {
+    "name": "Hotel Ugly",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Hotel+Ugly"
+  },
+  {
+    "name": "Tove Lo",
+    "mbid": "56756959-1e78-429c-b897-e1d056cb0225",
+    "url": "https://www.last.fm/music/Tove+Lo"
+  },
+  {
+    "name": "Current Joys",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Current+Joys"
+  },
+  {
+    "name": "Bee Gees",
+    "mbid": "bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810",
+    "url": "https://www.last.fm/music/Bee+Gees"
+  },
+  {
+    "name": "Sam Smith",
+    "mbid": "5a85c140-dcf9-4dd2-b2c8-aff0471549f3",
+    "url": "https://www.last.fm/music/Sam+Smith"
+  },
+  {
+    "name": "Sia",
+    "mbid": "2f548675-008d-4332-876c-108b0c7ab9c5",
+    "url": "https://www.last.fm/music/Sia"
+  },
+  {
+    "name": "JPEGMAFIA",
+    "mbid": "",
+    "url": "https://www.last.fm/music/JPEGMAFIA"
+  },
+  {
+    "name": "Khalid",
+    "mbid": "c6bfb05d-f570-46c8-98e1-e25441189770",
+    "url": "https://www.last.fm/music/Khalid"
+  },
+  {
+    "name": "Surf Curse",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Surf+Curse"
+  },
+  {
+    "name": "Stevie Wonder",
+    "mbid": "c1aa2ec9-53e7-4d90-8d36-bac75832e986",
+    "url": "https://www.last.fm/music/Stevie+Wonder"
+  },
+  {
+    "name": "Carly Rae Jepsen",
+    "mbid": "09887aa7-226e-4ecc-9a0c-02d2ae5777e1",
+    "url": "https://www.last.fm/music/Carly+Rae+Jepsen"
+  },
+  {
+    "name": "Billy Idol",
+    "mbid": "47c8f88b-987a-4b64-9175-2b1b57809727",
+    "url": "https://www.last.fm/music/Billy+Idol"
+  },
+  {
+    "name": "Earth, Wind & Fire",
+    "mbid": "535afeda-2538-435d-9dd1-5e10be586774",
+    "url": "https://www.last.fm/music/Earth,+Wind+&+Fire"
+  },
+  {
+    "name": "Cults",
+    "mbid": "4c671d5a-7027-4398-8055-03e61d1a3967",
+    "url": "https://www.last.fm/music/Cults"
+  },
+  {
+    "name": "Lizzy McAlpine",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lizzy+McAlpine"
+  },
+  {
+    "name": "Eagles",
+    "mbid": "f46bd570-5768-462e-b84c-c7c993bbf47e",
+    "url": "https://www.last.fm/music/Eagles"
+  },
+  {
+    "name": "NLE Choppa",
+    "mbid": "",
+    "url": "https://www.last.fm/music/NLE+Choppa"
+  },
+  {
+    "name": "Disclosure",
+    "mbid": "ae65c507-d9a0-4d42-9a6c-2b1f82158b9f",
+    "url": "https://www.last.fm/music/Disclosure"
+  },
+  {
+    "name": "Willow",
+    "mbid": "c53bb734-57cb-43eb-a6d1-e4794c9b9295",
+    "url": "https://www.last.fm/music/Willow"
+  },
+  {
+    "name": "Marvin Gaye",
+    "mbid": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+    "url": "https://www.last.fm/music/Marvin+Gaye"
+  },
+  {
+    "name": "P!nk",
+    "mbid": "f4d5cc07-3bc9-4836-9b15-88a08359bc63",
+    "url": "https://www.last.fm/music/P%21nk"
+  },
+  {
+    "name": "Jung Kook",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jung+Kook"
+  },
+  {
+    "name": "BLACKPINK",
+    "mbid": "",
+    "url": "https://www.last.fm/music/BLACKPINK"
+  },
+  {
+    "name": "Elliott Smith",
+    "mbid": "03ad1736-b7c9-412a-b442-82536d63a5c4",
+    "url": "https://www.last.fm/music/Elliott+Smith"
+  },
+  {
+    "name": "Tyla",
+    "mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8",
+    "url": "https://www.last.fm/music/Tyla"
+  },
+  {
+    "name": "ScHoolboy Q",
+    "mbid": "bce6d667-cde8-485e-b078-c0a05adea36d",
+    "url": "https://www.last.fm/music/ScHoolboy+Q"
+  },
+  {
+    "name": "Artemas",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Artemas"
+  },
+  {
+    "name": "Franz Ferdinand",
+    "mbid": "aa7a2827-f74b-473c-bd79-03d065835cf7",
+    "url": "https://www.last.fm/music/Franz+Ferdinand"
+  },
+  {
+    "name": "STRAY KIDS",
+    "mbid": "",
+    "url": "https://www.last.fm/music/STRAY+KIDS"
+  },
+  {
+    "name": "Snoop Dogg",
+    "mbid": "f90e8b26-9e52-4669-a5c9-e28529c47894",
+    "url": "https://www.last.fm/music/Snoop+Dogg"
+  },
+  {
+    "name": "Björk",
+    "mbid": "87c5dedd-371d-4a53-9f7f-80522fb7f3cb",
+    "url": "https://www.last.fm/music/Bj%C3%B6rk"
+  },
+  {
+    "name": "Benson Boone",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Benson+Boone"
+  },
+  {
+    "name": "Mark Ronson",
+    "mbid": "c3c82bdc-d9e7-4836-9746-c24ead47ca19",
+    "url": "https://www.last.fm/music/Mark+Ronson"
+  },
+  {
+    "name": "Cardi B",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cardi+B"
+  },
+  {
+    "name": "G-Eazy",
+    "mbid": "db48610c-6d8f-4d10-90ca-c4d14bb1a8b1",
+    "url": "https://www.last.fm/music/G-Eazy"
+  },
+  {
+    "name": "Japanese Breakfast",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Japanese+Breakfast"
+  },
+  {
+    "name": "Alicia Keys",
+    "mbid": "8ef1df30-ae4f-4dbd-9351-1a32b208a01e",
+    "url": "https://www.last.fm/music/Alicia+Keys"
+  },
+  {
+    "name": "Strawberry Guy",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Strawberry+Guy"
+  },
+  {
+    "name": "Matt Maltese",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Matt+Maltese"
+  },
+  {
+    "name": "Car Seat Headrest",
+    "mbid": "0fabbc1d-8d94-4a61-bd1d-1099ad1e4559",
+    "url": "https://www.last.fm/music/Car+Seat+Headrest"
+  },
+  {
+    "name": "Gotye",
+    "mbid": "6f6fd596-76e0-4b82-aa37-f558ac2d337b",
+    "url": "https://www.last.fm/music/Gotye"
+  },
+  {
+    "name": "Creedence Clearwater Revival",
+    "mbid": "44c48a1b-defd-4222-bee6-03f9ee9a7be9",
+    "url": "https://www.last.fm/music/Creedence+Clearwater+Revival"
+  },
+  {
+    "name": "Ayesha Erotica",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ayesha+Erotica"
+  },
+  {
+    "name": "DJ Snake",
+    "mbid": "31445b1e-96f3-4c7f-84ec-dd02e647e690",
+    "url": "https://www.last.fm/music/DJ+Snake"
+  },
+  {
+    "name": "Kiss Of Life",
+    "mbid": "c0b630b0-7ada-4350-8cb4-ed9b95ae4d03",
+    "url": "https://www.last.fm/music/Kiss+Of+Life"
+  },
+  {
+    "name": "Duster",
+    "mbid": "879d43c6-13a8-42f6-b8df-a9b7d50aa9e2",
+    "url": "https://www.last.fm/music/Duster"
+  },
+  {
+    "name": "Boygenius",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Boygenius"
+  },
+  {
+    "name": "Summer Walker",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Summer+Walker"
+  },
+  {
+    "name": "Two Door Cinema Club",
+    "mbid": "6f1de078-6684-4792-820d-2ffad64c15ed",
+    "url": "https://www.last.fm/music/Two+Door+Cinema+Club"
+  },
+  {
+    "name": "Illit",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Illit"
+  },
+  {
+    "name": "The Clash",
+    "mbid": "8f92558c-2baa-4758-8c38-615519e9deda",
+    "url": "https://www.last.fm/music/The+Clash"
+  },
+  {
+    "name": "BROCKHAMPTON",
+    "mbid": "",
+    "url": "https://www.last.fm/music/BROCKHAMPTON"
+  },
+  {
+    "name": "The Lumineers",
+    "mbid": "bfcb6630-9b31-4e63-b11f-7b0363be72b5",
+    "url": "https://www.last.fm/music/The+Lumineers"
+  },
+  {
+    "name": "The White Stripes",
+    "mbid": "11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5",
+    "url": "https://www.last.fm/music/The+White+Stripes"
+  },
+  {
+    "name": "The Doors",
+    "mbid": "9efff43b-3b29-4082-824e-bc82f646f93d",
+    "url": "https://www.last.fm/music/The+Doors"
+  },
+  {
+    "name": "Charlie Puth",
+    "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
+    "url": "https://www.last.fm/music/Charlie+Puth"
+  },
+  {
+    "name": "Thundercat",
+    "mbid": "044fd265-79dd-43eb-afc4-8b20becf7e17",
+    "url": "https://www.last.fm/music/Thundercat"
+  },
+  {
+    "name": "Duran Duran",
+    "mbid": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+    "url": "https://www.last.fm/music/Duran+Duran"
+  },
+  {
+    "name": "Dire Straits",
+    "mbid": "614e3804-7d34-41ba-857f-811bad7c2b7a",
+    "url": "https://www.last.fm/music/Dire+Straits"
+  },
+  {
+    "name": "The Sundays",
+    "mbid": "9df32318-47d5-4df7-bc68-3ed9e15eb0f6",
+    "url": "https://www.last.fm/music/The+Sundays"
+  },
+  {
+    "name": "Natasha Bedingfield",
+    "mbid": "8b477559-946e-4ef2-9fe1-446cff8fdd79",
+    "url": "https://www.last.fm/music/Natasha+Bedingfield"
+  },
+  {
+    "name": "Måneskin",
+    "mbid": "",
+    "url": "https://www.last.fm/music/M%C3%A5neskin"
+  },
+  {
+    "name": "Soundgarden",
+    "mbid": "153c9281-268f-4cf3-8938-f5a4593e5df4",
+    "url": "https://www.last.fm/music/Soundgarden"
+  },
+  {
+    "name": "Nas",
+    "mbid": "cfbc0924-0035-4d6c-8197-f024653af823",
+    "url": "https://www.last.fm/music/Nas"
+  },
+  {
+    "name": "No Doubt",
+    "mbid": "fbd2a255-1d57-4d31-ac11-65b671c19958",
+    "url": "https://www.last.fm/music/No+Doubt"
+  },
+  {
+    "name": "Kaytranada",
+    "mbid": "e56aee57-d90e-40cf-a70d-beb70f6f3c69",
+    "url": "https://www.last.fm/music/Kaytranada"
+  },
+  {
+    "name": "Rosalía",
+    "mbid": "ac0ee862-a6ca-4d39-a7a4-d8460534ba30",
+    "url": "https://www.last.fm/music/Rosal%C3%ADa"
+  },
+  {
+    "name": "Nine Inch Nails",
+    "mbid": "b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+    "url": "https://www.last.fm/music/Nine+Inch+Nails"
+  },
+  {
+    "name": "Migos",
+    "mbid": "0221734a-35a8-40f7-b5c5-2f61a200bc7c",
+    "url": "https://www.last.fm/music/Migos"
+  },
+  {
+    "name": "Bob Marley & The Wailers",
+    "mbid": "ed2ac1e9-d51d-4eff-a2c2-85e81abd6360",
+    "url": "https://www.last.fm/music/Bob+Marley+&+The+Wailers"
+  },
+  {
+    "name": "Lily Allen",
+    "mbid": "6e0c7c0e-cba5-4c2c-a652-38f71ef5785d",
+    "url": "https://www.last.fm/music/Lily+Allen"
+  },
+  {
+    "name": "Cafuné",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cafun%C3%A9"
+  },
+  {
+    "name": "Pinegrove",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Pinegrove"
+  },
+  {
+    "name": "Clean Bandit",
+    "mbid": "dacc2d64-7e59-42a8-87a9-10c53919aff2",
+    "url": "https://www.last.fm/music/Clean+Bandit"
+  },
+  {
+    "name": "Arcane",
+    "mbid": "f011c91f-d245-4782-93cc-2c5238b6657b",
+    "url": "https://www.last.fm/music/Arcane"
+  },
+  {
+    "name": "Timbaland",
+    "mbid": "daa09819-5da5-4c7a-8bef-eb372bb27ff1",
+    "url": "https://www.last.fm/music/Timbaland"
+  },
+  {
+    "name": "Major Lazer",
+    "mbid": "75be165a-ad83-4d12-bd28-f589a15c479f",
+    "url": "https://www.last.fm/music/Major+Lazer"
+  },
+  {
+    "name": "Sublime",
+    "mbid": "c460aa10-87a0-4971-b742-7de0e3c7c2ca",
+    "url": "https://www.last.fm/music/Sublime"
+  },
+  {
+    "name": "Rage Against the Machine",
+    "mbid": "3798b104-01cb-484c-a3b0-56adc6399b80",
+    "url": "https://www.last.fm/music/Rage+Against+the+Machine"
+  },
+  {
+    "name": "Nickelback",
+    "mbid": "bc710bcf-8815-42cf-bad2-3f1d12246aeb",
+    "url": "https://www.last.fm/music/Nickelback"
+  },
+  {
+    "name": "Labrinth",
+    "mbid": "dc99e6fd-c710-4f79-b74b-127b4d0b7849",
+    "url": "https://www.last.fm/music/Labrinth"
+  },
+  {
+    "name": "Raye",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Raye"
+  },
+  {
+    "name": "Kylie Minogue",
+    "mbid": "2fddb92d-24b2-46a5-bf28-3aed46f4684c",
+    "url": "https://www.last.fm/music/Kylie+Minogue"
+  },
+  {
+    "name": "Fontaines D.C.",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Fontaines+D.C."
+  },
+  {
+    "name": "Ice Cube",
+    "mbid": "1d11e2a1-4531-4d61-a8c7-7b5c6a608fd2",
+    "url": "https://www.last.fm/music/Ice+Cube"
+  },
+  {
+    "name": "J-Hope",
+    "mbid": "",
+    "url": "https://www.last.fm/music/J-Hope"
+  },
+  {
+    "name": "TOMORROW X TOGETHER",
+    "mbid": "",
+    "url": "https://www.last.fm/music/TOMORROW+X+TOGETHER"
+  },
+  {
+    "name": "Elvis Presley",
+    "mbid": "01809552-4f87-45b0-afff-2c6f0730a3be",
+    "url": "https://www.last.fm/music/Elvis+Presley"
+  },
+  {
+    "name": "Kelly Clarkson",
+    "mbid": "d339efbb-77b9-4147-ba9e-59f2f24550b2",
+    "url": "https://www.last.fm/music/Kelly+Clarkson"
+  },
+  {
+    "name": "R.E.M.",
+    "mbid": "ea4dfa26-f633-4da6-a52a-f49ea4897b58",
+    "url": "https://www.last.fm/music/R.E.M."
+  },
+  {
+    "name": "Toto",
+    "mbid": "aab5c954-cabe-432e-899e-1c4f99757327",
+    "url": "https://www.last.fm/music/Toto"
+  },
+  {
+    "name": "Malcolm Todd",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Malcolm+Todd"
+  },
+  {
+    "name": "Bon Jovi",
+    "mbid": "5dcdb5eb-cb72-4e6e-9e63-b7bace604965",
+    "url": "https://www.last.fm/music/Bon+Jovi"
+  },
+  {
+    "name": "M83",
+    "mbid": "6d7b7cd4-254b-4c25-83f6-dd20f98ceacd",
+    "url": "https://www.last.fm/music/M83"
+  },
+  {
+    "name": "Zedd",
+    "mbid": "56c4b861-0922-4c3a-a9b9-3bfcb00f8274",
+    "url": "https://www.last.fm/music/Zedd"
+  },
+  {
+    "name": "Massive Attack",
+    "mbid": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+    "url": "https://www.last.fm/music/Massive+Attack"
+  },
+  {
+    "name": "ENHYPEN",
+    "mbid": "",
+    "url": "https://www.last.fm/music/ENHYPEN"
+  },
+  {
+    "name": "Her's",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Her%27s"
+  },
+  {
+    "name": "Panchiko",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Panchiko"
+  },
+  {
+    "name": "Aerosmith",
+    "mbid": "3d2b98e5-556f-4451-a3ff-c50ea18d57cb",
+    "url": "https://www.last.fm/music/Aerosmith"
+  },
+  {
+    "name": "Ghost",
+    "mbid": "ed81302a-c095-4f0d-a243-ec362956fee7",
+    "url": "https://www.last.fm/music/Ghost"
+  },
+  {
+    "name": "The Beach Boys",
+    "mbid": "ebfc1398-8d96-47e3-82c3-f782abcdb13d",
+    "url": "https://www.last.fm/music/The+Beach+Boys"
+  },
+  {
+    "name": "Thee Sacred Souls",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Thee+Sacred+Souls"
+  },
+  {
+    "name": "Rammstein",
+    "mbid": "b2d122f9-eadb-4930-a196-8f221eeb0c66",
+    "url": "https://www.last.fm/music/Rammstein"
+  },
+  {
+    "name": "Sombr",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sombr"
+  },
+  {
+    "name": "Zach Bryan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Zach+Bryan"
+  },
+  {
+    "name": "Dr. Dre",
+    "mbid": "5f6ab597-f57a-40da-be9e-adad48708203",
+    "url": "https://www.last.fm/music/Dr.+Dre"
+  },
+  {
+    "name": "Sixpence None the Richer",
+    "mbid": "c2c70ed6-5f10-445c-969f-2c16bc9a4c2e",
+    "url": "https://www.last.fm/music/Sixpence+None+the+Richer"
+  },
+  {
+    "name": "Jungle",
+    "mbid": "6bbb3983-ce8a-4971-96e0-7cae73268fc4",
+    "url": "https://www.last.fm/music/Jungle"
+  },
+  {
+    "name": "Electric Light Orchestra",
+    "mbid": "0c502791-4ee9-4c5f-9696-0602b721ff3b",
+    "url": "https://www.last.fm/music/Electric+Light+Orchestra"
+  },
+  {
+    "name": "Jid",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jid"
+  },
+  {
+    "name": "Yung Lean",
+    "mbid": "757ed661-fbad-4e45-b1cd-a6b09f06f54a",
+    "url": "https://www.last.fm/music/Yung+Lean"
+  },
+  {
+    "name": "M.I.A.",
+    "mbid": "b22d45dd-deae-4663-a782-542db02e25cf",
+    "url": "https://www.last.fm/music/M.I.A."
+  },
+  {
+    "name": "George Michael",
+    "mbid": "ccb8f30e-4d71-40c4-8b1d-846dafe73e2c",
+    "url": "https://www.last.fm/music/George+Michael"
+  },
+  {
+    "name": "The Velvet Underground",
+    "mbid": "94b0fb9d-a066-4823-b2ec-af1d324bcfcf",
+    "url": "https://www.last.fm/music/The+Velvet+Underground"
+  },
+  {
+    "name": "Madison Beer",
+    "mbid": "749ef494-8518-4b49-b685-63d8e728d25c",
+    "url": "https://www.last.fm/music/Madison+Beer"
+  },
+  {
+    "name": "Tommy Richman",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Tommy+Richman"
+  },
+  {
+    "name": "The walters",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+walters"
+  },
+  {
+    "name": "SLEEPY HALLOW",
+    "mbid": "",
+    "url": "https://www.last.fm/music/SLEEPY+HALLOW"
+  },
+  {
+    "name": "Azealia Banks",
+    "mbid": "0c3505e7-d884-43cf-9028-d318607190a4",
+    "url": "https://www.last.fm/music/Azealia+Banks"
+  },
+  {
+    "name": "Ive",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ive"
+  },
+  {
+    "name": "Rae Sremmurd",
+    "mbid": "c78c3026-426b-4580-ab23-08490bb8b515",
+    "url": "https://www.last.fm/music/Rae+Sremmurd"
+  },
+  {
+    "name": "DJ Khaled",
+    "mbid": "081a2d60-9791-4e05-a075-f1890355eeee",
+    "url": "https://www.last.fm/music/DJ+Khaled"
+  },
+  {
+    "name": "Jhené Aiko",
+    "mbid": "ceb3f5b7-9f1a-430f-afbe-976fdcf30482",
+    "url": "https://www.last.fm/music/Jhen%C3%A9+Aiko"
+  },
+  {
+    "name": "Queens of the Stone Age",
+    "mbid": "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8",
+    "url": "https://www.last.fm/music/Queens+of+the+Stone+Age"
+  },
+  {
+    "name": "Cavetown",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cavetown"
+  },
+  {
+    "name": "Swedish House Mafia",
+    "mbid": "99075985-0d80-4692-a15e-b16f78831792",
+    "url": "https://www.last.fm/music/Swedish+House+Mafia"
+  },
+  {
+    "name": "Pop Smoke",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Pop+Smoke"
+  },
+  {
+    "name": "Blondie",
+    "mbid": "4d2956d1-a3f7-44bb-9a41-67563e1a0c94",
+    "url": "https://www.last.fm/music/Blondie"
+  },
+  {
+    "name": "Odetari",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Odetari"
+  },
+  {
+    "name": "New Order",
+    "mbid": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
+    "url": "https://www.last.fm/music/New+Order"
+  },
+  {
+    "name": "Jason Derulo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jason+Derulo"
+  },
+  {
+    "name": "Frou Frou",
+    "mbid": "d614b0ad-fe3a-4927-b413-48cb831a814b",
+    "url": "https://www.last.fm/music/Frou+Frou"
+  },
+  {
+    "name": "Nessa Barrett",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Nessa+Barrett"
+  },
+  {
+    "name": "Joy Division",
+    "mbid": "9a58fda3-f4ed-4080-a3a5-f457aac9fcdd",
+    "url": "https://www.last.fm/music/Joy+Division"
+  },
+  {
+    "name": "Gucci Mane",
+    "mbid": "36494952-f434-45d8-a958-8b4acdbcf8a8",
+    "url": "https://www.last.fm/music/Gucci+Mane"
+  },
+  {
+    "name": "Wiz Khalifa",
+    "mbid": "f5dfa020-ad69-41cd-b3d4-fd7af0414e94",
+    "url": "https://www.last.fm/music/Wiz+Khalifa"
+  },
+  {
+    "name": "Destroy Lonely",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Destroy+Lonely"
+  },
+  {
+    "name": "J Balvin",
+    "mbid": "5bdeb32d-56a5-4b6d-a768-264101fa0a0a",
+    "url": "https://www.last.fm/music/J+Balvin"
+  },
+  {
+    "name": "The Mamas & the Papas",
+    "mbid": "ff294730-0315-440d-a543-54005779c15b",
+    "url": "https://www.last.fm/music/The+Mamas+&+the+Papas"
+  },
+  {
+    "name": "Salvia Palth",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Salvia+Palth"
+  },
+  {
+    "name": "Vance Joy",
+    "mbid": "df36f6db-5987-46ed-9d02-0cf36ed4e060",
+    "url": "https://www.last.fm/music/Vance+Joy"
+  },
+  {
+    "name": "ROAR",
+    "mbid": "18de31c0-5c6e-4fa5-89e7-456012fbf7e9",
+    "url": "https://www.last.fm/music/ROAR"
+  },
+  {
+    "name": "Yeah Yeah Yeahs",
+    "mbid": "584c04d2-4acc-491b-8a0a-e63133f4bfc4",
+    "url": "https://www.last.fm/music/Yeah+Yeah+Yeahs"
+  },
+  {
+    "name": "A$AP Ferg",
+    "mbid": "8ab5d936-49d1-415e-92c8-151e0e7dd912",
+    "url": "https://www.last.fm/music/A$AP+Ferg"
+  },
+  {
+    "name": "Isaiah Rashad",
+    "mbid": "37547347-ea75-45fa-9766-ff36b44d8147",
+    "url": "https://www.last.fm/music/Isaiah+Rashad"
+  },
+  {
+    "name": "Anitta",
+    "mbid": "d606b860-cc03-4959-a3fd-3a24bccf2560",
+    "url": "https://www.last.fm/music/Anitta"
+  },
+  {
+    "name": "Madvillain",
+    "mbid": "4e024037-14b7-4aea-99ad-c6ace63b9620",
+    "url": "https://www.last.fm/music/Madvillain"
+  },
+  {
+    "name": "America",
+    "mbid": "34cf95c7-4be9-4efd-a48a-c2ea4a0bb114",
+    "url": "https://www.last.fm/music/America"
+  },
+  {
+    "name": "Earl Sweatshirt",
+    "mbid": "8b22acd6-20e6-4463-a75c-c14b5cfdb666",
+    "url": "https://www.last.fm/music/Earl+Sweatshirt"
+  },
+  {
+    "name": "Teddy Swims",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Teddy+Swims"
+  },
+  {
+    "name": "Lucy Dacus",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lucy+Dacus"
+  },
+  {
+    "name": "Aurora",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Aurora"
+  },
+  {
+    "name": "Keane",
+    "mbid": "c7020c6d-cae9-4db3-92a7-e5c561cbad50",
+    "url": "https://www.last.fm/music/Keane"
+  },
+  {
+    "name": "George Harrison",
+    "mbid": "42a8f507-8412-4611-854f-926571049fa0",
+    "url": "https://www.last.fm/music/George+Harrison"
+  },
+  {
+    "name": "Tiësto",
+    "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
+    "url": "https://www.last.fm/music/Ti%C3%ABsto"
+  },
+  {
+    "name": "Akon",
+    "mbid": "1138a764-2212-4d0a-b02d-0dc14df91e08",
+    "url": "https://www.last.fm/music/Akon"
+  },
+  {
+    "name": "A Tribe Called Quest",
+    "mbid": "9689aa5a-4471-4fb4-9721-07cecda0fa9f",
+    "url": "https://www.last.fm/music/A+Tribe+Called+Quest"
+  },
+  {
+    "name": "Jordana",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jordana"
+  },
+  {
+    "name": "Leon Thomas",
+    "mbid": "46f70f03-d259-4314-b926-2db36c28d86f",
+    "url": "https://www.last.fm/music/Leon+Thomas"
+  },
+  {
+    "name": "Jessie J",
+    "mbid": "d24fb461-dee8-41fc-bb15-2f13bb2644a6",
+    "url": "https://www.last.fm/music/Jessie+J"
+  },
+  {
+    "name": "Sean Paul",
+    "mbid": "c3da3346-2643-48a7-93cd-011f6834b3d7",
+    "url": "https://www.last.fm/music/Sean+Paul"
+  },
+  {
+    "name": "a-ha",
+    "mbid": "7364dea6-ca9a-48e3-be01-b44ad0d19897",
+    "url": "https://www.last.fm/music/a-ha"
+  },
+  {
+    "name": "Avenged Sevenfold",
+    "mbid": "24e1b53c-3085-4581-8472-0b0088d2508c",
+    "url": "https://www.last.fm/music/Avenged+Sevenfold"
+  },
+  {
+    "name": "Bladee",
+    "mbid": "cd689e77-dfdd-4f81-b50c-5e5a3f5e38a4",
+    "url": "https://www.last.fm/music/Bladee"
+  },
+  {
+    "name": "Stromae",
+    "mbid": "ab2528d9-719f-4261-8098-21849222a0f2",
+    "url": "https://www.last.fm/music/Stromae"
+  },
+  {
+    "name": "Christina Aguilera",
+    "mbid": "b202beb7-99bd-47e7-8b72-195c8d72ebdd",
+    "url": "https://www.last.fm/music/Christina+Aguilera"
+  },
+  {
+    "name": "wave to earth",
+    "mbid": "",
+    "url": "https://www.last.fm/music/wave+to+earth"
+  },
+  {
+    "name": "Ms. Lauryn Hill",
+    "mbid": "e8414012-4a1c-4ad4-be5e-fc55294e28cc",
+    "url": "https://www.last.fm/music/Ms.+Lauryn+Hill"
+  },
+  {
+    "name": "The Fray",
+    "mbid": "2ddd167f-5b8a-4372-b350-6ad50493bac0",
+    "url": "https://www.last.fm/music/The+Fray"
+  },
+  {
+    "name": "Jennifer Lopez",
+    "mbid": "f0602f55-1770-483d-89bd-4bae0d0ac086",
+    "url": "https://www.last.fm/music/Jennifer+Lopez"
+  },
+  {
+    "name": "Ricky Montgomery",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ricky+Montgomery"
+  },
+  {
+    "name": "Snow Strippers",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Snow+Strippers"
+  },
+  {
+    "name": "A BOOGIE WIT DA HOODIE",
+    "mbid": "",
+    "url": "https://www.last.fm/music/A+BOOGIE+WIT+DA+HOODIE"
+  },
+  {
+    "name": "Declan Mckenna",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Declan+Mckenna"
+  },
+  {
+    "name": "Central Cee",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Central+Cee"
+  },
+  {
+    "name": "Ne-Yo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ne-Yo"
+  },
+  {
+    "name": "Title Fight",
+    "mbid": "1154d345-8061-4d04-a52a-6214288523ac",
+    "url": "https://www.last.fm/music/Title+Fight"
+  },
+  {
+    "name": "All Time Low",
+    "mbid": "62162215-b023-4f0e-84bd-1e9412d5b32c",
+    "url": "https://www.last.fm/music/All+Time+Low"
+  },
+  {
+    "name": "GIVĒON",
+    "mbid": "",
+    "url": "https://www.last.fm/music/GIV%C4%92ON"
+  },
+  {
+    "name": "alt-J",
+    "mbid": "fc7bbf00-fbaa-4736-986b-b3ac0266ca9b",
+    "url": "https://www.last.fm/music/alt-J"
+  },
+  {
+    "name": "Caroline Polachek",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Caroline+Polachek"
+  },
+  {
+    "name": "Karol G",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Karol+G"
+  },
+  {
+    "name": "Fergie",
+    "mbid": "4f9675d2-f6d5-486c-9b26-33dcca998500",
+    "url": "https://www.last.fm/music/Fergie"
+  },
+  {
+    "name": "My Bloody Valentine",
+    "mbid": "8ca01f46-53ac-4af2-8516-55a909c0905e",
+    "url": "https://www.last.fm/music/My+Bloody+Valentine"
+  },
+  {
+    "name": "Journey",
+    "mbid": "abd506e1-6f2b-4d6f-b937-92c267f6f88b",
+    "url": "https://www.last.fm/music/Journey"
+  },
+  {
+    "name": "Rauw Alejandro",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rauw+Alejandro"
+  },
+  {
+    "name": "Chezile",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chezile"
+  },
+  {
+    "name": "Grouplove",
+    "mbid": "d8e41375-bd8d-4e39-9da7-f0c171e97086",
+    "url": "https://www.last.fm/music/Grouplove"
+  },
+  {
+    "name": "Offset",
+    "mbid": "c0c401e0-eb84-4266-9ccb-9160988e7a8e",
+    "url": "https://www.last.fm/music/Offset"
+  },
+  {
+    "name": "U2",
+    "mbid": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+    "url": "https://www.last.fm/music/U2"
+  },
+  {
+    "name": "Kendrick Lamar",
+    "mbid": "381086ea-f511-4aba-bdf9-71c753dc5077",
+    "url": "https://www.last.fm/music/Kendrick+Lamar"
+  },
+  {
+    "name": "Lady Gaga",
+    "mbid": "650e7db6-b795-4eb5-a702-5ea2fc46c848",
+    "url": "https://www.last.fm/music/Lady+Gaga"
+  },
+  {
+    "name": "The Weeknd",
+    "mbid": "c8b03190-306c-4120-bb0b-6f2ebfc06ea9",
+    "url": "https://www.last.fm/music/The+Weeknd"
+  },
+  {
+    "name": "Tyler, the Creator",
+    "mbid": "f6beac20-5dfe-4d1f-ae02-0b0a740aafd6",
+    "url": "https://www.last.fm/music/Tyler,+the+Creator"
+  },
+  {
+    "name": "Billie Eilish",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Billie+Eilish"
+  },
+  {
+    "name": "Chappell Roan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chappell+Roan"
+  },
+  {
+    "name": "Charli XCX",
+    "mbid": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
+    "url": "https://www.last.fm/music/Charli+XCX"
+  },
+  {
+    "name": "Kanye West",
+    "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
+    "url": "https://www.last.fm/music/Kanye+West"
+  },
+  {
+    "name": "Radiohead",
+    "mbid": "a74b1b7f-71a5-4011-9441-d0b5e4122711",
+    "url": "https://www.last.fm/music/Radiohead"
+  },
+  {
+    "name": "Ariana Grande",
+    "mbid": "f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387",
+    "url": "https://www.last.fm/music/Ariana+Grande"
+  },
+  {
+    "name": "Rihanna",
+    "mbid": "db36a76f-4cdf-43ac-8cd0-5e48092d2bae",
+    "url": "https://www.last.fm/music/Rihanna"
+  },
+  {
+    "name": "Sabrina Carpenter",
+    "mbid": "1882fe91-cdd9-49c9-9956-8e06a3810bd4",
+    "url": "https://www.last.fm/music/Sabrina+Carpenter"
+  },
+  {
+    "name": "Lana Del Rey",
+    "mbid": "b7539c32-53e7-4908-bda3-81449c367da6",
+    "url": "https://www.last.fm/music/Lana+Del+Rey"
+  },
+  {
+    "name": "Drake",
+    "mbid": "b49b81cc-d5b7-4bdd-aadb-385df8de69a6",
+    "url": "https://www.last.fm/music/Drake"
+  },
+  {
+    "name": "Taylor Swift",
+    "mbid": "20244d07-534f-4eff-b4d4-930878889970",
+    "url": "https://www.last.fm/music/Taylor+Swift"
+  },
+  {
+    "name": "Arctic Monkeys",
+    "mbid": "ada7a83c-e3e1-40f1-93f9-3e73dbc9298a",
+    "url": "https://www.last.fm/music/Arctic+Monkeys"
+  },
+  {
+    "name": "SZA",
+    "mbid": "272989c8-5535-492d-a25c-9f58803e027f",
+    "url": "https://www.last.fm/music/SZA"
+  },
+  {
+    "name": "Playboi Carti",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Playboi+Carti"
+  },
+  {
+    "name": "Frank Ocean",
+    "mbid": "e520459c-dff4-491d-a6e4-c97be35e0044",
+    "url": "https://www.last.fm/music/Frank+Ocean"
+  },
+  {
+    "name": "Doechii",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Doechii"
+  },
+  {
+    "name": "Paramore",
+    "mbid": "728ea90d-279b-4201-a8c4-597830883150",
+    "url": "https://www.last.fm/music/Paramore"
+  },
+  {
+    "name": "Travis Scott",
+    "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+    "url": "https://www.last.fm/music/Travis+Scott"
+  },
+  {
+    "name": "Gorillaz",
+    "mbid": "e21857d5-3256-4547-afb3-4b6ded592596",
+    "url": "https://www.last.fm/music/Gorillaz"
+  },
+  {
+    "name": "Coldplay",
+    "mbid": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
+    "url": "https://www.last.fm/music/Coldplay"
+  },
+  {
+    "name": "Doja Cat",
+    "mbid": "5df62a88-cac9-490a-b62c-c7c88f4020f4",
+    "url": "https://www.last.fm/music/Doja+Cat"
+  },
+  {
+    "name": "Olivia Rodrigo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Olivia+Rodrigo"
+  },
+  {
+    "name": "Tame Impala",
+    "mbid": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
+    "url": "https://www.last.fm/music/Tame+Impala"
+  },
+  {
+    "name": "Mitski",
+    "mbid": "fa58cf24-0e44-421d-8519-8bf461dcfaa5",
+    "url": "https://www.last.fm/music/Mitski"
+  },
+  {
+    "name": "Clairo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Clairo"
+  },
+  {
+    "name": "Beyoncé",
+    "mbid": "859d0860-d480-4efd-970c-c05d5f1776b8",
+    "url": "https://www.last.fm/music/Beyonc%C3%A9"
+  },
+  {
+    "name": "Childish Gambino",
+    "mbid": "7fb57fba-a6ef-44c2-abab-2fa3bdee607e",
+    "url": "https://www.last.fm/music/Childish+Gambino"
+  },
+  {
+    "name": "Future",
+    "mbid": "9f1195cf-9900-45db-bf9c-21c205672ae0",
+    "url": "https://www.last.fm/music/Future"
+  },
+  {
+    "name": "A$AP Rocky",
+    "mbid": "25b7b584-d952-4662-a8b9-dd8cdfbfeb64",
+    "url": "https://www.last.fm/music/A$AP+Rocky"
+  },
+  {
+    "name": "Bruno Mars",
+    "mbid": "afb680f2-b6eb-4cd7-a70b-a63b25c763d5",
+    "url": "https://www.last.fm/music/Bruno+Mars"
+  },
+  {
+    "name": "The Neighbourhood",
+    "mbid": "97b8d224-5660-419c-8dff-4b3bf0c33983",
+    "url": "https://www.last.fm/music/The+Neighbourhood"
+  },
+  {
+    "name": "The Smiths",
+    "mbid": "40f5d9e4-2de7-4f2d-ad41-e31a9a9fea27",
+    "url": "https://www.last.fm/music/The+Smiths"
+  },
+  {
+    "name": "Katy Perry",
+    "mbid": "122d63fc-8671-43e4-9752-34e846d62a9c",
+    "url": "https://www.last.fm/music/Katy+Perry"
+  },
+  {
+    "name": "Nirvana",
+    "mbid": "9282c8b4-ca0b-4c6b-b7e3-4f7762dfc4d6",
+    "url": "https://www.last.fm/music/Nirvana"
+  },
+  {
+    "name": "beabadoobee",
+    "mbid": "",
+    "url": "https://www.last.fm/music/beabadoobee"
+  },
+  {
+    "name": "Linkin Park",
+    "mbid": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
+    "url": "https://www.last.fm/music/Linkin+Park"
+  },
+  {
+    "name": "Steve Lacy",
+    "mbid": "ca9766a0-1c30-43e6-a213-bac1334efc4a",
+    "url": "https://www.last.fm/music/Steve+Lacy"
+  },
+  {
+    "name": "TV Girl",
+    "mbid": "38f0c7ac-46eb-49ca-b3ab-c785ccd05a60",
+    "url": "https://www.last.fm/music/TV+Girl"
+  },
+  {
+    "name": "Fleetwood Mac",
+    "mbid": "bd13909f-1c29-4c27-a874-d4aaf27c5b1a",
+    "url": "https://www.last.fm/music/Fleetwood+Mac"
+  },
+  {
+    "name": "Deftones",
+    "mbid": "7527f6c2-d762-4b88-b5e2-9244f1e34c46",
+    "url": "https://www.last.fm/music/Deftones"
+  },
+  {
+    "name": "Kali Uchis",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kali+Uchis"
+  },
+  {
+    "name": "The Beatles",
+    "mbid": "b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d",
+    "url": "https://www.last.fm/music/The+Beatles"
+  },
+  {
+    "name": "Mac DeMarco",
+    "mbid": "f2492c31-54a8-4347-a1fc-f81f72873bbf",
+    "url": "https://www.last.fm/music/Mac+DeMarco"
+  },
+  {
+    "name": "The Marías",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Mar%C3%ADas"
+  },
+  {
+    "name": "Justin Bieber",
+    "mbid": "e0140a67-e4d1-4f13-8a01-364355bee46e",
+    "url": "https://www.last.fm/music/Justin+Bieber"
+  },
+  {
+    "name": "Mac Miller",
+    "mbid": "a0e8a1b1-5f8f-475a-a253-17415c17d0ff",
+    "url": "https://www.last.fm/music/Mac+Miller"
+  },
+  {
+    "name": "Britney Spears",
+    "mbid": "45a663b5-b1cb-4a91-bff6-2bef7bbfdd76",
+    "url": "https://www.last.fm/music/Britney+Spears"
+  },
+  {
+    "name": "Michael Jackson",
+    "mbid": "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
+    "url": "https://www.last.fm/music/Michael+Jackson"
+  },
+  {
+    "name": "Hozier",
+    "mbid": "b4691384-50c3-4afd-9988-51d3ec5db65d",
+    "url": "https://www.last.fm/music/Hozier"
+  },
+  {
+    "name": "Tate McRae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Tate+McRae"
+  },
+  {
+    "name": "Eminem",
+    "mbid": "b95ce3ff-3d05-4e87-9e01-c97b66af13d4",
+    "url": "https://www.last.fm/music/Eminem"
+  },
+  {
+    "name": "Don Toliver",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Don+Toliver"
+  },
+  {
+    "name": "Queen",
+    "mbid": "420ca290-76c5-41af-999e-564d7c71f1a7",
+    "url": "https://www.last.fm/music/Queen"
+  },
+  {
+    "name": "Maroon 5",
+    "mbid": "0ab49580-c84f-44d4-875f-d83760ea2cfe",
+    "url": "https://www.last.fm/music/Maroon+5"
+  },
+  {
+    "name": "Post Malone",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Post+Malone"
+  },
+  {
+    "name": "Jennie",
+    "mbid": "d32de3a1-01f0-430e-859a-72307724041c",
+    "url": "https://www.last.fm/music/Jennie"
+  },
+  {
+    "name": "Calvin Harris",
+    "mbid": "8dd98bdc-80ec-4e93-8509-2f46bafc09a7",
+    "url": "https://www.last.fm/music/Calvin+Harris"
+  },
+  {
+    "name": "Harry Styles",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Harry+Styles"
+  },
+  {
+    "name": "The Strokes",
+    "mbid": "f181961b-20f7-459e-89de-920ef03c7ed0",
+    "url": "https://www.last.fm/music/The+Strokes"
+  },
+  {
+    "name": "Selena Gomez",
+    "mbid": "e4bc69e2-a064-4f93-ada1-f7f209cc1cc3",
+    "url": "https://www.last.fm/music/Selena+Gomez"
+  },
+  {
+    "name": "LIL UZI VERT",
+    "mbid": "",
+    "url": "https://www.last.fm/music/LIL+UZI+VERT"
+  },
+  {
+    "name": "Lorde",
+    "mbid": "8e494408-8620-4c6a-82c2-c2ca4a1e4f12",
+    "url": "https://www.last.fm/music/Lorde"
+  },
+  {
+    "name": "The Cure",
+    "mbid": "69ee3720-a7cb-4402-b48d-a02c366f2bcf",
+    "url": "https://www.last.fm/music/The+Cure"
+  },
+  {
+    "name": "Dua Lipa",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Dua+Lipa"
+  },
+  {
+    "name": "Cigarettes After Sex",
+    "mbid": "34557d8f-ee4a-44ab-ae6e-49bb8ac604d0",
+    "url": "https://www.last.fm/music/Cigarettes+After+Sex"
+  },
+  {
+    "name": "Red Hot Chili Peppers",
+    "mbid": "8bfac288-ccc5-448d-9573-c33ea2aa5c30",
+    "url": "https://www.last.fm/music/Red+Hot+Chili+Peppers"
+  },
+  {
+    "name": "pinkpantheress",
+    "mbid": "",
+    "url": "https://www.last.fm/music/pinkpantheress"
+  },
+  {
+    "name": "Green Day",
+    "mbid": "084308bd-1654-436f-ba03-df6697104e19",
+    "url": "https://www.last.fm/music/Green+Day"
+  },
+  {
+    "name": "Gracie Abrams",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Gracie+Abrams"
+  },
+  {
+    "name": "The Cranberries",
+    "mbid": "c98d40fd-f6cf-4b26-883e-eaa515ee2851",
+    "url": "https://www.last.fm/music/The+Cranberries"
+  },
+  {
+    "name": "Metro Boomin",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Metro+Boomin"
+  },
+  {
+    "name": "Bad Bunny",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Bad+Bunny"
+  },
+  {
+    "name": "J. Cole",
+    "mbid": "875203e1-8e58-4b86-8dcb-7190faf411c5",
+    "url": "https://www.last.fm/music/J.+Cole"
+  },
+  {
+    "name": "Pink Floyd",
+    "mbid": "83d91898-7763-47d7-b03b-b92132375c47",
+    "url": "https://www.last.fm/music/Pink+Floyd"
+  },
+  {
+    "name": "System of a Down",
+    "mbid": "cc0b7089-c08d-4c10-b6b0-873582c17fd6",
+    "url": "https://www.last.fm/music/System+of+a+Down"
+  },
+  {
+    "name": "Nicki Minaj",
+    "mbid": "1036b808-f58c-4a3e-b461-a2c4492ecf1b",
+    "url": "https://www.last.fm/music/Nicki+Minaj"
+  },
+  {
+    "name": "My Chemical Romance",
+    "mbid": "c07f0676-9143-4217-8a9f-4c26bd636f13",
+    "url": "https://www.last.fm/music/My+Chemical+Romance"
+  },
+  {
+    "name": "Miley Cyrus",
+    "mbid": "7e9bd05a-117f-4cce-87bc-e011527a8b18",
+    "url": "https://www.last.fm/music/Miley+Cyrus"
+  },
+  {
+    "name": "21 Savage",
+    "mbid": "",
+    "url": "https://www.last.fm/music/21+Savage"
+  },
+  {
+    "name": "Joji",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Joji"
+  },
+  {
+    "name": "Adele",
+    "mbid": "cc2c9c3c-b7bc-4b8b-84d8-4fbd8779e493",
+    "url": "https://www.last.fm/music/Adele"
+  },
+  {
+    "name": "Jay-Z",
+    "mbid": "f82bcf78-5b69-4622-a5ef-73800768d9ac",
+    "url": "https://www.last.fm/music/Jay-Z"
+  },
+  {
+    "name": "David Guetta",
+    "mbid": "302bd7b9-d012-4360-897a-93b00c855680",
+    "url": "https://www.last.fm/music/David+Guetta"
+  },
+  {
+    "name": "d4vd",
+    "mbid": "",
+    "url": "https://www.last.fm/music/d4vd"
+  },
+  {
+    "name": "Twenty One Pilots",
+    "mbid": "a6c6897a-7415-4f8d-b5a5-3a5e05f3be67",
+    "url": "https://www.last.fm/music/Twenty+One+Pilots"
+  },
+  {
+    "name": "ABBA",
+    "mbid": "d87e52c5-bb8d-4da8-b941-9f4928627dc8",
+    "url": "https://www.last.fm/music/ABBA"
+  },
+  {
+    "name": "Justin Timberlake",
+    "mbid": "596ffa74-3d08-44ef-b113-765d43d12738",
+    "url": "https://www.last.fm/music/Justin+Timberlake"
+  },
+  {
+    "name": "xxxtentacion",
+    "mbid": "",
+    "url": "https://www.last.fm/music/xxxtentacion"
+  },
+  {
+    "name": "Kesha",
+    "mbid": "fab34286-b8e1-4879-bce3-194e1358fbd2",
+    "url": "https://www.last.fm/music/Kesha"
+  },
+  {
+    "name": "The Smashing Pumpkins",
+    "mbid": "ba0d6274-db14-4ef5-b28d-657ebde1a396",
+    "url": "https://www.last.fm/music/The+Smashing+Pumpkins"
+  },
+  {
+    "name": "Lisa",
+    "mbid": "fde67432-278f-4a41-9e2f-0d1b35d8a3dc",
+    "url": "https://www.last.fm/music/Lisa"
+  },
+  {
+    "name": "Daft Punk",
+    "mbid": "056e4f3e-d505-4dad-8ec1-d04f521cbb56",
+    "url": "https://www.last.fm/music/Daft+Punk"
+  },
+  {
+    "name": "LE SSERAFIM",
+    "mbid": "",
+    "url": "https://www.last.fm/music/LE+SSERAFIM"
+  },
+  {
+    "name": "Imogen Heap",
+    "mbid": "328d146c-79f1-4eb6-9e40-8ee5710c14e5",
+    "url": "https://www.last.fm/music/Imogen+Heap"
+  },
+  {
+    "name": "Pitbull",
+    "mbid": "d262ea27-3ffe-40f7-b922-85c42d625e67",
+    "url": "https://www.last.fm/music/Pitbull"
+  },
+  {
+    "name": "Panic! at the Disco",
+    "mbid": "b9472588-93f3-4922-a1a2-74082cdf9ce8",
+    "url": "https://www.last.fm/music/Panic%21+at+the+Disco"
+  },
+  {
+    "name": "MGMT",
+    "mbid": "c485632c-b784-4ee9-8ea1-c5fb365681fc",
+    "url": "https://www.last.fm/music/MGMT"
+  },
+  {
+    "name": "Elton John",
+    "mbid": "b83bc61f-8451-4a5d-8b8e-7e9ed295e822",
+    "url": "https://www.last.fm/music/Elton+John"
+  },
+  {
+    "name": "Baby Keem",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Baby+Keem"
+  },
+  {
+    "name": "Lil Wayne",
+    "mbid": "ac9a487a-d9d2-4f27-bb23-0f4686488345",
+    "url": "https://www.last.fm/music/Lil+Wayne"
+  },
+  {
+    "name": "Black Eyed Peas",
+    "mbid": "d5be5333-4171-427e-8e12-732087c6b78e",
+    "url": "https://www.last.fm/music/Black+Eyed+Peas"
+  },
+  {
+    "name": "The Killers",
+    "mbid": "95e1ead9-4d31-4808-a7ac-32c3614c116b",
+    "url": "https://www.last.fm/music/The+Killers"
+  },
+  {
+    "name": "Daniel Caesar",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Daniel+Caesar"
+  },
+  {
+    "name": "Nelly Furtado",
+    "mbid": "13655113-cd16-4b43-9dca-cadbbf26ee05",
+    "url": "https://www.last.fm/music/Nelly+Furtado"
+  },
+  {
+    "name": "David Bowie",
+    "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
+    "url": "https://www.last.fm/music/David+Bowie"
+  },
+  {
+    "name": "Beach House",
+    "mbid": "d5cc67b8-1cc4-453b-96e8-44487acdebea",
+    "url": "https://www.last.fm/music/Beach+House"
+  },
+  {
+    "name": "Conan Gray",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Conan+Gray"
+  },
+  {
+    "name": "OutKast",
+    "mbid": "73fdb566-a9b1-494c-9f32-51768ec9fd27",
+    "url": "https://www.last.fm/music/OutKast"
+  },
+  {
+    "name": "Weezer",
+    "mbid": "6fe07aa5-fec0-4eca-a456-f29bff451b04",
+    "url": "https://www.last.fm/music/Weezer"
+  },
+  {
+    "name": "Fall Out Boy",
+    "mbid": "516cef4d-0718-4007-9939-f9b38af3f784",
+    "url": "https://www.last.fm/music/Fall+Out+Boy"
+  },
+  {
+    "name": "bôa",
+    "mbid": "ca1dcba2-792c-4550-abf2-7b45396e81ca",
+    "url": "https://www.last.fm/music/b%C3%B4a"
+  },
+  {
+    "name": "Marina",
+    "mbid": "fe0ad4d4-391b-4f43-b02f-4d2ed0ab2b5e",
+    "url": "https://www.last.fm/music/Marina"
+  },
+  {
+    "name": "Brent Faiyaz",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Brent+Faiyaz"
+  },
+  {
+    "name": "Sade",
+    "mbid": "67930b3e-e00b-469f-8c74-fd69f20522ec",
+    "url": "https://www.last.fm/music/Sade"
+  },
+  {
+    "name": "Billy Joel",
+    "mbid": "64b94289-9474-4d43-8c93-918ccc1920d1",
+    "url": "https://www.last.fm/music/Billy+Joel"
+  },
+  {
+    "name": "Foo Fighters",
+    "mbid": "67f66c07-6e61-4026-ade5-7e782fad3a5d",
+    "url": "https://www.last.fm/music/Foo+Fighters"
+  },
+  {
+    "name": "One Direction",
+    "mbid": "3fedf601-0039-4ba4-af53-7b6d1ff5b69a",
+    "url": "https://www.last.fm/music/One+Direction"
+  },
+  {
+    "name": "Phoebe Bridgers",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Phoebe+Bridgers"
+  },
+  {
+    "name": "Men I Trust",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Men+I+Trust"
+  },
+  {
+    "name": "Rosé",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ros%C3%A9"
+  },
+  {
+    "name": "Madonna",
+    "mbid": "79239441-bfd5-4981-a70c-55c3f15c1287",
+    "url": "https://www.last.fm/music/Madonna"
+  },
+  {
+    "name": "PARTYNEXTDOOR",
+    "mbid": "f23ef341-33bd-47c1-b83c-846a78581f05",
+    "url": "https://www.last.fm/music/PARTYNEXTDOOR"
+  },
+  {
+    "name": "Laufey",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Laufey"
+  },
+  {
+    "name": "Troye Sivan",
+    "mbid": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+    "url": "https://www.last.fm/music/Troye+Sivan"
+  },
+  {
+    "name": "Cage the Elephant",
+    "mbid": "b41b38d4-ef3e-4f37-8c75-cfe9af999696",
+    "url": "https://www.last.fm/music/Cage+the+Elephant"
+  },
+  {
+    "name": "Ed Sheeran",
+    "mbid": "b8a7c51f-362c-4dcb-a259-bc6e0095f0a6",
+    "url": "https://www.last.fm/music/Ed+Sheeran"
+  },
+  {
+    "name": "Avril Lavigne",
+    "mbid": "0103c1cc-4a09-4a5d-a344-56ad99a77193",
+    "url": "https://www.last.fm/music/Avril+Lavigne"
+  },
+  {
+    "name": "Faye Webster",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Faye+Webster"
+  },
+  {
+    "name": "Metallica",
+    "mbid": "65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab",
+    "url": "https://www.last.fm/music/Metallica"
+  },
+  {
+    "name": "Lil Tecca",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Tecca"
+  },
+  {
+    "name": "The 1975",
+    "mbid": "5b6ebfe0-f72b-4902-bba9-74c8af0f1af0",
+    "url": "https://www.last.fm/music/The+1975"
+  },
+  {
+    "name": "Shakira",
+    "mbid": "bf24ca37-25f4-4e34-9aec-460b94364cfc",
+    "url": "https://www.last.fm/music/Shakira"
+  },
+  {
+    "name": "Alex G",
+    "mbid": "b9e306aa-5f93-4f50-9dd1-335526e33c1a",
+    "url": "https://www.last.fm/music/Alex+G"
+  },
+  {
+    "name": "Juice WRLD",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Juice+WRLD"
+  },
+  {
+    "name": "Imagine Dragons",
+    "mbid": "012151a8-0f9a-44c9-997f-ebd68b5389f9",
+    "url": "https://www.last.fm/music/Imagine+Dragons"
+  },
+  {
+    "name": "Kid Cudi",
+    "mbid": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
+    "url": "https://www.last.fm/music/Kid+Cudi"
+  },
+  {
+    "name": "NewJeans",
+    "mbid": "",
+    "url": "https://www.last.fm/music/NewJeans"
+  },
+  {
+    "name": "The Police",
+    "mbid": "9e0e2b01-41db-4008-bd8b-988977d6019a",
+    "url": "https://www.last.fm/music/The+Police"
+  },
+  {
+    "name": "Muse",
+    "mbid": "fd857293-5ab8-40de-b29e-55a69d4e4d0f",
+    "url": "https://www.last.fm/music/Muse"
+  },
+  {
+    "name": "BTS",
+    "mbid": "0d79fe8e-ba27-4859-bb8c-2f255f346853",
+    "url": "https://www.last.fm/music/BTS"
+  },
+  {
+    "name": "The Kid Laroi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Kid+Laroi"
+  },
+  {
+    "name": "Halsey",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Halsey"
+  },
+  {
+    "name": "Slipknot",
+    "mbid": "ceb7b6be-1dbb-4d80-b157-5588bc884764",
+    "url": "https://www.last.fm/music/Slipknot"
+  },
+  {
+    "name": "Tears for Fears",
+    "mbid": "7c7f9c94-dee8-4903-892b-6cf44652e2de",
+    "url": "https://www.last.fm/music/Tears+for+Fears"
+  },
+  {
+    "name": "Megan Thee Stallion",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Megan+Thee+Stallion"
+  },
+  {
+    "name": "Lil Yachty",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Yachty"
+  },
+  {
+    "name": "Jeff Buckley",
+    "mbid": "e6e879c0-3d56-4f12-b3c5-3ce459661a8e",
+    "url": "https://www.last.fm/music/Jeff+Buckley"
+  },
+  {
+    "name": "Mazzy Star",
+    "mbid": "c48d4327-8122-4286-af66-05e1ee6ac4d8",
+    "url": "https://www.last.fm/music/Mazzy+Star"
+  },
+  {
+    "name": "Gunna",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Gunna"
+  },
+  {
+    "name": "Djo",
+    "mbid": "46207881-6a12-4872-b9b4-8cb80f979f47",
+    "url": "https://www.last.fm/music/Djo"
+  },
+  {
+    "name": "Usher",
+    "mbid": "3414d446-735a-443c-931f-10634f57e5b9",
+    "url": "https://www.last.fm/music/Usher"
+  },
+  {
+    "name": "Gigi Perez",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Gigi+Perez"
+  },
+  {
+    "name": "Dominic Fike",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Dominic+Fike"
+  },
+  {
+    "name": "Oasis",
+    "mbid": "ecf9f3a3-35e9-4c58-acaa-e707fba45060",
+    "url": "https://www.last.fm/music/Oasis"
+  },
+  {
+    "name": "LIL PEEP",
+    "mbid": "",
+    "url": "https://www.last.fm/music/LIL+PEEP"
+  },
+  {
+    "name": "Pixies",
+    "mbid": "b6b2bb8d-54a9-491f-9607-7b546023b433",
+    "url": "https://www.last.fm/music/Pixies"
+  },
+  {
+    "name": "The Rolling Stones",
+    "mbid": "b071f9fa-14b0-4217-8e97-eb41da73f598",
+    "url": "https://www.last.fm/music/The+Rolling+Stones"
+  },
+  {
+    "name": "Tory Lanez",
+    "mbid": "5b8ec72b-9e39-4a06-a2bf-964166b92a71",
+    "url": "https://www.last.fm/music/Tory+Lanez"
+  },
+  {
+    "name": "Wallows",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Wallows"
+  },
+  {
+    "name": "Girl In Red",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Girl+In+Red"
+  },
+  {
+    "name": "MF DOOM",
+    "mbid": "188711ed-c99b-439c-844a-ca831f63a727",
+    "url": "https://www.last.fm/music/MF+DOOM"
+  },
+  {
+    "name": "Led Zeppelin",
+    "mbid": "d6e0e274-8e19-44ce-b5b2-52c12f8a674a",
+    "url": "https://www.last.fm/music/Led+Zeppelin"
+  },
+  {
+    "name": "Grimes",
+    "mbid": "7e5a2a59-6d9f-4a17-b7c2-e1eedb7bd222",
+    "url": "https://www.last.fm/music/Grimes"
+  },
+  {
+    "name": "Florence + the Machine",
+    "mbid": "5fee3020-513b-48c2-b1f7-4681b01db0c6",
+    "url": "https://www.last.fm/music/Florence+%252B+the+Machine"
+  },
+  {
+    "name": "Cocteau Twins",
+    "mbid": "000fc734-b7e1-4a01-92d1-f544261b43f5",
+    "url": "https://www.last.fm/music/Cocteau+Twins"
+  },
+  {
+    "name": "Chase Atlantic",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chase+Atlantic"
+  },
+  {
+    "name": "Big Thief",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Big+Thief"
+  },
+  {
+    "name": "Frank Sinatra",
+    "mbid": "197450cd-0124-4164-b723-3c22dd16494d",
+    "url": "https://www.last.fm/music/Frank+Sinatra"
+  },
+  {
+    "name": "TWICE",
+    "mbid": "d594ff3d-d3ca-4d2e-bb6a-a7dada9af0c5",
+    "url": "https://www.last.fm/music/TWICE"
+  },
+  {
+    "name": "¥$",
+    "mbid": "",
+    "url": "https://www.last.fm/music/%C2%A5$"
+  },
+  {
+    "name": "Bring Me the Horizon",
+    "mbid": "074e3847-f67f-49f9-81f1-8c8cea147e8e",
+    "url": "https://www.last.fm/music/Bring+Me+the+Horizon"
+  },
+  {
+    "name": "yeat",
+    "mbid": "",
+    "url": "https://www.last.fm/music/yeat"
+  },
+  {
+    "name": "Gwen Stefani",
+    "mbid": "2e41ae9c-afd2-4f20-8f1e-17281ce9b472",
+    "url": "https://www.last.fm/music/Gwen+Stefani"
+  },
+  {
+    "name": "Slowdive",
+    "mbid": "a16371b9-7d36-497a-a9d4-42b0a0440c5e",
+    "url": "https://www.last.fm/music/Slowdive"
+  },
+  {
+    "name": "2Pac",
+    "mbid": "382f1005-e9ab-4684-afd4-0bdae4ee37f2",
+    "url": "https://www.last.fm/music/2Pac"
+  },
+  {
+    "name": "Empire of the Sun",
+    "mbid": "ac7e838c-3d95-47c2-92a9-81767ad7c217",
+    "url": "https://www.last.fm/music/Empire+of+the+Sun"
+  },
+  {
+    "name": "Amy Winehouse",
+    "mbid": "dfe9a7c4-8cf2-47f4-9dcb-d233c2b86ec3",
+    "url": "https://www.last.fm/music/Amy+Winehouse"
+  },
+  {
+    "name": "The Cardigans",
+    "mbid": "3e55d51d-687f-4a9d-af96-2fabccf802e5",
+    "url": "https://www.last.fm/music/The+Cardigans"
+  },
+  {
+    "name": "The Notorious B.I.G.",
+    "mbid": "d5d97b2b-b83b-4976-814a-056d9076c8c3",
+    "url": "https://www.last.fm/music/The+Notorious+B.I.G."
+  },
+  {
+    "name": "Chief Keef",
+    "mbid": "9118f524-be76-4eaf-875c-ccf15e2a2ad6",
+    "url": "https://www.last.fm/music/Chief+Keef"
+  },
+  {
+    "name": "Pierce The Veil",
+    "mbid": "8ed919fb-eaee-45a1-ba99-b3ede9ca5f1d",
+    "url": "https://www.last.fm/music/Pierce+The+Veil"
+  },
+  {
+    "name": "Korn",
+    "mbid": "ac865b2e-bba8-4f5a-8756-dd40d5e39f46",
+    "url": "https://www.last.fm/music/Korn"
+  },
+  {
+    "name": "aespa",
+    "mbid": "",
+    "url": "https://www.last.fm/music/aespa"
+  },
+  {
+    "name": "Limp Bizkit",
+    "mbid": "8f9d6bb2-dba4-4cca-9967-cc02b9f4820c",
+    "url": "https://www.last.fm/music/Limp+Bizkit"
+  },
+  {
+    "name": "Shawn Mendes",
+    "mbid": "b7d92248-97e3-4450-8057-6fe06738f735",
+    "url": "https://www.last.fm/music/Shawn+Mendes"
+  },
+  {
+    "name": "MAGDALENA BAY",
+    "mbid": "",
+    "url": "https://www.last.fm/music/MAGDALENA+BAY"
+  },
+  {
+    "name": "Bob Dylan",
+    "mbid": "72c536dc-7137-4477-a521-567eeb840fa8",
+    "url": "https://www.last.fm/music/Bob+Dylan"
+  },
+  {
+    "name": "Evanescence",
+    "mbid": "f4a31f0a-51dd-4fa7-986d-3095c40c5ed9",
+    "url": "https://www.last.fm/music/Evanescence"
+  },
+  {
+    "name": "Noah Kahan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Noah+Kahan"
+  },
+  {
+    "name": "Trippie Redd",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Trippie+Redd"
+  },
+  {
+    "name": "Young Thug",
+    "mbid": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+    "url": "https://www.last.fm/music/Young+Thug"
+  },
+  {
+    "name": "50 Cent",
+    "mbid": "8e68819d-71be-4e7d-b41d-f1df81b01d3f",
+    "url": "https://www.last.fm/music/50+Cent"
+  },
+  {
+    "name": "The Goo Goo Dolls",
+    "mbid": "e2c00c56-8365-4160-9f40-a64682917633",
+    "url": "https://www.last.fm/music/The+Goo+Goo+Dolls"
+  },
+  {
+    "name": "Sufjan Stevens",
+    "mbid": "01d3c51b-9b98-418a-8d8e-37f6fab59d8c",
+    "url": "https://www.last.fm/music/Sufjan+Stevens"
+  },
+  {
+    "name": "Chris Brown",
+    "mbid": "c234fa42-e6a6-443e-937e-2f4b073538a3",
+    "url": "https://www.last.fm/music/Chris+Brown"
+  },
+  {
+    "name": "Blood Orange",
+    "mbid": "e43daa78-3cf3-4cf9-bc27-af4d4e675a02",
+    "url": "https://www.last.fm/music/Blood+Orange"
+  },
+  {
+    "name": "Kate Bush",
+    "mbid": "4b585938-f271-45e2-b19a-91c634b5e396",
+    "url": "https://www.last.fm/music/Kate+Bush"
+  },
+  {
+    "name": "5 Seconds of Summer",
+    "mbid": "830e5c4e-6b7d-431d-86ab-00c751281dc5",
+    "url": "https://www.last.fm/music/5+Seconds+of+Summer"
+  },
+  {
+    "name": "blink-182",
+    "mbid": "0743b15a-3c32-48c8-ad58-cb325350befa",
+    "url": "https://www.last.fm/music/blink-182"
+  },
+  {
+    "name": "Demi Lovato",
+    "mbid": "faf4cefb-036c-4c88-b93a-5b03dd0a0e6b",
+    "url": "https://www.last.fm/music/Demi+Lovato"
+  },
+  {
+    "name": "Alice in Chains",
+    "mbid": "4bd95eea-b9f6-4d70-a36c-cfea77431553",
+    "url": "https://www.last.fm/music/Alice+in+Chains"
+  },
+  {
+    "name": "AdriAnne Lenker",
+    "mbid": "763cb144-afdb-471e-bd86-d4f5b9b58641",
+    "url": "https://www.last.fm/music/AdriAnne+Lenker"
+  },
+  {
+    "name": "Eyedress",
+    "mbid": "0b619a94-481c-40ac-abae-85f33f2b1588",
+    "url": "https://www.last.fm/music/Eyedress"
+  },
+  {
+    "name": "Lil Nas X",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Nas+X"
+  },
+  {
+    "name": "Ken Carson",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ken+Carson"
+  },
+  {
+    "name": "Lil Baby",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lil+Baby"
+  },
+  {
+    "name": "Melanie Martinez",
+    "mbid": "0df563ec-1a79-486e-a46d-5b9862a40311",
+    "url": "https://www.last.fm/music/Melanie+Martinez"
+  },
+  {
+    "name": "Miguel",
+    "mbid": "f5c1f728-4bf0-48d6-aa2b-1d2e36e2cd56",
+    "url": "https://www.last.fm/music/Miguel"
+  },
+  {
+    "name": "Daryl Hall & John Oates",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Daryl+Hall+&+John+Oates"
+  },
+  {
+    "name": "Ravyn Lenae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ravyn+Lenae"
+  },
+  {
+    "name": "Flo Rida",
+    "mbid": "4593d49a-7f67-46ba-9ec0-126bd676286f",
+    "url": "https://www.last.fm/music/Flo+Rida"
+  },
+  {
+    "name": "Jack Harlow",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jack+Harlow"
+  },
+  {
+    "name": "Camila Cabello",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Camila+Cabello"
+  },
+  {
+    "name": "Blur",
+    "mbid": "ba853904-ae25-4ebb-89d6-c44cfbd71bd2",
+    "url": "https://www.last.fm/music/Blur"
+  },
+  {
+    "name": "Suki Waterhouse",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Suki+Waterhouse"
+  },
+  {
+    "name": "OneRepublic",
+    "mbid": "c33c2065-b1c3-4406-b066-d33a9e2ea71a",
+    "url": "https://www.last.fm/music/OneRepublic"
+  },
+  {
+    "name": "Guns N' Roses",
+    "mbid": "eeb1195b-f213-4ce1-b28c-8565211f8e43",
+    "url": "https://www.last.fm/music/Guns+N%27+Roses"
+  },
+  {
+    "name": "Glass Animals",
+    "mbid": "20395131-fbde-43ce-b141-b700cfdae99c",
+    "url": "https://www.last.fm/music/Glass+Animals"
+  },
+  {
+    "name": "Crystal Castles",
+    "mbid": "b1570544-93ab-4b2b-8398-131735394202",
+    "url": "https://www.last.fm/music/Crystal+Castles"
+  },
+  {
+    "name": "Foster the People",
+    "mbid": "e0e1a584-dd0a-4bd1-88d1-c4c62895039d",
+    "url": "https://www.last.fm/music/Foster+the+People"
+  },
+  {
+    "name": "Addison Rae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Addison+Rae"
+  },
+  {
+    "name": "The Chainsmokers",
+    "mbid": "91a81925-92f9-4fc9-b897-93cf01226282",
+    "url": "https://www.last.fm/music/The+Chainsmokers"
+  },
+  {
+    "name": "FKA twigs",
+    "mbid": "1e4e9db7-5068-4a9c-bdd0-5777e47172c8",
+    "url": "https://www.last.fm/music/FKA+twigs"
+  },
+  {
+    "name": "Lola Young",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lola+Young"
+  },
+  {
+    "name": "Denzel Curry",
+    "mbid": "5f95440d-7737-4a36-9bcf-c05337f7129b",
+    "url": "https://www.last.fm/music/Denzel+Curry"
+  },
+  {
+    "name": "Black Sabbath",
+    "mbid": "5182c1d9-c7d2-4dad-afa0-ccfeada921a8",
+    "url": "https://www.last.fm/music/Black+Sabbath"
+  },
+  {
+    "name": "Kodak Black",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kodak+Black"
+  },
+  {
+    "name": "Lord Huron",
+    "mbid": "51c76d97-0635-433c-b26d-66beb81657f8",
+    "url": "https://www.last.fm/music/Lord+Huron"
+  },
+  {
+    "name": "Zayn",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Zayn"
+  },
+  {
+    "name": "Three Days Grace",
+    "mbid": "fabb37f8-eb2a-4cc1-a72a-b56935bbb72d",
+    "url": "https://www.last.fm/music/Three+Days+Grace"
+  },
+  {
+    "name": "Fetty Wap",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Fetty+Wap"
+  },
+  {
+    "name": "Bon Iver",
+    "mbid": "437a0e49-c6ae-42f6-a6c1-84f25ed366bc",
+    "url": "https://www.last.fm/music/Bon+Iver"
+  },
+  {
+    "name": "Depeche Mode",
+    "mbid": "8538e728-ca0b-4321-b7e5-cff6565dd4c0",
+    "url": "https://www.last.fm/music/Depeche+Mode"
+  },
+  {
+    "name": "Mariah Carey",
+    "mbid": "494e8d09-f85b-4543-892f-a5096aed1cd4",
+    "url": "https://www.last.fm/music/Mariah+Carey"
+  },
+  {
+    "name": "Marshmello",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Marshmello"
+  },
+  {
+    "name": "Bryson Tiller",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Bryson+Tiller"
+  },
+  {
+    "name": "Talking Heads",
+    "mbid": "a94a7155-c79d-4409-9fcf-220cb0e4dc3a",
+    "url": "https://www.last.fm/music/Talking+Heads"
+  },
+  {
+    "name": "The Offspring",
+    "mbid": "23a03e33-a603-404e-bcbf-2c00159d7067",
+    "url": "https://www.last.fm/music/The+Offspring"
+  },
+  {
+    "name": "Rex Orange County",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rex+Orange+County"
+  },
+  {
+    "name": "Aphex Twin",
+    "mbid": "f22942a1-6f70-4f48-866e-238cb2308fbd",
+    "url": "https://www.last.fm/music/Aphex+Twin"
+  },
+  {
+    "name": "Pharrell Williams",
+    "mbid": "149f91ef-1287-46da-9a8e-87fee02f1471",
+    "url": "https://www.last.fm/music/Pharrell+Williams"
+  },
+  {
+    "name": "Joey Bada$$",
+    "mbid": "9757ae7d-44b1-4d63-81ce-b463fe27b9ae",
+    "url": "https://www.last.fm/music/Joey+Bada$$"
+  },
+  {
+    "name": "Ethel Cain",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ethel+Cain"
+  },
+  {
+    "name": "Ellie Goulding",
+    "mbid": "33ca19f4-18c8-4411-98df-ac23890ce9f5",
+    "url": "https://www.last.fm/music/Ellie+Goulding"
+  },
+  {
+    "name": "bbno$",
+    "mbid": "",
+    "url": "https://www.last.fm/music/bbno$"
+  },
+  {
+    "name": "Lucki",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lucki"
+  },
+  {
+    "name": "Pearl Jam",
+    "mbid": "83b9cbe7-9857-49e2-ab8e-b57b01038103",
+    "url": "https://www.last.fm/music/Pearl+Jam"
+  },
+  {
+    "name": "Fiona Apple",
+    "mbid": "a9ee533f-8871-4f62-a6bb-91eb264abc90",
+    "url": "https://www.last.fm/music/Fiona+Apple"
+  },
+  {
+    "name": "Mother Mother",
+    "mbid": "69681b02-05b8-4685-80cb-e98983b7a96f",
+    "url": "https://www.last.fm/music/Mother+Mother"
+  },
+  {
+    "name": "VACATIONS",
+    "mbid": "9a86e17f-b554-4c0f-a797-6f07b181c8d6",
+    "url": "https://www.last.fm/music/VACATIONS"
+  },
+  {
+    "name": "AC/DC",
+    "mbid": "66c662b6-6e2f-4930-8610-912e24c63ed1",
+    "url": "https://www.last.fm/music/AC%2FDC"
+  },
+  {
+    "name": "$uicideboy$",
+    "mbid": "",
+    "url": "https://www.last.fm/music/$uicideboy$"
+  },
+  {
+    "name": "Kings of Leon",
+    "mbid": "6ffb8ea9-2370-44d8-b678-e9237bbd347b",
+    "url": "https://www.last.fm/music/Kings+of+Leon"
+  },
+  {
+    "name": "Red Velvet",
+    "mbid": "4f0cb3b7-6c06-4317-ae35-ddf3106a17ee",
+    "url": "https://www.last.fm/music/Red+Velvet"
+  },
+  {
+    "name": "Avicii",
+    "mbid": "c85cfd6b-b1e9-4a50-bd55-eb725f04f7d5",
+    "url": "https://www.last.fm/music/Avicii"
+  },
+  {
+    "name": "Hotel Ugly",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Hotel+Ugly"
+  },
+  {
+    "name": "Tove Lo",
+    "mbid": "56756959-1e78-429c-b897-e1d056cb0225",
+    "url": "https://www.last.fm/music/Tove+Lo"
+  },
+  {
+    "name": "Current Joys",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Current+Joys"
+  },
+  {
+    "name": "Bee Gees",
+    "mbid": "bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810",
+    "url": "https://www.last.fm/music/Bee+Gees"
+  },
+  {
+    "name": "Sam Smith",
+    "mbid": "5a85c140-dcf9-4dd2-b2c8-aff0471549f3",
+    "url": "https://www.last.fm/music/Sam+Smith"
+  },
+  {
+    "name": "Sia",
+    "mbid": "2f548675-008d-4332-876c-108b0c7ab9c5",
+    "url": "https://www.last.fm/music/Sia"
+  },
+  {
+    "name": "JPEGMAFIA",
+    "mbid": "",
+    "url": "https://www.last.fm/music/JPEGMAFIA"
+  },
+  {
+    "name": "Khalid",
+    "mbid": "c6bfb05d-f570-46c8-98e1-e25441189770",
+    "url": "https://www.last.fm/music/Khalid"
+  },
+  {
+    "name": "Surf Curse",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Surf+Curse"
+  },
+  {
+    "name": "Stevie Wonder",
+    "mbid": "c1aa2ec9-53e7-4d90-8d36-bac75832e986",
+    "url": "https://www.last.fm/music/Stevie+Wonder"
+  },
+  {
+    "name": "Carly Rae Jepsen",
+    "mbid": "09887aa7-226e-4ecc-9a0c-02d2ae5777e1",
+    "url": "https://www.last.fm/music/Carly+Rae+Jepsen"
+  },
+  {
+    "name": "Billy Idol",
+    "mbid": "47c8f88b-987a-4b64-9175-2b1b57809727",
+    "url": "https://www.last.fm/music/Billy+Idol"
+  },
+  {
+    "name": "Earth, Wind & Fire",
+    "mbid": "535afeda-2538-435d-9dd1-5e10be586774",
+    "url": "https://www.last.fm/music/Earth,+Wind+&+Fire"
+  },
+  {
+    "name": "Cults",
+    "mbid": "4c671d5a-7027-4398-8055-03e61d1a3967",
+    "url": "https://www.last.fm/music/Cults"
+  },
+  {
+    "name": "Lizzy McAlpine",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lizzy+McAlpine"
+  },
+  {
+    "name": "Eagles",
+    "mbid": "f46bd570-5768-462e-b84c-c7c993bbf47e",
+    "url": "https://www.last.fm/music/Eagles"
+  },
+  {
+    "name": "NLE Choppa",
+    "mbid": "",
+    "url": "https://www.last.fm/music/NLE+Choppa"
+  },
+  {
+    "name": "Disclosure",
+    "mbid": "ae65c507-d9a0-4d42-9a6c-2b1f82158b9f",
+    "url": "https://www.last.fm/music/Disclosure"
+  },
+  {
+    "name": "Willow",
+    "mbid": "c53bb734-57cb-43eb-a6d1-e4794c9b9295",
+    "url": "https://www.last.fm/music/Willow"
+  },
+  {
+    "name": "Marvin Gaye",
+    "mbid": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+    "url": "https://www.last.fm/music/Marvin+Gaye"
+  },
+  {
+    "name": "P!nk",
+    "mbid": "f4d5cc07-3bc9-4836-9b15-88a08359bc63",
+    "url": "https://www.last.fm/music/P%21nk"
+  },
+  {
+    "name": "Jung Kook",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jung+Kook"
+  },
+  {
+    "name": "BLACKPINK",
+    "mbid": "",
+    "url": "https://www.last.fm/music/BLACKPINK"
+  },
+  {
+    "name": "Elliott Smith",
+    "mbid": "03ad1736-b7c9-412a-b442-82536d63a5c4",
+    "url": "https://www.last.fm/music/Elliott+Smith"
+  },
+  {
+    "name": "Tyla",
+    "mbid": "2bf761c6-4bcf-4cfc-a388-8fcb2eea8cc8",
+    "url": "https://www.last.fm/music/Tyla"
+  },
+  {
+    "name": "ScHoolboy Q",
+    "mbid": "bce6d667-cde8-485e-b078-c0a05adea36d",
+    "url": "https://www.last.fm/music/ScHoolboy+Q"
+  },
+  {
+    "name": "Artemas",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Artemas"
+  },
+  {
+    "name": "Franz Ferdinand",
+    "mbid": "aa7a2827-f74b-473c-bd79-03d065835cf7",
+    "url": "https://www.last.fm/music/Franz+Ferdinand"
+  },
+  {
+    "name": "STRAY KIDS",
+    "mbid": "",
+    "url": "https://www.last.fm/music/STRAY+KIDS"
+  },
+  {
+    "name": "Snoop Dogg",
+    "mbid": "f90e8b26-9e52-4669-a5c9-e28529c47894",
+    "url": "https://www.last.fm/music/Snoop+Dogg"
+  },
+  {
+    "name": "Björk",
+    "mbid": "87c5dedd-371d-4a53-9f7f-80522fb7f3cb",
+    "url": "https://www.last.fm/music/Bj%C3%B6rk"
+  },
+  {
+    "name": "Benson Boone",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Benson+Boone"
+  },
+  {
+    "name": "Mark Ronson",
+    "mbid": "c3c82bdc-d9e7-4836-9746-c24ead47ca19",
+    "url": "https://www.last.fm/music/Mark+Ronson"
+  },
+  {
+    "name": "Cardi B",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cardi+B"
+  },
+  {
+    "name": "G-Eazy",
+    "mbid": "db48610c-6d8f-4d10-90ca-c4d14bb1a8b1",
+    "url": "https://www.last.fm/music/G-Eazy"
+  },
+  {
+    "name": "Japanese Breakfast",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Japanese+Breakfast"
+  },
+  {
+    "name": "Alicia Keys",
+    "mbid": "8ef1df30-ae4f-4dbd-9351-1a32b208a01e",
+    "url": "https://www.last.fm/music/Alicia+Keys"
+  },
+  {
+    "name": "Strawberry Guy",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Strawberry+Guy"
+  },
+  {
+    "name": "Matt Maltese",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Matt+Maltese"
+  },
+  {
+    "name": "Car Seat Headrest",
+    "mbid": "0fabbc1d-8d94-4a61-bd1d-1099ad1e4559",
+    "url": "https://www.last.fm/music/Car+Seat+Headrest"
+  },
+  {
+    "name": "Gotye",
+    "mbid": "6f6fd596-76e0-4b82-aa37-f558ac2d337b",
+    "url": "https://www.last.fm/music/Gotye"
+  },
+  {
+    "name": "Creedence Clearwater Revival",
+    "mbid": "44c48a1b-defd-4222-bee6-03f9ee9a7be9",
+    "url": "https://www.last.fm/music/Creedence+Clearwater+Revival"
+  },
+  {
+    "name": "Ayesha Erotica",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ayesha+Erotica"
+  },
+  {
+    "name": "DJ Snake",
+    "mbid": "31445b1e-96f3-4c7f-84ec-dd02e647e690",
+    "url": "https://www.last.fm/music/DJ+Snake"
+  },
+  {
+    "name": "Kiss Of Life",
+    "mbid": "c0b630b0-7ada-4350-8cb4-ed9b95ae4d03",
+    "url": "https://www.last.fm/music/Kiss+Of+Life"
+  },
+  {
+    "name": "Duster",
+    "mbid": "879d43c6-13a8-42f6-b8df-a9b7d50aa9e2",
+    "url": "https://www.last.fm/music/Duster"
+  },
+  {
+    "name": "Boygenius",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Boygenius"
+  },
+  {
+    "name": "Summer Walker",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Summer+Walker"
+  },
+  {
+    "name": "Two Door Cinema Club",
+    "mbid": "6f1de078-6684-4792-820d-2ffad64c15ed",
+    "url": "https://www.last.fm/music/Two+Door+Cinema+Club"
+  },
+  {
+    "name": "Illit",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Illit"
+  },
+  {
+    "name": "The Clash",
+    "mbid": "8f92558c-2baa-4758-8c38-615519e9deda",
+    "url": "https://www.last.fm/music/The+Clash"
+  },
+  {
+    "name": "BROCKHAMPTON",
+    "mbid": "",
+    "url": "https://www.last.fm/music/BROCKHAMPTON"
+  },
+  {
+    "name": "The Lumineers",
+    "mbid": "bfcb6630-9b31-4e63-b11f-7b0363be72b5",
+    "url": "https://www.last.fm/music/The+Lumineers"
+  },
+  {
+    "name": "The White Stripes",
+    "mbid": "11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5",
+    "url": "https://www.last.fm/music/The+White+Stripes"
+  },
+  {
+    "name": "The Doors",
+    "mbid": "9efff43b-3b29-4082-824e-bc82f646f93d",
+    "url": "https://www.last.fm/music/The+Doors"
+  },
+  {
+    "name": "Charlie Puth",
+    "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
+    "url": "https://www.last.fm/music/Charlie+Puth"
+  },
+  {
+    "name": "Thundercat",
+    "mbid": "044fd265-79dd-43eb-afc4-8b20becf7e17",
+    "url": "https://www.last.fm/music/Thundercat"
+  },
+  {
+    "name": "Duran Duran",
+    "mbid": "1a1cd7f3-e5df-4eca-bae2-2757c9e656b5",
+    "url": "https://www.last.fm/music/Duran+Duran"
+  },
+  {
+    "name": "Dire Straits",
+    "mbid": "614e3804-7d34-41ba-857f-811bad7c2b7a",
+    "url": "https://www.last.fm/music/Dire+Straits"
+  },
+  {
+    "name": "The Sundays",
+    "mbid": "9df32318-47d5-4df7-bc68-3ed9e15eb0f6",
+    "url": "https://www.last.fm/music/The+Sundays"
+  },
+  {
+    "name": "Natasha Bedingfield",
+    "mbid": "8b477559-946e-4ef2-9fe1-446cff8fdd79",
+    "url": "https://www.last.fm/music/Natasha+Bedingfield"
+  },
+  {
+    "name": "Måneskin",
+    "mbid": "",
+    "url": "https://www.last.fm/music/M%C3%A5neskin"
+  },
+  {
+    "name": "Soundgarden",
+    "mbid": "153c9281-268f-4cf3-8938-f5a4593e5df4",
+    "url": "https://www.last.fm/music/Soundgarden"
+  },
+  {
+    "name": "Nas",
+    "mbid": "cfbc0924-0035-4d6c-8197-f024653af823",
+    "url": "https://www.last.fm/music/Nas"
+  },
+  {
+    "name": "No Doubt",
+    "mbid": "fbd2a255-1d57-4d31-ac11-65b671c19958",
+    "url": "https://www.last.fm/music/No+Doubt"
+  },
+  {
+    "name": "Kaytranada",
+    "mbid": "e56aee57-d90e-40cf-a70d-beb70f6f3c69",
+    "url": "https://www.last.fm/music/Kaytranada"
+  },
+  {
+    "name": "Rosalía",
+    "mbid": "ac0ee862-a6ca-4d39-a7a4-d8460534ba30",
+    "url": "https://www.last.fm/music/Rosal%C3%ADa"
+  },
+  {
+    "name": "Nine Inch Nails",
+    "mbid": "b7ffd2af-418f-4be2-bdd1-22f8b48613da",
+    "url": "https://www.last.fm/music/Nine+Inch+Nails"
+  },
+  {
+    "name": "Migos",
+    "mbid": "0221734a-35a8-40f7-b5c5-2f61a200bc7c",
+    "url": "https://www.last.fm/music/Migos"
+  },
+  {
+    "name": "Bob Marley & The Wailers",
+    "mbid": "ed2ac1e9-d51d-4eff-a2c2-85e81abd6360",
+    "url": "https://www.last.fm/music/Bob+Marley+&+The+Wailers"
+  },
+  {
+    "name": "Lily Allen",
+    "mbid": "6e0c7c0e-cba5-4c2c-a652-38f71ef5785d",
+    "url": "https://www.last.fm/music/Lily+Allen"
+  },
+  {
+    "name": "Cafuné",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cafun%C3%A9"
+  },
+  {
+    "name": "Pinegrove",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Pinegrove"
+  },
+  {
+    "name": "Clean Bandit",
+    "mbid": "dacc2d64-7e59-42a8-87a9-10c53919aff2",
+    "url": "https://www.last.fm/music/Clean+Bandit"
+  },
+  {
+    "name": "Arcane",
+    "mbid": "f011c91f-d245-4782-93cc-2c5238b6657b",
+    "url": "https://www.last.fm/music/Arcane"
+  },
+  {
+    "name": "Timbaland",
+    "mbid": "daa09819-5da5-4c7a-8bef-eb372bb27ff1",
+    "url": "https://www.last.fm/music/Timbaland"
+  },
+  {
+    "name": "Major Lazer",
+    "mbid": "75be165a-ad83-4d12-bd28-f589a15c479f",
+    "url": "https://www.last.fm/music/Major+Lazer"
+  },
+  {
+    "name": "Sublime",
+    "mbid": "c460aa10-87a0-4971-b742-7de0e3c7c2ca",
+    "url": "https://www.last.fm/music/Sublime"
+  },
+  {
+    "name": "Rage Against the Machine",
+    "mbid": "3798b104-01cb-484c-a3b0-56adc6399b80",
+    "url": "https://www.last.fm/music/Rage+Against+the+Machine"
+  },
+  {
+    "name": "Nickelback",
+    "mbid": "bc710bcf-8815-42cf-bad2-3f1d12246aeb",
+    "url": "https://www.last.fm/music/Nickelback"
+  },
+  {
+    "name": "Labrinth",
+    "mbid": "dc99e6fd-c710-4f79-b74b-127b4d0b7849",
+    "url": "https://www.last.fm/music/Labrinth"
+  },
+  {
+    "name": "Raye",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Raye"
+  },
+  {
+    "name": "Kylie Minogue",
+    "mbid": "2fddb92d-24b2-46a5-bf28-3aed46f4684c",
+    "url": "https://www.last.fm/music/Kylie+Minogue"
+  },
+  {
+    "name": "Fontaines D.C.",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Fontaines+D.C."
+  },
+  {
+    "name": "Ice Cube",
+    "mbid": "1d11e2a1-4531-4d61-a8c7-7b5c6a608fd2",
+    "url": "https://www.last.fm/music/Ice+Cube"
+  },
+  {
+    "name": "J-Hope",
+    "mbid": "",
+    "url": "https://www.last.fm/music/J-Hope"
+  },
+  {
+    "name": "TOMORROW X TOGETHER",
+    "mbid": "",
+    "url": "https://www.last.fm/music/TOMORROW+X+TOGETHER"
+  },
+  {
+    "name": "Elvis Presley",
+    "mbid": "01809552-4f87-45b0-afff-2c6f0730a3be",
+    "url": "https://www.last.fm/music/Elvis+Presley"
+  },
+  {
+    "name": "Kelly Clarkson",
+    "mbid": "d339efbb-77b9-4147-ba9e-59f2f24550b2",
+    "url": "https://www.last.fm/music/Kelly+Clarkson"
+  },
+  {
+    "name": "R.E.M.",
+    "mbid": "ea4dfa26-f633-4da6-a52a-f49ea4897b58",
+    "url": "https://www.last.fm/music/R.E.M."
+  },
+  {
+    "name": "Toto",
+    "mbid": "aab5c954-cabe-432e-899e-1c4f99757327",
+    "url": "https://www.last.fm/music/Toto"
+  },
+  {
+    "name": "Malcolm Todd",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Malcolm+Todd"
+  },
+  {
+    "name": "Bon Jovi",
+    "mbid": "5dcdb5eb-cb72-4e6e-9e63-b7bace604965",
+    "url": "https://www.last.fm/music/Bon+Jovi"
+  },
+  {
+    "name": "M83",
+    "mbid": "6d7b7cd4-254b-4c25-83f6-dd20f98ceacd",
+    "url": "https://www.last.fm/music/M83"
+  },
+  {
+    "name": "Zedd",
+    "mbid": "56c4b861-0922-4c3a-a9b9-3bfcb00f8274",
+    "url": "https://www.last.fm/music/Zedd"
+  },
+  {
+    "name": "Massive Attack",
+    "mbid": "10adbe5e-a2c0-4bf3-8249-2b4cbf6e6ca8",
+    "url": "https://www.last.fm/music/Massive+Attack"
+  },
+  {
+    "name": "ENHYPEN",
+    "mbid": "",
+    "url": "https://www.last.fm/music/ENHYPEN"
+  },
+  {
+    "name": "Her's",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Her%27s"
+  },
+  {
+    "name": "Panchiko",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Panchiko"
+  },
+  {
+    "name": "Aerosmith",
+    "mbid": "3d2b98e5-556f-4451-a3ff-c50ea18d57cb",
+    "url": "https://www.last.fm/music/Aerosmith"
+  },
+  {
+    "name": "Ghost",
+    "mbid": "ed81302a-c095-4f0d-a243-ec362956fee7",
+    "url": "https://www.last.fm/music/Ghost"
+  },
+  {
+    "name": "The Beach Boys",
+    "mbid": "ebfc1398-8d96-47e3-82c3-f782abcdb13d",
+    "url": "https://www.last.fm/music/The+Beach+Boys"
+  },
+  {
+    "name": "Thee Sacred Souls",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Thee+Sacred+Souls"
+  },
+  {
+    "name": "Rammstein",
+    "mbid": "b2d122f9-eadb-4930-a196-8f221eeb0c66",
+    "url": "https://www.last.fm/music/Rammstein"
+  },
+  {
+    "name": "Sombr",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sombr"
+  },
+  {
+    "name": "Zach Bryan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Zach+Bryan"
+  },
+  {
+    "name": "Dr. Dre",
+    "mbid": "5f6ab597-f57a-40da-be9e-adad48708203",
+    "url": "https://www.last.fm/music/Dr.+Dre"
+  },
+  {
+    "name": "Sixpence None the Richer",
+    "mbid": "c2c70ed6-5f10-445c-969f-2c16bc9a4c2e",
+    "url": "https://www.last.fm/music/Sixpence+None+the+Richer"
+  },
+  {
+    "name": "Jungle",
+    "mbid": "6bbb3983-ce8a-4971-96e0-7cae73268fc4",
+    "url": "https://www.last.fm/music/Jungle"
+  },
+  {
+    "name": "Electric Light Orchestra",
+    "mbid": "0c502791-4ee9-4c5f-9696-0602b721ff3b",
+    "url": "https://www.last.fm/music/Electric+Light+Orchestra"
+  },
+  {
+    "name": "Jid",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jid"
+  },
+  {
+    "name": "Yung Lean",
+    "mbid": "757ed661-fbad-4e45-b1cd-a6b09f06f54a",
+    "url": "https://www.last.fm/music/Yung+Lean"
+  },
+  {
+    "name": "M.I.A.",
+    "mbid": "b22d45dd-deae-4663-a782-542db02e25cf",
+    "url": "https://www.last.fm/music/M.I.A."
+  },
+  {
+    "name": "George Michael",
+    "mbid": "ccb8f30e-4d71-40c4-8b1d-846dafe73e2c",
+    "url": "https://www.last.fm/music/George+Michael"
+  },
+  {
+    "name": "The Velvet Underground",
+    "mbid": "94b0fb9d-a066-4823-b2ec-af1d324bcfcf",
+    "url": "https://www.last.fm/music/The+Velvet+Underground"
+  },
+  {
+    "name": "Madison Beer",
+    "mbid": "749ef494-8518-4b49-b685-63d8e728d25c",
+    "url": "https://www.last.fm/music/Madison+Beer"
+  },
+  {
+    "name": "Tommy Richman",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Tommy+Richman"
+  },
+  {
+    "name": "The walters",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+walters"
+  },
+  {
+    "name": "SLEEPY HALLOW",
+    "mbid": "",
+    "url": "https://www.last.fm/music/SLEEPY+HALLOW"
+  },
+  {
+    "name": "Azealia Banks",
+    "mbid": "0c3505e7-d884-43cf-9028-d318607190a4",
+    "url": "https://www.last.fm/music/Azealia+Banks"
+  },
+  {
+    "name": "Ive",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ive"
+  },
+  {
+    "name": "Rae Sremmurd",
+    "mbid": "c78c3026-426b-4580-ab23-08490bb8b515",
+    "url": "https://www.last.fm/music/Rae+Sremmurd"
+  },
+  {
+    "name": "DJ Khaled",
+    "mbid": "081a2d60-9791-4e05-a075-f1890355eeee",
+    "url": "https://www.last.fm/music/DJ+Khaled"
+  },
+  {
+    "name": "Jhené Aiko",
+    "mbid": "ceb3f5b7-9f1a-430f-afbe-976fdcf30482",
+    "url": "https://www.last.fm/music/Jhen%C3%A9+Aiko"
+  },
+  {
+    "name": "Queens of the Stone Age",
+    "mbid": "7dc8f5bd-9d0b-4087-9f73-dc164950bbd8",
+    "url": "https://www.last.fm/music/Queens+of+the+Stone+Age"
+  },
+  {
+    "name": "Cavetown",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cavetown"
+  },
+  {
+    "name": "Swedish House Mafia",
+    "mbid": "99075985-0d80-4692-a15e-b16f78831792",
+    "url": "https://www.last.fm/music/Swedish+House+Mafia"
+  },
+  {
+    "name": "Pop Smoke",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Pop+Smoke"
+  },
+  {
+    "name": "Blondie",
+    "mbid": "4d2956d1-a3f7-44bb-9a41-67563e1a0c94",
+    "url": "https://www.last.fm/music/Blondie"
+  },
+  {
+    "name": "Odetari",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Odetari"
+  },
+  {
+    "name": "New Order",
+    "mbid": "f1106b17-dcbb-45f6-b938-199ccfab50cc",
+    "url": "https://www.last.fm/music/New+Order"
+  },
+  {
+    "name": "Jason Derulo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jason+Derulo"
+  },
+  {
+    "name": "Frou Frou",
+    "mbid": "d614b0ad-fe3a-4927-b413-48cb831a814b",
+    "url": "https://www.last.fm/music/Frou+Frou"
+  },
+  {
+    "name": "Nessa Barrett",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Nessa+Barrett"
+  },
+  {
+    "name": "Joy Division",
+    "mbid": "9a58fda3-f4ed-4080-a3a5-f457aac9fcdd",
+    "url": "https://www.last.fm/music/Joy+Division"
+  },
+  {
+    "name": "Gucci Mane",
+    "mbid": "36494952-f434-45d8-a958-8b4acdbcf8a8",
+    "url": "https://www.last.fm/music/Gucci+Mane"
+  },
+  {
+    "name": "Wiz Khalifa",
+    "mbid": "f5dfa020-ad69-41cd-b3d4-fd7af0414e94",
+    "url": "https://www.last.fm/music/Wiz+Khalifa"
+  },
+  {
+    "name": "Destroy Lonely",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Destroy+Lonely"
+  },
+  {
+    "name": "J Balvin",
+    "mbid": "5bdeb32d-56a5-4b6d-a768-264101fa0a0a",
+    "url": "https://www.last.fm/music/J+Balvin"
+  },
+  {
+    "name": "The Mamas & the Papas",
+    "mbid": "ff294730-0315-440d-a543-54005779c15b",
+    "url": "https://www.last.fm/music/The+Mamas+&+the+Papas"
+  },
+  {
+    "name": "Salvia Palth",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Salvia+Palth"
+  },
+  {
+    "name": "Vance Joy",
+    "mbid": "df36f6db-5987-46ed-9d02-0cf36ed4e060",
+    "url": "https://www.last.fm/music/Vance+Joy"
+  },
+  {
+    "name": "ROAR",
+    "mbid": "18de31c0-5c6e-4fa5-89e7-456012fbf7e9",
+    "url": "https://www.last.fm/music/ROAR"
+  },
+  {
+    "name": "Yeah Yeah Yeahs",
+    "mbid": "584c04d2-4acc-491b-8a0a-e63133f4bfc4",
+    "url": "https://www.last.fm/music/Yeah+Yeah+Yeahs"
+  },
+  {
+    "name": "A$AP Ferg",
+    "mbid": "8ab5d936-49d1-415e-92c8-151e0e7dd912",
+    "url": "https://www.last.fm/music/A$AP+Ferg"
+  },
+  {
+    "name": "Isaiah Rashad",
+    "mbid": "37547347-ea75-45fa-9766-ff36b44d8147",
+    "url": "https://www.last.fm/music/Isaiah+Rashad"
+  },
+  {
+    "name": "Anitta",
+    "mbid": "d606b860-cc03-4959-a3fd-3a24bccf2560",
+    "url": "https://www.last.fm/music/Anitta"
+  },
+  {
+    "name": "Madvillain",
+    "mbid": "4e024037-14b7-4aea-99ad-c6ace63b9620",
+    "url": "https://www.last.fm/music/Madvillain"
+  },
+  {
+    "name": "America",
+    "mbid": "34cf95c7-4be9-4efd-a48a-c2ea4a0bb114",
+    "url": "https://www.last.fm/music/America"
+  },
+  {
+    "name": "Earl Sweatshirt",
+    "mbid": "8b22acd6-20e6-4463-a75c-c14b5cfdb666",
+    "url": "https://www.last.fm/music/Earl+Sweatshirt"
+  },
+  {
+    "name": "Teddy Swims",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Teddy+Swims"
+  },
+  {
+    "name": "Lucy Dacus",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lucy+Dacus"
+  },
+  {
+    "name": "Aurora",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Aurora"
+  },
+  {
+    "name": "Keane",
+    "mbid": "c7020c6d-cae9-4db3-92a7-e5c561cbad50",
+    "url": "https://www.last.fm/music/Keane"
+  },
+  {
+    "name": "George Harrison",
+    "mbid": "42a8f507-8412-4611-854f-926571049fa0",
+    "url": "https://www.last.fm/music/George+Harrison"
+  },
+  {
+    "name": "Tiësto",
+    "mbid": "aabb1d9f-be12-45b3-a84d-a1fc3e8181fd",
+    "url": "https://www.last.fm/music/Ti%C3%ABsto"
+  },
+  {
+    "name": "Akon",
+    "mbid": "1138a764-2212-4d0a-b02d-0dc14df91e08",
+    "url": "https://www.last.fm/music/Akon"
+  },
+  {
+    "name": "A Tribe Called Quest",
+    "mbid": "9689aa5a-4471-4fb4-9721-07cecda0fa9f",
+    "url": "https://www.last.fm/music/A+Tribe+Called+Quest"
+  },
+  {
+    "name": "Jordana",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jordana"
+  },
+  {
+    "name": "Leon Thomas",
+    "mbid": "46f70f03-d259-4314-b926-2db36c28d86f",
+    "url": "https://www.last.fm/music/Leon+Thomas"
+  },
+  {
+    "name": "Jessie J",
+    "mbid": "d24fb461-dee8-41fc-bb15-2f13bb2644a6",
+    "url": "https://www.last.fm/music/Jessie+J"
+  },
+  {
+    "name": "Sean Paul",
+    "mbid": "c3da3346-2643-48a7-93cd-011f6834b3d7",
+    "url": "https://www.last.fm/music/Sean+Paul"
+  },
+  {
+    "name": "a-ha",
+    "mbid": "7364dea6-ca9a-48e3-be01-b44ad0d19897",
+    "url": "https://www.last.fm/music/a-ha"
+  },
+  {
+    "name": "Avenged Sevenfold",
+    "mbid": "24e1b53c-3085-4581-8472-0b0088d2508c",
+    "url": "https://www.last.fm/music/Avenged+Sevenfold"
+  },
+  {
+    "name": "Bladee",
+    "mbid": "cd689e77-dfdd-4f81-b50c-5e5a3f5e38a4",
+    "url": "https://www.last.fm/music/Bladee"
+  },
+  {
+    "name": "Stromae",
+    "mbid": "ab2528d9-719f-4261-8098-21849222a0f2",
+    "url": "https://www.last.fm/music/Stromae"
+  },
+  {
+    "name": "Christina Aguilera",
+    "mbid": "b202beb7-99bd-47e7-8b72-195c8d72ebdd",
+    "url": "https://www.last.fm/music/Christina+Aguilera"
+  },
+  {
+    "name": "wave to earth",
+    "mbid": "",
+    "url": "https://www.last.fm/music/wave+to+earth"
+  },
+  {
+    "name": "Ms. Lauryn Hill",
+    "mbid": "e8414012-4a1c-4ad4-be5e-fc55294e28cc",
+    "url": "https://www.last.fm/music/Ms.+Lauryn+Hill"
+  },
+  {
+    "name": "The Fray",
+    "mbid": "2ddd167f-5b8a-4372-b350-6ad50493bac0",
+    "url": "https://www.last.fm/music/The+Fray"
+  },
+  {
+    "name": "Jennifer Lopez",
+    "mbid": "f0602f55-1770-483d-89bd-4bae0d0ac086",
+    "url": "https://www.last.fm/music/Jennifer+Lopez"
+  },
+  {
+    "name": "Ricky Montgomery",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ricky+Montgomery"
+  },
+  {
+    "name": "Snow Strippers",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Snow+Strippers"
+  },
+  {
+    "name": "A BOOGIE WIT DA HOODIE",
+    "mbid": "",
+    "url": "https://www.last.fm/music/A+BOOGIE+WIT+DA+HOODIE"
+  },
+  {
+    "name": "Declan Mckenna",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Declan+Mckenna"
+  },
+  {
+    "name": "Central Cee",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Central+Cee"
+  },
+  {
+    "name": "Ne-Yo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ne-Yo"
+  },
+  {
+    "name": "Title Fight",
+    "mbid": "1154d345-8061-4d04-a52a-6214288523ac",
+    "url": "https://www.last.fm/music/Title+Fight"
+  },
+  {
+    "name": "All Time Low",
+    "mbid": "62162215-b023-4f0e-84bd-1e9412d5b32c",
+    "url": "https://www.last.fm/music/All+Time+Low"
+  },
+  {
+    "name": "GIVĒON",
+    "mbid": "",
+    "url": "https://www.last.fm/music/GIV%C4%92ON"
+  },
+  {
+    "name": "alt-J",
+    "mbid": "fc7bbf00-fbaa-4736-986b-b3ac0266ca9b",
+    "url": "https://www.last.fm/music/alt-J"
+  },
+  {
+    "name": "Caroline Polachek",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Caroline+Polachek"
+  },
+  {
+    "name": "Karol G",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Karol+G"
+  },
+  {
+    "name": "Fergie",
+    "mbid": "4f9675d2-f6d5-486c-9b26-33dcca998500",
+    "url": "https://www.last.fm/music/Fergie"
+  },
+  {
+    "name": "My Bloody Valentine",
+    "mbid": "8ca01f46-53ac-4af2-8516-55a909c0905e",
+    "url": "https://www.last.fm/music/My+Bloody+Valentine"
+  },
+  {
+    "name": "Journey",
+    "mbid": "abd506e1-6f2b-4d6f-b937-92c267f6f88b",
+    "url": "https://www.last.fm/music/Journey"
+  },
+  {
+    "name": "Rauw Alejandro",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rauw+Alejandro"
+  },
+  {
+    "name": "Chezile",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chezile"
+  },
+  {
+    "name": "Grouplove",
+    "mbid": "d8e41375-bd8d-4e39-9da7-f0c171e97086",
+    "url": "https://www.last.fm/music/Grouplove"
+  },
+  {
+    "name": "Offset",
+    "mbid": "c0c401e0-eb84-4266-9ccb-9160988e7a8e",
+    "url": "https://www.last.fm/music/Offset"
+  },
+  {
+    "name": "U2",
+    "mbid": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+    "url": "https://www.last.fm/music/U2"
+  },
+  {
+    "name": "Jimi Hendrix",
+    "mbid": "06fb1c8b-566e-4cb2-985b-b467c90781d4",
+    "url": "https://www.last.fm/music/Jimi+Hendrix"
+  },
+  {
+    "name": "John Lennon",
+    "mbid": "4d5447d7-c61c-4120-ba1b-d7f471d385b9",
+    "url": "https://www.last.fm/music/John+Lennon"
+  },
+  {
+    "name": "Train",
+    "mbid": "e273f427-3287-472d-84fe-1a9f2f91e5e2",
+    "url": "https://www.last.fm/music/Train"
+  },
+  {
+    "name": "HAIM",
+    "mbid": "aef06569-098f-4218-a577-b413944d9493",
+    "url": "https://www.last.fm/music/HAIM"
+  },
+  {
+    "name": "Beach Weather",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Beach+Weather"
+  },
+  {
+    "name": "Metric",
+    "mbid": "4449ccf6-c948-4d33-aa97-b6ad98ce4b5b",
+    "url": "https://www.last.fm/music/Metric"
+  },
+  {
+    "name": "Sleep Token",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sleep+Token"
+  },
+  {
+    "name": "Role Model",
+    "mbid": "50e3c30f-d673-4304-8e7f-bc42e3370958",
+    "url": "https://www.last.fm/music/Role+Model"
+  },
+  {
+    "name": "Ashnikko",
+    "mbid": "7e3e73e3-41a7-435c-9af3-484c0d3ba682",
+    "url": "https://www.last.fm/music/Ashnikko"
+  },
+  {
+    "name": "Freddie Gibbs",
+    "mbid": "21645c31-fe1c-45a4-955c-3e172b12c3f9",
+    "url": "https://www.last.fm/music/Freddie+Gibbs"
+  },
+  {
+    "name": "Tinashe",
+    "mbid": "396a9525-0994-4542-b480-c4587feeb476",
+    "url": "https://www.last.fm/music/Tinashe"
+  },
+  {
+    "name": "Selena Gomez & the Scene",
+    "mbid": "37d0a847-32d3-480f-bd1e-101f50a3d332",
+    "url": "https://www.last.fm/music/Selena+Gomez+&+the+Scene"
+  },
+  {
+    "name": "Destiny's Child",
+    "mbid": "a796b92e-c137-4895-9c89-10f900617a4f",
+    "url": "https://www.last.fm/music/Destiny%27s+Child"
+  },
+  {
+    "name": "Flo Milli",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Flo+Milli"
+  },
+  {
+    "name": "Lauv",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lauv"
+  },
+  {
+    "name": "Skrillex",
+    "mbid": "ae002c5d-aac6-490b-a39a-30aa9e2edf2b",
+    "url": "https://www.last.fm/music/Skrillex"
+  },
+  {
+    "name": "Prince",
+    "mbid": "cdc0fff7-54cf-4052-a283-319b648670fd",
+    "url": "https://www.last.fm/music/Prince"
+  },
+  {
+    "name": "omar apollo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/omar+apollo"
+  },
+  {
+    "name": "Fred again..",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Fred+again.."
+  },
+  {
+    "name": "Johnny Cash",
+    "mbid": "d43d12a1-2dc9-4257-a2fd-0a3bb1081b86",
+    "url": "https://www.last.fm/music/Johnny+Cash"
+  },
+  {
+    "name": "Big Sean",
+    "mbid": "942a9807-9c1a-4a0e-a285-1fde2c5be9d1",
+    "url": "https://www.last.fm/music/Big+Sean"
+  },
+  {
+    "name": "The Script",
+    "mbid": "4c98aa1b-34eb-4336-987f-5e50aa059c00",
+    "url": "https://www.last.fm/music/The+Script"
+  },
+  {
+    "name": "Sonder",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sonder"
+  },
+  {
+    "name": "Kiss",
+    "mbid": "e1f1e33e-2e4c-4d43-b91b-7064068d3283",
+    "url": "https://www.last.fm/music/Kiss"
+  },
+  {
+    "name": "Whitney Houston",
+    "mbid": "0307edfc-437c-4b48-8700-80680e66a228",
+    "url": "https://www.last.fm/music/Whitney+Houston"
+  },
+  {
+    "name": "King Von",
+    "mbid": "",
+    "url": "https://www.last.fm/music/King+Von"
+  },
+  {
+    "name": "Daddy Yankee",
+    "mbid": "2f522f5c-111c-4ce8-8bd0-d82e97c227ad",
+    "url": "https://www.last.fm/music/Daddy+Yankee"
+  },
+  {
+    "name": "(G)I-DLE",
+    "mbid": "",
+    "url": "https://www.last.fm/music/(G)I-DLE"
+  },
+  {
+    "name": "Weyes Blood",
+    "mbid": "469d6414-1f06-43de-80d5-17762d4a356a",
+    "url": "https://www.last.fm/music/Weyes+Blood"
+  },
+  {
+    "name": "Pantera",
+    "mbid": "541f16f5-ad7a-428e-af89-9fa1b16d3c9c",
+    "url": "https://www.last.fm/music/Pantera"
+  },
+  {
+    "name": "Benny Blanco",
+    "mbid": "80fe825a-8327-4d99-aca1-67e13e85a0ae",
+    "url": "https://www.last.fm/music/Benny+Blanco"
+  },
+  {
+    "name": "Glorilla",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Glorilla"
+  },
+  {
+    "name": "Falling in Reverse",
+    "mbid": "e56ab1ae-1cfa-4d0e-b33b-af31bff677c7",
+    "url": "https://www.last.fm/music/Falling+in+Reverse"
+  },
+  {
+    "name": "Mike Posner",
+    "mbid": "5b64e344-b2fb-47bd-bd7b-4c793b17d472",
+    "url": "https://www.last.fm/music/Mike+Posner"
+  },
+  {
+    "name": "Creed",
+    "mbid": "f4b5b380-abbb-4790-a96d-a5317416908e",
+    "url": "https://www.last.fm/music/Creed"
+  },
+  {
+    "name": "Lynyrd Skynyrd",
+    "mbid": "c544ed4d-2390-4442-a83e-1ea2883b09c8",
+    "url": "https://www.last.fm/music/Lynyrd+Skynyrd"
+  },
+  {
+    "name": "Pavement",
+    "mbid": "36bfa85f-737b-41db-a8fc-b8825850ffc3",
+    "url": "https://www.last.fm/music/Pavement"
+  },
+  {
+    "name": "Crowded House",
+    "mbid": "9854d99f-d954-4c0f-9ae5-58a0cdd885f5",
+    "url": "https://www.last.fm/music/Crowded+House"
+  },
+  {
+    "name": "Beach Bunny",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Beach+Bunny"
+  },
+  {
+    "name": "Lykke Li",
+    "mbid": "cc7d4686-ea02-45fd-956e-94c1a322558c",
+    "url": "https://www.last.fm/music/Lykke+Li"
+  },
+  {
+    "name": "Paul McCartney",
+    "mbid": "ba550d0e-adac-4864-b88b-407cab5e76af",
+    "url": "https://www.last.fm/music/Paul+McCartney"
+  },
+  {
+    "name": "Wisp",
+    "mbid": "d907c1b8-1957-4cad-9f6c-b4ad8e5f6c4f",
+    "url": "https://www.last.fm/music/Wisp"
+  },
+  {
+    "name": "Sexyy Red",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sexyy+Red"
+  },
+  {
+    "name": "Steely Dan",
+    "mbid": "e01c3376-15fa-40d7-b747-5f219bdefdd7",
+    "url": "https://www.last.fm/music/Steely+Dan"
+  },
+  {
+    "name": "Hole",
+    "mbid": "1dcc8968-f2cd-441c-beda-6270f70f2863",
+    "url": "https://www.last.fm/music/Hole"
+  },
+  {
+    "name": "Disturbed",
+    "mbid": "dc75517c-d268-486d-bd5b-0eaff34eeef9",
+    "url": "https://www.last.fm/music/Disturbed"
+  },
+  {
+    "name": "The Pussycat Dolls",
+    "mbid": "1fda852b-92e9-4562-82fa-c52820a77b23",
+    "url": "https://www.last.fm/music/The+Pussycat+Dolls"
+  },
+  {
+    "name": "Phil Collins",
+    "mbid": "401c3991-b76b-499d-8082-9f2df958ef78",
+    "url": "https://www.last.fm/music/Phil+Collins"
+  },
+  {
+    "name": "Montell Fish",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Montell+Fish"
+  },
+  {
+    "name": "Audioslave",
+    "mbid": "020bfbb4-05c3-4c86-b372-17825c262094",
+    "url": "https://www.last.fm/music/Audioslave"
+  },
+  {
+    "name": "JVKE",
+    "mbid": "",
+    "url": "https://www.last.fm/music/JVKE"
+  },
+  {
+    "name": "Bill Withers",
+    "mbid": "fd1a2d9d-9bb6-44de-83a3-41560658aba9",
+    "url": "https://www.last.fm/music/Bill+Withers"
+  },
+  {
+    "name": "Portishead",
+    "mbid": "8f6bd1e4-fbe1-4f50-aa9b-94c450ec0f11",
+    "url": "https://www.last.fm/music/Portishead"
+  },
+  {
+    "name": "Lamp",
+    "mbid": "8bff8d1d-2e87-4b97-9909-2bd3404e92b9",
+    "url": "https://www.last.fm/music/Lamp"
+  },
+  {
+    "name": "Little Mix",
+    "mbid": "38f59974-2f4d-4bfa-b2e3-d2696de1b675",
+    "url": "https://www.last.fm/music/Little+Mix"
+  },
+  {
+    "name": "NAV",
+    "mbid": "8cc34dfe-aa43-4245-bc3b-8b09bc76df65",
+    "url": "https://www.last.fm/music/NAV"
+  },
+  {
+    "name": "The Living Tombstone",
+    "mbid": "3f6ee55e-d523-4dd8-a027-7a6af9909ae1",
+    "url": "https://www.last.fm/music/The+Living+Tombstone"
+  },
+  {
+    "name": "Dove Cameron",
+    "mbid": "831dcf03-b745-436b-922f-6a2baaf45e57",
+    "url": "https://www.last.fm/music/Dove+Cameron"
+  },
+  {
+    "name": "Jamiroquai",
+    "mbid": "f4857fb9-e255-4dc6-bd01-e4ca7cc68544",
+    "url": "https://www.last.fm/music/Jamiroquai"
+  },
+  {
+    "name": "Black Country, New Road",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Black+Country,+New+Road"
+  },
+  {
+    "name": "The Verve",
+    "mbid": "d4d17620-fd97-4574-92a8-a2cb7e72ce42",
+    "url": "https://www.last.fm/music/The+Verve"
+  },
+  {
+    "name": "Keshi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Keshi"
+  },
+  {
+    "name": "Kygo",
+    "mbid": "ba0e7638-0cd6-4ff4-8987-c3e224d22c23",
+    "url": "https://www.last.fm/music/Kygo"
+  },
+  {
+    "name": "The Backseat Lovers",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Backseat+Lovers"
+  },
+  {
+    "name": "Father John Misty",
+    "mbid": "172053e5-a7fb-4548-a64d-c53858b5e775",
+    "url": "https://www.last.fm/music/Father+John+Misty"
+  },
+  {
+    "name": "NMixx",
+    "mbid": "",
+    "url": "https://www.last.fm/music/NMixx"
+  },
+  {
+    "name": "Papa Roach",
+    "mbid": "c5eb9407-caeb-4303-b383-6929aa94021c",
+    "url": "https://www.last.fm/music/Papa+Roach"
+  },
+  {
+    "name": "Soulja Boy",
+    "mbid": "29eead4d-3793-4625-8727-c03edbb38b8b",
+    "url": "https://www.last.fm/music/Soulja+Boy"
+  },
+  {
+    "name": "Tool",
+    "mbid": "bbfa1e12-8b61-4ed8-bc6e-52d2298f41a2",
+    "url": "https://www.last.fm/music/Tool"
+  },
+  {
+    "name": "YoungBoy Never Broke Again",
+    "mbid": "",
+    "url": "https://www.last.fm/music/YoungBoy+Never+Broke+Again"
+  },
+  {
+    "name": "Crumb",
+    "mbid": "b1619173-e106-4515-8e1d-9d2022365459",
+    "url": "https://www.last.fm/music/Crumb"
+  },
+  {
+    "name": "Seventeen",
+    "mbid": "7d35e85a-8f73-4481-9c2b-24e142ed2307",
+    "url": "https://www.last.fm/music/Seventeen"
+  },
+  {
+    "name": "C418",
+    "mbid": "fac55e3c-d459-45ed-9f9f-f5078d3b3423",
+    "url": "https://www.last.fm/music/C418"
+  },
+  {
+    "name": "Kehlani",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kehlani"
+  },
+  {
+    "name": "Cynthia Erivo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cynthia+Erivo"
+  },
+  {
+    "name": "Erykah Badu",
+    "mbid": "321531fc-db73-4ffa-a959-61a61a2908c1",
+    "url": "https://www.last.fm/music/Erykah+Badu"
+  },
+  {
+    "name": "Neon Trees",
+    "mbid": "16243662-8538-4746-a0fb-0d15b5828b8e",
+    "url": "https://www.last.fm/music/Neon+Trees"
+  },
+  {
+    "name": "Nelly",
+    "mbid": "811900b2-68fc-4d41-8bad-69b7a1f4d628",
+    "url": "https://www.last.fm/music/Nelly"
+  },
+  {
+    "name": "Gym Class Heroes",
+    "mbid": "f4d4b515-0b74-423f-a161-db184330c37c",
+    "url": "https://www.last.fm/music/Gym+Class+Heroes"
+  },
+  {
+    "name": "Bruce Springsteen",
+    "mbid": "70248960-cb53-4ea4-943a-edb18f7d336f",
+    "url": "https://www.last.fm/music/Bruce+Springsteen"
+  },
+  {
+    "name": "Vince Staples",
+    "mbid": "78e854b8-9713-4ff2-9218-6b3784893bff",
+    "url": "https://www.last.fm/music/Vince+Staples"
+  },
+  {
+    "name": "MGK",
+    "mbid": "f6af669a-56ea-448a-a044-de76181ada33",
+    "url": "https://www.last.fm/music/MGK"
+  },
+  {
+    "name": "The Black Keys",
+    "mbid": "d15721d8-56b4-453d-b506-fc915b14cba2",
+    "url": "https://www.last.fm/music/The+Black+Keys"
+  },
+  {
+    "name": "Wheatus",
+    "mbid": "741a2892-1c5d-402f-a769-2096356c77d7",
+    "url": "https://www.last.fm/music/Wheatus"
+  },
+  {
+    "name": "Fitz and the Tantrums",
+    "mbid": "8560d4e8-05e2-4c20-980b-ad2db445dd5d",
+    "url": "https://www.last.fm/music/Fitz+and+the+Tantrums"
+  },
+  {
+    "name": "Blackbear",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Blackbear"
+  },
+  {
+    "name": "Flume",
+    "mbid": "35fd8d42-b4a6-4414-9827-8766bd0daa3c",
+    "url": "https://www.last.fm/music/Flume"
+  },
+  {
+    "name": "Beck",
+    "mbid": "a8baaa41-50f1-4f63-979e-717c14979dfb",
+    "url": "https://www.last.fm/music/Beck"
+  },
+  {
+    "name": "Sleeping with Sirens",
+    "mbid": "3267d5a3-c72c-4c3b-bafe-ec8a569c0b74",
+    "url": "https://www.last.fm/music/Sleeping+with+Sirens"
+  },
+  {
+    "name": "Alex Warren",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Alex+Warren"
+  },
+  {
+    "name": "Yot Club",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Yot+Club"
+  },
+  {
+    "name": "Dean Blunt",
+    "mbid": "e8bd5b47-e8b4-4671-a9f6-590a92e88898",
+    "url": "https://www.last.fm/music/Dean+Blunt"
+  },
+  {
+    "name": "Jimmy Eat World",
+    "mbid": "bbc5b66b-d037-4f26-aecf-0b129e7f876a",
+    "url": "https://www.last.fm/music/Jimmy+Eat+World"
+  },
+  {
+    "name": "Ian",
+    "mbid": "e1a597b0-492c-47d9-9b83-0faf328c7666",
+    "url": "https://www.last.fm/music/Ian"
+  },
+  {
+    "name": "Zara Larsson",
+    "mbid": "134e6410-6954-45d1-bd4a-0f2d2ad5471d",
+    "url": "https://www.last.fm/music/Zara+Larsson"
+  },
+  {
+    "name": "Bastille",
+    "mbid": "fefe1208-5d8c-48a7-9b6c-2f5ffb62b063",
+    "url": "https://www.last.fm/music/Bastille"
+  },
+  {
+    "name": "Beastie Boys",
+    "mbid": "9beb62b2-88db-4cea-801e-162cd344ee53",
+    "url": "https://www.last.fm/music/Beastie+Boys"
+  },
+  {
+    "name": "Modern Baseball",
+    "mbid": "e3513b4f-2a13-45f5-8ead-e79b1af0bf68",
+    "url": "https://www.last.fm/music/Modern+Baseball"
+  },
+  {
+    "name": "Superheaven",
+    "mbid": "16f7e748-59b4-4705-959c-9276be0ebf6a",
+    "url": "https://www.last.fm/music/Superheaven"
+  },
+  {
+    "name": "XG",
+    "mbid": "",
+    "url": "https://www.last.fm/music/XG"
+  },
+  {
+    "name": "SKI MASK THE SLUMP GOD",
+    "mbid": "",
+    "url": "https://www.last.fm/music/SKI+MASK+THE+SLUMP+GOD"
+  },
+  {
+    "name": "STAYC",
+    "mbid": "",
+    "url": "https://www.last.fm/music/STAYC"
+  },
+  {
+    "name": "Solange",
+    "mbid": "ff7103c5-da9e-434d-b8aa-037424ba45ad",
+    "url": "https://www.last.fm/music/Solange"
+  },
+  {
+    "name": "Dave",
+    "mbid": "c7740223-c657-4b0a-a0a4-b8349169e760",
+    "url": "https://www.last.fm/music/Dave"
+  },
+  {
+    "name": "Sevdaliza",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sevdaliza"
+  },
+  {
+    "name": "Exo",
+    "mbid": "f2f9845c-6803-4451-a10e-9c6673608667",
+    "url": "https://www.last.fm/music/Exo"
+  },
+  {
+    "name": "Westside Gunn",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Westside+Gunn"
+  },
+  {
+    "name": "Macklemore",
+    "mbid": "b6d7ec94-830c-44dd-b699-ce66556b7e55",
+    "url": "https://www.last.fm/music/Macklemore"
+  },
+  {
+    "name": "Simon & Garfunkel",
+    "mbid": "5d02f264-e225-41ff-83f7-d9b1f0b1874a",
+    "url": "https://www.last.fm/music/Simon+&+Garfunkel"
+  },
+  {
+    "name": "Logic",
+    "mbid": "b2f45ca6-2c92-438c-b037-ad4d8b92e90e",
+    "url": "https://www.last.fm/music/Logic"
+  },
+  {
+    "name": "The All-American Rejects",
+    "mbid": "09885b8e-f235-4b80-a02a-055539493173",
+    "url": "https://www.last.fm/music/The+All-American+Rejects"
+  },
+  {
+    "name": "Vampire Weekend",
+    "mbid": "af37c51c-0790-4a29-b995-456f98a6b8c9",
+    "url": "https://www.last.fm/music/Vampire+Weekend"
+  },
+  {
+    "name": "Sum 41",
+    "mbid": "f2eef649-a6d5-4114-afba-e50ab26254d2",
+    "url": "https://www.last.fm/music/Sum+41"
+  },
+  {
+    "name": "Rachel Chinouriri",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rachel+Chinouriri"
+  },
+  {
+    "name": "Modjo",
+    "mbid": "04bac789-bf59-4383-8ad7-799d20d969f7",
+    "url": "https://www.last.fm/music/Modjo"
+  },
+  {
+    "name": "French Montana",
+    "mbid": "45dc5f07-6609-4760-a933-8c9e0f858d05",
+    "url": "https://www.last.fm/music/French+Montana"
+  },
+  {
+    "name": "Mindless Self Indulgence",
+    "mbid": "44f42386-a733-4b51-8298-fe5c807d03aa",
+    "url": "https://www.last.fm/music/Mindless+Self+Indulgence"
+  },
+  {
+    "name": "Young Nudy",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Young+Nudy"
+  },
+  {
+    "name": "Wham!",
+    "mbid": "d570bb31-b9ca-45a4-a2d9-11b186d9c159",
+    "url": "https://www.last.fm/music/Wham%21"
+  },
+  {
+    "name": "Lizzo",
+    "mbid": "50d06c43-5392-4393-ba2d-f091d8167227",
+    "url": "https://www.last.fm/music/Lizzo"
+  },
+  {
+    "name": "Justice",
+    "mbid": "f9c1cc73-36ba-4f8d-ba12-7d2490608886",
+    "url": "https://www.last.fm/music/Justice"
+  },
+  {
+    "name": "Polo G",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Polo+G"
+  },
+  {
+    "name": "BigXthaPlug",
+    "mbid": "",
+    "url": "https://www.last.fm/music/BigXthaPlug"
+  },
+  {
+    "name": "Tom Odell",
+    "mbid": "fee6a7fb-80d9-4290-a171-e48f1f20e381",
+    "url": "https://www.last.fm/music/Tom+Odell"
+  },
+  {
+    "name": "The Alchemist",
+    "mbid": "6cb9186a-594e-4efb-be97-5d3129935c42",
+    "url": "https://www.last.fm/music/The+Alchemist"
+  },
+  {
+    "name": "Joey Valence & Brae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Joey+Valence+&+Brae"
+  },
+  {
+    "name": "James Arthur",
+    "mbid": "56f62fe8-d3a0-46e0-b5df-a64a8b4b4274",
+    "url": "https://www.last.fm/music/James+Arthur"
+  },
+  {
+    "name": "alex_g_offline",
+    "mbid": "",
+    "url": "https://www.last.fm/music/alex_g_offline"
+  },
+  {
+    "name": "Lil Durk",
+    "mbid": "c9cd225b-4883-428e-82c2-73e0b6282fb6",
+    "url": "https://www.last.fm/music/Lil+Durk"
+  },
+  {
+    "name": "Neutral Milk Hotel",
+    "mbid": "a506f761-2c22-4b2f-8a94-bd748c2c8f75",
+    "url": "https://www.last.fm/music/Neutral+Milk+Hotel"
+  },
+  {
+    "name": "fun.",
+    "mbid": "136c4166-85b3-4994-aa04-59857c434199",
+    "url": "https://www.last.fm/music/fun."
+  },
+  {
+    "name": "Martin Garrix",
+    "mbid": "3e1f2ee4-16be-4406-bf18-6173840cf2b1",
+    "url": "https://www.last.fm/music/Martin+Garrix"
+  },
+  {
+    "name": "Janet Jackson",
+    "mbid": "6be2828f-6c0d-4059-99d4-fa18acf1a296",
+    "url": "https://www.last.fm/music/Janet+Jackson"
+  },
+  {
+    "name": "Quavo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Quavo"
+  },
+  {
+    "name": "John Mayer",
+    "mbid": "8a81edd9-6f62-4ac7-afee-17dc0fec5fe7",
+    "url": "https://www.last.fm/music/John+Mayer"
+  },
+  {
+    "name": "Don Omar",
+    "mbid": "afbdfac9-2955-4404-ae22-c08bf1c1b51e",
+    "url": "https://www.last.fm/music/Don+Omar"
+  },
+  {
+    "name": "Ty Dolla $ign",
+    "mbid": "c3483e58-d700-4f08-a7ae-ad8c00011c94",
+    "url": "https://www.last.fm/music/Ty+Dolla+$ign"
+  },
+  {
+    "name": "Joy Again",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Joy+Again"
+  },
+  {
+    "name": "Eve",
+    "mbid": "f4464a44-3153-4c64-893c-a9d23fc93925",
+    "url": "https://www.last.fm/music/Eve"
+  },
+  {
+    "name": "Gesaffelstein",
+    "mbid": "cc3e537d-ff34-423f-8cd6-635a80f4dba7",
+    "url": "https://www.last.fm/music/Gesaffelstein"
+  },
+  {
+    "name": "Steven Universe",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Steven+Universe"
+  },
+  {
+    "name": "Hans Zimmer",
+    "mbid": "e6de1f3b-6484-491c-88dd-6d619f142abc",
+    "url": "https://www.last.fm/music/Hans+Zimmer"
+  },
+  {
+    "name": "Machine Girl",
+    "mbid": "c7df5ec5-380a-40f9-856f-28fb4a33d946",
+    "url": "https://www.last.fm/music/Machine+Girl"
+  },
+  {
+    "name": "Meek Mill",
+    "mbid": "31bcadcc-e1da-4cad-bec8-2f4f1d41b095",
+    "url": "https://www.last.fm/music/Meek+Mill"
+  },
+  {
+    "name": "Young the Giant",
+    "mbid": "7fe96b15-5608-430e-ad25-77a01353c5d9",
+    "url": "https://www.last.fm/music/Young+the+Giant"
+  },
+  {
+    "name": "Reneé Rapp",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rene%C3%A9+Rapp"
+  },
+  {
+    "name": "Icona Pop",
+    "mbid": "c5f259d0-abd8-418e-81ee-3965fd4e4e9a",
+    "url": "https://www.last.fm/music/Icona+Pop"
+  },
+  {
+    "name": "Sydney Rose",
+    "mbid": "1b8c2534-f4fd-47bd-b8b9-c869623fba78",
+    "url": "https://www.last.fm/music/Sydney+Rose"
+  },
+  {
+    "name": "Backstreet Boys",
+    "mbid": "2f569e60-0a1b-4fb9-95a4-3dc1525d1aad",
+    "url": "https://www.last.fm/music/Backstreet+Boys"
+  },
+  {
+    "name": "Aminé",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Amin%C3%A9"
+  },
+  {
+    "name": "Chris Isaak",
+    "mbid": "479497d4-e7c2-4e78-972e-56e78fac3995",
+    "url": "https://www.last.fm/music/Chris+Isaak"
+  },
+  {
+    "name": "Jeremih",
+    "mbid": "1c009a08-74d1-4682-bc56-8bfbe9e66b62",
+    "url": "https://www.last.fm/music/Jeremih"
+  },
+  {
+    "name": "Alvvays",
+    "mbid": "99450990-b24e-4132-bb68-235f8c3e2564",
+    "url": "https://www.last.fm/music/Alvvays"
+  },
+  {
+    "name": "Arcade Fire",
+    "mbid": "52074ba6-e495-4ef3-9bb4-0703888a9f68",
+    "url": "https://www.last.fm/music/Arcade+Fire"
+  },
+  {
+    "name": "Latto",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Latto"
+  },
+  {
+    "name": "Bakar",
+    "mbid": "62841baa-52ae-4d69-a086-75a129db03fc",
+    "url": "https://www.last.fm/music/Bakar"
+  },
+  {
+    "name": "Van Halen",
+    "mbid": "b665b768-0d83-4363-950c-31ed39317c15",
+    "url": "https://www.last.fm/music/Van+Halen"
+  },
+  {
+    "name": "2hollis",
+    "mbid": "",
+    "url": "https://www.last.fm/music/2hollis"
+  },
+  {
+    "name": "BØRNS",
+    "mbid": "b2befbb4-c585-4b05-8efa-3deebc8e1385",
+    "url": "https://www.last.fm/music/B%C3%98RNS"
+  },
+  {
+    "name": "Bhad Bhabie",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Bhad+Bhabie"
+  },
+  {
+    "name": "Cyndi Lauper",
+    "mbid": "7bd9e20e-74b9-446a-a2ed-a223f82a36e7",
+    "url": "https://www.last.fm/music/Cyndi+Lauper"
+  },
+  {
+    "name": "Stephen Sanchez",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Stephen+Sanchez"
+  },
+  {
+    "name": "Dayglow",
+    "mbid": "2bee95a7-1c0e-4b3c-99a5-4857d9d776dd",
+    "url": "https://www.last.fm/music/Dayglow"
+  },
+  {
+    "name": "Noah Cyrus",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Noah+Cyrus"
+  },
+  {
+    "name": "Liana Flores",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Liana+Flores"
+  },
+  {
+    "name": "B.o.B",
+    "mbid": "bb4d8640-fe09-4019-9068-2b22a086012c",
+    "url": "https://www.last.fm/music/B.o.B"
+  },
+  {
+    "name": "Rob Zombie",
+    "mbid": "c995a379-60b9-404b-bd97-a7e2de0751d3",
+    "url": "https://www.last.fm/music/Rob+Zombie"
+  },
+  {
+    "name": "Isabel LaRosa",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Isabel+LaRosa"
+  },
+  {
+    "name": "Iron Maiden",
+    "mbid": "ca891d65-d9b0-4258-89f7-e6ba29d83767",
+    "url": "https://www.last.fm/music/Iron+Maiden"
+  },
+  {
+    "name": "Morgan Wallen",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Morgan+Wallen"
+  },
+  {
+    "name": "Mumford & Sons",
+    "mbid": "c44e9c22-ef82-4a77-9bcd-af6c958446d6",
+    "url": "https://www.last.fm/music/Mumford+&+Sons"
+  },
+  {
+    "name": "Roddy Ricch",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Roddy+Ricch"
+  },
+  {
+    "name": "Modest Mouse",
+    "mbid": "a96ac800-bfcb-412a-8a63-0a98df600700",
+    "url": "https://www.last.fm/music/Modest+Mouse"
+  },
+  {
+    "name": "jimin",
+    "mbid": "",
+    "url": "https://www.last.fm/music/jimin"
+  },
+  {
+    "name": "LCD Soundsystem",
+    "mbid": "2aaf7396-6ab8-40f3-9776-a41c42c8e26b",
+    "url": "https://www.last.fm/music/LCD+Soundsystem"
+  },
+  {
+    "name": "Itzy",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Itzy"
+  },
+  {
+    "name": "Capital Cities",
+    "mbid": "119a2c67-e6d6-41cf-a58c-c51b75c80daa",
+    "url": "https://www.last.fm/music/Capital+Cities"
+  },
+  {
+    "name": "Neil Young",
+    "mbid": "75167b8b-44e4-407b-9d35-effe87b223cf",
+    "url": "https://www.last.fm/music/Neil+Young"
+  },
+  {
+    "name": "TLC",
+    "mbid": "99790314-885a-4975-8614-9c5bc890364d",
+    "url": "https://www.last.fm/music/TLC"
+  },
+  {
+    "name": "Sky Ferreira",
+    "mbid": "05f3353e-e2d9-4344-a3c9-8009dd8e0427",
+    "url": "https://www.last.fm/music/Sky+Ferreira"
+  },
+  {
+    "name": "Far East Movement",
+    "mbid": "6bd5655c-b7fe-48ee-8925-c2d2d8798618",
+    "url": "https://www.last.fm/music/Far+East+Movement"
+  },
+  {
+    "name": "Death Grips",
+    "mbid": "f9133036-ab3d-4e97-bd11-7a2c98ad148a",
+    "url": "https://www.last.fm/music/Death+Grips"
+  },
+  {
+    "name": "League of Legends",
+    "mbid": "9243bdc6-c518-4520-9100-1c2fbd9e5835",
+    "url": "https://www.last.fm/music/League+of+Legends"
+  },
+  {
+    "name": "Ichiko Aoba",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ichiko+Aoba"
+  },
+  {
+    "name": "Toby Fox",
+    "mbid": "1c26f82c-b35d-4c8e-a1f4-9c20747495c9",
+    "url": "https://www.last.fm/music/Toby+Fox"
+  },
+  {
+    "name": "Dolly Parton",
+    "mbid": "1d543e07-d0d2-4834-a8db-d65c50c2a856",
+    "url": "https://www.last.fm/music/Dolly+Parton"
+  },
+  {
+    "name": "Vansire",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Vansire"
+  },
+  {
+    "name": "Sean Kingston",
+    "mbid": "f7eb3be3-1065-4a53-94d4-e2d0c15c0b33",
+    "url": "https://www.last.fm/music/Sean+Kingston"
+  },
+  {
+    "name": "Sonic Youth",
+    "mbid": "be04c6a7-f7e8-4236-8124-3883d05eb259",
+    "url": "https://www.last.fm/music/Sonic+Youth"
+  },
+  {
+    "name": "Alan Walker",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Alan+Walker"
+  },
+  {
+    "name": "Diplo",
+    "mbid": "a56bd8f9-8ef8-4d63-89a4-794ed1360dd2",
+    "url": "https://www.last.fm/music/Diplo"
+  },
+  {
+    "name": "Jim Croce",
+    "mbid": "fcfa9543-e113-4ef9-9ef6-455ba4cbe7af",
+    "url": "https://www.last.fm/music/Jim+Croce"
+  },
+  {
+    "name": "Bad Omens",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Bad+Omens"
+  },
+  {
+    "name": "Ozzy Osbourne",
+    "mbid": "8aa5b65a-5b3c-4029-92bf-47a544356934",
+    "url": "https://www.last.fm/music/Ozzy+Osbourne"
+  },
+  {
+    "name": "Joni Mitchell",
+    "mbid": "a6de8ef9-b1a1-4756-97aa-481bbb8a4069",
+    "url": "https://www.last.fm/music/Joni+Mitchell"
+  },
+  {
+    "name": "yoasobi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/yoasobi"
+  },
+  {
+    "name": "Chrystal",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Chrystal"
+  },
+  {
+    "name": "Estelle",
+    "mbid": "d0a3080c-57a5-4c35-9389-84a5a2f819f8",
+    "url": "https://www.last.fm/music/Estelle"
+  },
+  {
+    "name": "Alice Phoebe Lou",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Alice+Phoebe+Lou"
+  },
+  {
+    "name": "Poppy",
+    "mbid": "a55ca0fa-18cc-4e7b-b6f3-2c1539417050",
+    "url": "https://www.last.fm/music/Poppy"
+  },
+  {
+    "name": "Dr. Dog",
+    "mbid": "e9aed5e5-ed35-4244-872e-194862290295",
+    "url": "https://www.last.fm/music/Dr.+Dog"
+  },
+  {
+    "name": "Katseye",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Katseye"
+  },
+  {
+    "name": "Nujabes",
+    "mbid": "1595addf-f76b-450a-a097-af852ff35f27",
+    "url": "https://www.last.fm/music/Nujabes"
+  },
+  {
+    "name": "Mom Jeans.",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Mom+Jeans."
+  },
+  {
+    "name": "Air",
+    "mbid": "ef3f5cea-b32e-4325-b8d4-96ae70a9fc2e",
+    "url": "https://www.last.fm/music/Air"
+  },
+  {
+    "name": "The Ronettes",
+    "mbid": "393e5448-896f-43e9-b80b-4ee58e1e71a4",
+    "url": "https://www.last.fm/music/The+Ronettes"
+  },
+  {
+    "name": "Santana",
+    "mbid": "f7fda030-0ba1-42e9-a385-3deebc939bc9",
+    "url": "https://www.last.fm/music/Santana"
+  },
+  {
+    "name": "Mustard",
+    "mbid": "827e33c4-8265-4245-8edc-8465888db3b8",
+    "url": "https://www.last.fm/music/Mustard"
+  },
+  {
+    "name": "Type O Negative",
+    "mbid": "a63df8c3-28e4-41db-bac2-c6c6e8ff8f28",
+    "url": "https://www.last.fm/music/Type+O+Negative"
+  },
+  {
+    "name": "Incubus",
+    "mbid": "e3e0abcd-7671-4482-a9d8-462f5acc9be5",
+    "url": "https://www.last.fm/music/Incubus"
+  },
+  {
+    "name": "NCT 127",
+    "mbid": "",
+    "url": "https://www.last.fm/music/NCT+127"
+  },
+  {
+    "name": "Owl City",
+    "mbid": "ad279295-653f-42e1-9aaa-b731df2e78ba",
+    "url": "https://www.last.fm/music/Owl+City"
+  },
+  {
+    "name": "Phantogram",
+    "mbid": "dfe78af2-779e-4137-826a-3073a16e3278",
+    "url": "https://www.last.fm/music/Phantogram"
+  },
+  {
+    "name": "The Kinks",
+    "mbid": "f53888c9-8bdc-4cc3-b2ab-ddab6bc5afb7",
+    "url": "https://www.last.fm/music/The+Kinks"
+  },
+  {
+    "name": "100 gecs",
+    "mbid": "",
+    "url": "https://www.last.fm/music/100+gecs"
+  },
+  {
+    "name": "Pet Shop Boys",
+    "mbid": "be540c02-7898-4b79-9acc-c8122c7d9e83",
+    "url": "https://www.last.fm/music/Pet+Shop+Boys"
+  },
+  {
+    "name": "Tim Maia",
+    "mbid": "446ac261-09ae-43f4-a7e1-2c753c0813ce",
+    "url": "https://www.last.fm/music/Tim+Maia"
+  },
+  {
+    "name": "Shelly",
+    "mbid": "bdcdec4b-71f5-4e5a-97e4-1ddf8c6e780b",
+    "url": "https://www.last.fm/music/Shelly"
+  },
+  {
+    "name": "ATEEZ",
+    "mbid": "",
+    "url": "https://www.last.fm/music/ATEEZ"
+  },
+  {
+    "name": "Meghan Trainor",
+    "mbid": "b2029169-2574-4305-820f-252a5fde3697",
+    "url": "https://www.last.fm/music/Meghan+Trainor"
+  },
+  {
+    "name": "Niall Horan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Niall+Horan"
+  },
+  {
+    "name": "Megadeth",
+    "mbid": "a9044915-8be3-4c7e-b11f-9e2d2ea0a91e",
+    "url": "https://www.last.fm/music/Megadeth"
+  },
+  {
+    "name": "Blue Öyster Cult",
+    "mbid": "c7423e0c-ab3e-4ab4-be10-cdff5a9d3062",
+    "url": "https://www.last.fm/music/Blue+%C3%96yster+Cult"
+  },
+  {
+    "name": "Men at Work",
+    "mbid": "395cc503-63b5-4a0b-a20a-604e3fcacea2",
+    "url": "https://www.last.fm/music/Men+at+Work"
+  },
+  {
+    "name": "Stone Temple Pilots",
+    "mbid": "8c32bb01-58a3-453b-8050-8c0620edb0e5",
+    "url": "https://www.last.fm/music/Stone+Temple+Pilots"
+  },
+  {
+    "name": "Rina Sawayama",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rina+Sawayama"
+  },
+  {
+    "name": "J. Eskine",
+    "mbid": "",
+    "url": "https://www.last.fm/music/J.+Eskine"
+  },
+  {
+    "name": "Lenny Kravitz",
+    "mbid": "0ef3f425-9bd2-4216-9dd2-219d2fe90f1f",
+    "url": "https://www.last.fm/music/Lenny+Kravitz"
+  },
+  {
+    "name": "Vundabar",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Vundabar"
+  },
+  {
+    "name": "Phoenix",
+    "mbid": "ec5bae34-cd8d-47cb-aa66-60bc0fdce77b",
+    "url": "https://www.last.fm/music/Phoenix"
+  },
+  {
+    "name": "ICE SPICE",
+    "mbid": "",
+    "url": "https://www.last.fm/music/ICE+SPICE"
+  },
+  {
+    "name": "Thirty Seconds to Mars",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Thirty+Seconds+to+Mars"
+  },
+  {
+    "name": "IU",
+    "mbid": "b9545342-1e6d-4dae-84ac-013374ad8d7c",
+    "url": "https://www.last.fm/music/IU"
+  },
+  {
+    "name": "will.i.am",
+    "mbid": "d574c9bd-46f6-440a-8d6a-8412a283eeb1",
+    "url": "https://www.last.fm/music/will.i.am"
+  },
+  {
+    "name": "SpiritBox",
+    "mbid": "",
+    "url": "https://www.last.fm/music/SpiritBox"
+  },
+  {
+    "name": "Wu-Tang Clan",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Wu-Tang+Clan"
+  },
+  {
+    "name": "She Wants Revenge",
+    "mbid": "f434ae2b-b203-490d-a8ac-aa9cd51c0e73",
+    "url": "https://www.last.fm/music/She+Wants+Revenge"
+  },
+  {
+    "name": "Girls' Generation",
+    "mbid": "b7442f18-d9be-4185-8b51-482510046156",
+    "url": "https://www.last.fm/music/Girls%27+Generation"
+  },
+  {
+    "name": "Agust D",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Agust+D"
+  },
+  {
+    "name": "Of Monsters and Men",
+    "mbid": "9e103f85-7af7-41d7-b83b-49ba8f0c5abf",
+    "url": "https://www.last.fm/music/Of+Monsters+and+Men"
+  },
+  {
+    "name": "Alessia Cara",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Alessia+Cara"
+  },
+  {
+    "name": "Jonas Brothers",
+    "mbid": "6e019bc6-5c23-4935-94f0-4a896631d846",
+    "url": "https://www.last.fm/music/Jonas+Brothers"
+  },
+  {
+    "name": "The Kooks",
+    "mbid": "f82f3a3e-29c2-42ca-b589-bc5dc210fa9e",
+    "url": "https://www.last.fm/music/The+Kooks"
+  },
+  {
+    "name": "Milky Chance",
+    "mbid": "6d230d98-fb8d-4421-a6e8-daca4e55d53e",
+    "url": "https://www.last.fm/music/Milky+Chance"
+  },
+  {
+    "name": "Cuco",
+    "mbid": "6d8192a4-afe5-4f82-a9ed-1b13036a1021",
+    "url": "https://www.last.fm/music/Cuco"
+  },
+  {
+    "name": "Scorpions",
+    "mbid": "c3cceeed-3332-4cf0-8c4c-bbde425147b6",
+    "url": "https://www.last.fm/music/Scorpions"
+  },
+  {
+    "name": "Patrick Watson",
+    "mbid": "592da4c4-9618-4a1a-a944-e60c05c39037",
+    "url": "https://www.last.fm/music/Patrick+Watson"
+  },
+  {
+    "name": "Key Glock",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Key+Glock"
+  },
+  {
+    "name": "DaBaby",
+    "mbid": "",
+    "url": "https://www.last.fm/music/DaBaby"
+  },
+  {
+    "name": "Enrique Iglesias",
+    "mbid": "35f866dc-c061-48ba-8157-cf2e0eac4857",
+    "url": "https://www.last.fm/music/Enrique+Iglesias"
+  },
+  {
+    "name": "Flyleaf",
+    "mbid": "9011971a-df29-4b57-8889-2e5e9a645cbe",
+    "url": "https://www.last.fm/music/Flyleaf"
+  },
+  {
+    "name": "Ciara",
+    "mbid": "03172286-f7ed-4864-a4db-459cd5ca9790",
+    "url": "https://www.last.fm/music/Ciara"
+  },
+  {
+    "name": "Dream, Ivory",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Dream,+Ivory"
+  },
+  {
+    "name": "Charlie Brown JR.",
+    "mbid": "29b550f2-04a3-4733-b6f5-4e347fac7e11",
+    "url": "https://www.last.fm/music/Charlie+Brown+JR."
+  },
+  {
+    "name": "The Who",
+    "mbid": "f2fa2f0c-b6d7-4d09-be35-910c110bb342",
+    "url": "https://www.last.fm/music/The+Who"
+  },
+  {
+    "name": "Rich Amiri",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rich+Amiri"
+  },
+  {
+    "name": "Iggy Azalea",
+    "mbid": "3a052c99-8c18-484a-8beb-9873b4fb3106",
+    "url": "https://www.last.fm/music/Iggy+Azalea"
+  },
+  {
+    "name": "American Football",
+    "mbid": "4ebb5ad3-9018-407d-8c24-c03011ab9ac6",
+    "url": "https://www.last.fm/music/American+Football"
+  },
+  {
+    "name": "NF",
+    "mbid": "adf056ea-8a89-4ac0-afba-c60d205f26d3",
+    "url": "https://www.last.fm/music/NF"
+  },
+  {
+    "name": "Walk the Moon",
+    "mbid": "d4aad415-9cd0-4845-9b05-0416fdcc9fc4",
+    "url": "https://www.last.fm/music/Walk+the+Moon"
+  },
+  {
+    "name": "Mötley Crüe",
+    "mbid": "26f07661-e115-471d-a930-206f5c89d17c",
+    "url": "https://www.last.fm/music/M%C3%B6tley+Cr%C3%BCe"
+  },
+  {
+    "name": "Alec Benjamin",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Alec+Benjamin"
+  },
+  {
+    "name": "V",
+    "mbid": "8f509d2c-a88e-4de2-8ec2-e8e863b9e41d",
+    "url": "https://www.last.fm/music/V"
+  },
+  {
+    "name": "Julie Doiron",
+    "mbid": "44727d86-a37c-449f-aa91-4a8554127336",
+    "url": "https://www.last.fm/music/Julie+Doiron"
+  },
+  {
+    "name": "Skillet",
+    "mbid": "1caf6919-a2ff-4b6b-85bc-c06add35f689",
+    "url": "https://www.last.fm/music/Skillet"
+  },
+  {
+    "name": "LMFAO",
+    "mbid": "ed5d9086-e8cd-473a-b96c-d81ad6c98f0d",
+    "url": "https://www.last.fm/music/LMFAO"
+  },
+  {
+    "name": "Basement",
+    "mbid": "a8c7ff7a-ebc0-42c7-8828-475decf0ccdd",
+    "url": "https://www.last.fm/music/Basement"
+  },
+  {
+    "name": "Paris Paloma",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Paris+Paloma"
+  },
+  {
+    "name": "Remi Wolf",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Remi+Wolf"
+  },
+  {
+    "name": "Kim Petras",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kim+Petras"
+  },
+  {
+    "name": "Royel Otis",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Royel+Otis"
+  },
+  {
+    "name": "Niki",
+    "mbid": "babbda81-1131-4b35-8342-7d69dfa539ff",
+    "url": "https://www.last.fm/music/Niki"
+  },
+  {
+    "name": "Wolf Alice",
+    "mbid": "3547f34a-db02-4ab7-b4a0-380e1ef951a9",
+    "url": "https://www.last.fm/music/Wolf+Alice"
+  },
+  {
+    "name": "Rainbow Kitten Surprise",
+    "mbid": "ab4e7869-86f5-455e-b52c-c89d7664c07b",
+    "url": "https://www.last.fm/music/Rainbow+Kitten+Surprise"
+  },
+  {
+    "name": "GoldLink",
+    "mbid": "7cb6e306-a75b-48b4-be00-2c4aa6bbe3a8",
+    "url": "https://www.last.fm/music/GoldLink"
+  },
+  {
+    "name": "Tay-K",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Tay-K"
+  },
+  {
+    "name": "Breaking Benjamin",
+    "mbid": "854a1807-025b-42a8-ba8c-2a39717f1d25",
+    "url": "https://www.last.fm/music/Breaking+Benjamin"
+  },
+  {
+    "name": "Jack Johnson",
+    "mbid": "ff6e677f-91dd-4986-a174-8db0474b1799",
+    "url": "https://www.last.fm/music/Jack+Johnson"
+  },
+  {
+    "name": "Jorge Ben Jor",
+    "mbid": "19499124-36d4-4ccc-b28d-04dde3d2076f",
+    "url": "https://www.last.fm/music/Jorge+Ben+Jor"
+  },
+  {
+    "name": "Pastel Ghost",
+    "mbid": "de0748c9-ed32-4a7c-aaaa-cfac23ec5299",
+    "url": "https://www.last.fm/music/Pastel+Ghost"
+  },
+  {
+    "name": "Tally Hall",
+    "mbid": "407d7ae0-c297-491c-bd19-4185e2b12ef2",
+    "url": "https://www.last.fm/music/Tally+Hall"
+  },
+  {
+    "name": "Oklou",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Oklou"
+  },
+  {
+    "name": "RM",
+    "mbid": "e6700906-07e1-48fe-bc46-33cf8b3f55b5",
+    "url": "https://www.last.fm/music/RM"
+  },
+  {
+    "name": "Leslie Odom Jr.",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Leslie+Odom+Jr."
+  },
+  {
+    "name": "Richy Mitch & The Coal Miners",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Richy+Mitch+&+The+Coal+Miners"
+  },
+  {
+    "name": "Fifty Fifty",
+    "mbid": "be1088c7-16ca-4549-94d9-22063ecae779",
+    "url": "https://www.last.fm/music/Fifty+Fifty"
+  },
+  {
+    "name": "Jorja Smith",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jorja+Smith"
+  },
+  {
+    "name": "Nina Simone",
+    "mbid": "2944824d-4c26-476f-a981-be849081942f",
+    "url": "https://www.last.fm/music/Nina+Simone"
+  },
+  {
+    "name": "Rita Lee",
+    "mbid": "3f962bf0-42a0-45a0-830f-07b66301d35f",
+    "url": "https://www.last.fm/music/Rita+Lee"
+  },
+  {
+    "name": "The Front Bottoms",
+    "mbid": "622b6000-ff0d-4ab3-9e98-c4916f3692c3",
+    "url": "https://www.last.fm/music/The+Front+Bottoms"
+  },
+  {
+    "name": "Fifth Harmony",
+    "mbid": "e565610b-9a8f-451d-b594-ea658d76f725",
+    "url": "https://www.last.fm/music/Fifth+Harmony"
+  },
+  {
+    "name": "The Drums",
+    "mbid": "c3ecef5d-84f3-4942-8c24-0a626343c3f4",
+    "url": "https://www.last.fm/music/The+Drums"
+  },
+  {
+    "name": "A Day to Remember",
+    "mbid": "db008806-16f6-48fc-8521-3d953709689d",
+    "url": "https://www.last.fm/music/A+Day+to+Remember"
+  },
+  {
+    "name": "Van Morrison",
+    "mbid": "a41ac10f-0a56-4672-9161-b83f9b223559",
+    "url": "https://www.last.fm/music/Van+Morrison"
+  },
+  {
+    "name": "Jade",
+    "mbid": "e935ff1c-1249-4e6a-a3eb-6739b8836d85",
+    "url": "https://www.last.fm/music/Jade"
+  },
+  {
+    "name": "Wonder Girls",
+    "mbid": "fcc7e9c8-3474-4221-b83a-27890982e0fa",
+    "url": "https://www.last.fm/music/Wonder+Girls"
+  },
+  {
+    "name": "Peach Pit",
+    "mbid": "660ad6f4-9a86-4d3c-9305-f269186b195c",
+    "url": "https://www.last.fm/music/Peach+Pit"
+  },
+  {
+    "name": "Jay Rock",
+    "mbid": "9880800a-f6f8-4f8f-a00e-b4b664776c0c",
+    "url": "https://www.last.fm/music/Jay+Rock"
+  },
+  {
+    "name": "Lewis Capaldi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lewis+Capaldi"
+  },
+  {
+    "name": "Xavier Wulf",
+    "mbid": "e167a029-fd9f-43c1-96c2-c3da6b15164f",
+    "url": "https://www.last.fm/music/Xavier+Wulf"
+  },
+  {
+    "name": "Bryan Adams",
+    "mbid": "4dbf5678-7a31-406a-abbe-232f8ac2cd63",
+    "url": "https://www.last.fm/music/Bryan+Adams"
+  },
+  {
+    "name": "Taio Cruz",
+    "mbid": "ba7d2626-38ce-4859-8495-bdb5732715c4",
+    "url": "https://www.last.fm/music/Taio+Cruz"
+  },
+  {
+    "name": "Siouxsie and the Banshees",
+    "mbid": "78ea5ea1-3c4d-4b7e-ac5d-68900319ebe2",
+    "url": "https://www.last.fm/music/Siouxsie+and+the+Banshees"
+  },
+  {
+    "name": "H.E.R.",
+    "mbid": "",
+    "url": "https://www.last.fm/music/H.E.R."
+  },
+  {
+    "name": "Frédéric Chopin",
+    "mbid": "81269a28-c616-4e87-8942-a6f8e59b68e4",
+    "url": "https://www.last.fm/music/Fr%C3%A9d%C3%A9ric+Chopin"
+  },
+  {
+    "name": "Khruangbin",
+    "mbid": "aea4c9b9-9f8d-49dc-b2ca-57d6f26e8634",
+    "url": "https://www.last.fm/music/Khruangbin"
+  },
+  {
+    "name": "JackBoys",
+    "mbid": "",
+    "url": "https://www.last.fm/music/JackBoys"
+  },
+  {
+    "name": "*NSYNC",
+    "mbid": "603ba565-3967-4be1-931e-9cb945394e86",
+    "url": "https://www.last.fm/music/%2ANSYNC"
+  },
+  {
+    "name": "Loona",
+    "mbid": "cb525a30-b590-448f-b94d-fab86e0e8756",
+    "url": "https://www.last.fm/music/Loona"
+  },
+  {
+    "name": "Pusha T",
+    "mbid": "14ecd19f-7121-4192-8549-e5056241a42f",
+    "url": "https://www.last.fm/music/Pusha+T"
+  },
+  {
+    "name": "Ava Max",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ava+Max"
+  },
+  {
+    "name": "Ado",
+    "mbid": "ca195d97-30d9-4870-8a52-7fd3c2e175c3",
+    "url": "https://www.last.fm/music/Ado"
+  },
+  {
+    "name": "Sophie Ellis-Bextor",
+    "mbid": "c4b87e45-c07a-460f-9c58-8d15328e2964",
+    "url": "https://www.last.fm/music/Sophie+Ellis-Bextor"
+  },
+  {
+    "name": "ShyGirl",
+    "mbid": "",
+    "url": "https://www.last.fm/music/ShyGirl"
+  },
+  {
+    "name": "Spice Girls",
+    "mbid": "bf0caafc-2b20-4e07-ab85-87e14ff430ce",
+    "url": "https://www.last.fm/music/Spice+Girls"
+  },
+  {
+    "name": "YNW Melly",
+    "mbid": "",
+    "url": "https://www.last.fm/music/YNW+Melly"
+  },
+  {
+    "name": "Rise Against",
+    "mbid": "606bf117-494f-4864-891f-09d63ff6aa4b",
+    "url": "https://www.last.fm/music/Rise+Against"
+  },
+  {
+    "name": "Novo Amor",
+    "mbid": "61a57a2a-4c7f-4b41-8109-1070a9c32242",
+    "url": "https://www.last.fm/music/Novo+Amor"
+  },
+  {
+    "name": "Chance the Rapper",
+    "mbid": "373a4c98-a46b-48e4-86ec-f6ca65b4f438",
+    "url": "https://www.last.fm/music/Chance+the+Rapper"
+  },
+  {
+    "name": "Interpol",
+    "mbid": "c44ff8d1-8c81-45c8-abd6-5feefb07b764",
+    "url": "https://www.last.fm/music/Interpol"
+  },
+  {
+    "name": "JiSoo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/JiSoo"
+  },
+  {
+    "name": "Bo Burnham",
+    "mbid": "889db25c-d1df-457a-b0d1-c405f34a01f3",
+    "url": "https://www.last.fm/music/Bo+Burnham"
+  },
+  {
+    "name": "Have a Nice Life",
+    "mbid": "70923a5d-d3ba-4ef7-9064-ea5f709aa076",
+    "url": "https://www.last.fm/music/Have+a+Nice+Life"
+  },
+  {
+    "name": "Internet Money",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Internet+Money"
+  },
+  {
+    "name": "3 Doors Down",
+    "mbid": "2386cd66-e923-4e8e-bf14-2eebe2e9b973",
+    "url": "https://www.last.fm/music/3+Doors+Down"
+  },
+  {
+    "name": "The Internet",
+    "mbid": "45804465-4271-4e6a-b881-ce668ef09530",
+    "url": "https://www.last.fm/music/The+Internet"
+  },
+  {
+    "name": "Flying Lotus",
+    "mbid": "fc7376fe-1a6f-4414-b4a7-83f50ed59c92",
+    "url": "https://www.last.fm/music/Flying+Lotus"
+  },
+  {
+    "name": "Slow Pulp",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Slow+Pulp"
+  },
+  {
+    "name": "Fleet Foxes",
+    "mbid": "fa97dd36-1b82-43d7-a6e4-2adeafd59cef",
+    "url": "https://www.last.fm/music/Fleet+Foxes"
+  },
+  {
+    "name": "Djavan",
+    "mbid": "751e517d-9663-4692-8c20-942e16d484c5",
+    "url": "https://www.last.fm/music/Djavan"
+  },
+  {
+    "name": "Leith Ross",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Leith+Ross"
+  },
+  {
+    "name": "Ashe",
+    "mbid": "6301d329-9bc9-4ff1-a24b-9dc07254b9aa",
+    "url": "https://www.last.fm/music/Ashe"
+  },
+  {
+    "name": "Aretha Franklin",
+    "mbid": "2f9ecbed-27be-40e6-abca-6de49d50299e",
+    "url": "https://www.last.fm/music/Aretha+Franklin"
+  },
+  {
+    "name": "Loathe",
+    "mbid": "e9ea0fbc-ccc7-4e98-9290-0a41aa848fa2",
+    "url": "https://www.last.fm/music/Loathe"
+  },
+  {
+    "name": "Peso Pluma",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Peso+Pluma"
+  },
+  {
+    "name": "Little Simz",
+    "mbid": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
+    "url": "https://www.last.fm/music/Little+Simz"
+  },
+  {
+    "name": "Gregory Alan Isakov",
+    "mbid": "5c61efe6-3cdf-4160-b43c-9274944369e6",
+    "url": "https://www.last.fm/music/Gregory+Alan+Isakov"
+  },
+  {
+    "name": "ECCO2k",
+    "mbid": "66ab36ce-8f58-46fb-9284-396c2c90ecbd",
+    "url": "https://www.last.fm/music/ECCO2k"
+  },
+  {
+    "name": "Le Tigre",
+    "mbid": "955838b6-ba6c-452f-9642-0ab68bfac926",
+    "url": "https://www.last.fm/music/Le+Tigre"
+  },
+  {
+    "name": "Mary J. Blige",
+    "mbid": "db76c5ca-d555-4f09-b1db-baa1b713d875",
+    "url": "https://www.last.fm/music/Mary+J.+Blige"
+  },
+  {
+    "name": "Nick Drake",
+    "mbid": "99ea432a-e3d8-42cb-9d5e-db316a6a8458",
+    "url": "https://www.last.fm/music/Nick+Drake"
+  },
+  {
+    "name": "Sophie",
+    "mbid": "f79d1239-0723-4a0c-9858-be69961945ee",
+    "url": "https://www.last.fm/music/Sophie"
+  },
+  {
+    "name": "Counting Crows",
+    "mbid": "a0327dc2-dc76-44d5-aec6-47cd2dff1469",
+    "url": "https://www.last.fm/music/Counting+Crows"
+  },
+  {
+    "name": "Aaron May",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Aaron+May"
+  },
+  {
+    "name": "Sir Mix-A-Lot",
+    "mbid": "05539fb8-b7a5-4012-97a9-5e27ddc031fb",
+    "url": "https://www.last.fm/music/Sir+Mix-A-Lot"
+  },
+  {
+    "name": "Etta James",
+    "mbid": "e22d2f66-881e-41ca-9356-544697ee5f90",
+    "url": "https://www.last.fm/music/Etta+James"
+  },
+  {
+    "name": "The Last Dinner Party",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Last+Dinner+Party"
+  },
+  {
+    "name": "Foreigner",
+    "mbid": "160629ab-ec18-4931-8c95-02cb92d06186",
+    "url": "https://www.last.fm/music/Foreigner"
+  },
+  {
+    "name": "t.A.T.u.",
+    "mbid": "7c20f558-d664-42bd-b6f1-81acf9dbb72d",
+    "url": "https://www.last.fm/music/t.A.T.u."
+  },
+  {
+    "name": "Snow Patrol",
+    "mbid": "a66999a7-ae5c-460e-ba94-1a01143ae847",
+    "url": "https://www.last.fm/music/Snow+Patrol"
+  },
+  {
+    "name": "LeeHi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/LeeHi"
+  },
+  {
+    "name": "Luke Combs",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Luke+Combs"
+  },
+  {
+    "name": "Bizarrap",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Bizarrap"
+  },
+  {
+    "name": "Hoobastank",
+    "mbid": "2fa0d3ac-b64c-401a-b0a1-4915ba6cc157",
+    "url": "https://www.last.fm/music/Hoobastank"
+  },
+  {
+    "name": "Nayeon",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Nayeon"
+  },
+  {
+    "name": "Portugal. The Man",
+    "mbid": "3599a39e-4e10-4cb5-90d4-c8a015ebc73b",
+    "url": "https://www.last.fm/music/Portugal.+The+Man"
+  },
+  {
+    "name": "Mareux",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Mareux"
+  },
+  {
+    "name": "The Japanese House",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Japanese+House"
+  },
+  {
+    "name": "FINNEAS",
+    "mbid": "",
+    "url": "https://www.last.fm/music/FINNEAS"
+  },
+  {
+    "name": "Seulgi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Seulgi"
+  },
+  {
+    "name": "DG e Batidão Stronda",
+    "mbid": "",
+    "url": "https://www.last.fm/music/DG+e+Batid%C3%A3o+Stronda"
+  },
+  {
+    "name": "Molchat Doma",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Molchat+Doma"
+  },
+  {
+    "name": "Rio Romeo",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Rio+Romeo"
+  },
+  {
+    "name": "Gal Costa",
+    "mbid": "fc63a914-272d-4b95-9221-61adcce6f793",
+    "url": "https://www.last.fm/music/Gal+Costa"
+  },
+  {
+    "name": "Pyotr Ilyich Tchaikovsky",
+    "mbid": "9ddd7abc-9e1b-471d-8031-583bc6bc8be9",
+    "url": "https://www.last.fm/music/Pyotr+Ilyich+Tchaikovsky"
+  },
+  {
+    "name": "Marina Sena",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Marina+Sena"
+  },
+  {
+    "name": "The Game",
+    "mbid": "baec7ed1-32d7-482d-9455-33c403e61952",
+    "url": "https://www.last.fm/music/The+Game"
+  },
+  {
+    "name": "SHINee",
+    "mbid": "70e5098b-c4ae-4cd7-9799-3c1b9b57c753",
+    "url": "https://www.last.fm/music/SHINee"
+  },
+  {
+    "name": "FloyyMenor",
+    "mbid": "",
+    "url": "https://www.last.fm/music/FloyyMenor"
+  },
+  {
+    "name": "Cascada",
+    "mbid": "04af2581-6692-4f14-a7fe-151a36f20368",
+    "url": "https://www.last.fm/music/Cascada"
+  },
+  {
+    "name": "Bleachers",
+    "mbid": "58e235fc-f6ea-4614-9ed4-9855a5665ae1",
+    "url": "https://www.last.fm/music/Bleachers"
+  },
+  {
+    "name": "Sports",
+    "mbid": "b03bbf4e-4c7a-4acc-8d30-71c360d95b4b",
+    "url": "https://www.last.fm/music/Sports"
+  },
+  {
+    "name": "amaarae",
+    "mbid": "",
+    "url": "https://www.last.fm/music/amaarae"
+  },
+  {
+    "name": "Adore",
+    "mbid": "fd184a8d-1c77-43de-b2b7-c321e4b49afa",
+    "url": "https://www.last.fm/music/Adore"
+  },
+  {
+    "name": "bazzi",
+    "mbid": "",
+    "url": "https://www.last.fm/music/bazzi"
+  },
+  {
+    "name": "Bibi",
+    "mbid": "ec387e78-d510-447b-be78-4945b55fe708",
+    "url": "https://www.last.fm/music/Bibi"
+  },
+  {
+    "name": "Bonnie Tyler",
+    "mbid": "0aa8294b-6332-4b65-b677-e3a1f8591d3b",
+    "url": "https://www.last.fm/music/Bonnie+Tyler"
+  },
+  {
+    "name": "BK",
+    "mbid": "a0c2e9c5-c065-4933-97be-e64cff3c4532",
+    "url": "https://www.last.fm/music/BK"
+  },
+  {
+    "name": "nettspend",
+    "mbid": "",
+    "url": "https://www.last.fm/music/nettspend"
+  },
+  {
+    "name": "Yeule",
+    "mbid": "31da7b06-bc30-4a1f-9f4a-c2ac1a84167f",
+    "url": "https://www.last.fm/music/Yeule"
+  },
+  {
+    "name": "Third Eye Blind",
+    "mbid": "92a42e82-b36f-4308-82c1-68bad2e03c89",
+    "url": "https://www.last.fm/music/Third+Eye+Blind"
+  },
+  {
+    "name": "Mk.gee",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Mk.gee"
+  },
+  {
+    "name": "BABYMETAL",
+    "mbid": "27e2997f-f7a1-4353-bcc4-57b9274fa9a4",
+    "url": "https://www.last.fm/music/BABYMETAL"
+  },
+  {
+    "name": "Creepy Nuts",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Creepy+Nuts"
+  },
+  {
+    "name": "Frankie Valli",
+    "mbid": "3f64d38c-1ad4-4fb0-941e-7f4b51d4c9e6",
+    "url": "https://www.last.fm/music/Frankie+Valli"
+  },
+  {
+    "name": "Alanis Morissette",
+    "mbid": "4bdcee62-4902-4773-8cd1-e252e2e31225",
+    "url": "https://www.last.fm/music/Alanis+Morissette"
+  },
+  {
+    "name": "Ramones",
+    "mbid": "d6ed7887-a401-47a8-893c-34b967444d26",
+    "url": "https://www.last.fm/music/Ramones"
+  },
+  {
+    "name": "Yungblud",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Yungblud"
+  },
+  {
+    "name": "Eurythmics",
+    "mbid": "b4d32cff-f19e-455f-86c4-f347d824ca61",
+    "url": "https://www.last.fm/music/Eurythmics"
+  },
+  {
+    "name": "Kai",
+    "mbid": "a29ec9aa-918f-40a0-81a7-b7350051fe33",
+    "url": "https://www.last.fm/music/Kai"
+  },
+  {
+    "name": "Nemzzz",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Nemzzz"
+  },
+  {
+    "name": "Keyshia Cole",
+    "mbid": "ef73e6ed-9096-4ddb-9799-b94874d0ce33",
+    "url": "https://www.last.fm/music/Keyshia+Cole"
+  },
+  {
+    "name": "Kids See Ghosts",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kids+See+Ghosts"
+  },
+  {
+    "name": "Paul Simon",
+    "mbid": "05517043-ff78-4988-9c22-88c68588ebb9",
+    "url": "https://www.last.fm/music/Paul+Simon"
+  },
+  {
+    "name": "SYML",
+    "mbid": "",
+    "url": "https://www.last.fm/music/SYML"
+  },
+  {
+    "name": "Simple Plan",
+    "mbid": "b345af35-205e-4eca-8006-029e5c20127e",
+    "url": "https://www.last.fm/music/Simple+Plan"
+  },
+  {
+    "name": "Dreamville",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Dreamville"
+  },
+  {
+    "name": "Gerry Rafferty",
+    "mbid": "563201cb-721c-4cfb-acca-c1ba69e3d1fb",
+    "url": "https://www.last.fm/music/Gerry+Rafferty"
+  },
+  {
+    "name": "Orion Sun",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Orion+Sun"
+  },
+  {
+    "name": "Clams Casino",
+    "mbid": "772a0eb3-fe31-4a08-b583-690296f44900",
+    "url": "https://www.last.fm/music/Clams+Casino"
+  },
+  {
+    "name": "Chris Stapleton",
+    "mbid": "bdf9a24e-2bb5-4218-b4d8-e33769843f24",
+    "url": "https://www.last.fm/music/Chris+Stapleton"
+  },
+  {
+    "name": "Chico Buarque",
+    "mbid": "3a5d1cc7-627e-48ea-aba3-fdd20d782c33",
+    "url": "https://www.last.fm/music/Chico+Buarque"
+  },
+  {
+    "name": "Cochise",
+    "mbid": "f0340cd2-9eb5-4399-b18c-08afacd1f4b3",
+    "url": "https://www.last.fm/music/Cochise"
+  },
+  {
+    "name": "Maluma",
+    "mbid": "e8979f75-9110-4df8-ac70-898898d080d1",
+    "url": "https://www.last.fm/music/Maluma"
+  },
+  {
+    "name": "Yves Tumor",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Yves+Tumor"
+  },
+  {
+    "name": "Still Woozy",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Still+Woozy"
+  },
+  {
+    "name": "Jack Stauber's Micropop",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jack+Stauber%27s+Micropop"
+  },
+  {
+    "name": "Young Stoner Life",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Young+Stoner+Life"
+  },
+  {
+    "name": "DNCE",
+    "mbid": "",
+    "url": "https://www.last.fm/music/DNCE"
+  },
+  {
+    "name": "Heart",
+    "mbid": "bdbd48f5-abf3-4a4f-9a21-4551dbc3fde9",
+    "url": "https://www.last.fm/music/Heart"
+  },
+  {
+    "name": "Al Green",
+    "mbid": "fb7272ba-f130-4f0a-934d-6eeea4c18c9a",
+    "url": "https://www.last.fm/music/Al+Green"
+  },
+  {
+    "name": "Freddie Dredd",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Freddie+Dredd"
+  },
+  {
+    "name": "Sam Fender",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sam+Fender"
+  },
+  {
+    "name": "Bones",
+    "mbid": "e3f7631b-e50b-4923-9049-2fa84dfcaf71",
+    "url": "https://www.last.fm/music/Bones"
+  },
+  {
+    "name": "sign crushes motorist",
+    "mbid": "",
+    "url": "https://www.last.fm/music/sign+crushes+motorist"
+  },
+  {
+    "name": "ANAVITÓRIA",
+    "mbid": "",
+    "url": "https://www.last.fm/music/ANAVIT%C3%93RIA"
+  },
+  {
+    "name": "The Rare Occasions",
+    "mbid": "",
+    "url": "https://www.last.fm/music/The+Rare+Occasions"
+  },
+  {
+    "name": "Death Cab for Cutie",
+    "mbid": "0039c7ae-e1a7-4a7d-9b49-0cbc716821a6",
+    "url": "https://www.last.fm/music/Death+Cab+for+Cutie"
+  },
+  {
+    "name": "Fugees",
+    "mbid": "ea321799-9b1d-4e74-a074-a5facf597d82",
+    "url": "https://www.last.fm/music/Fugees"
+  },
+  {
+    "name": "Claude Debussy",
+    "mbid": "be50643c-0377-4968-b48c-47e06b2e2a3b",
+    "url": "https://www.last.fm/music/Claude+Debussy"
+  },
+  {
+    "name": "Øneheart",
+    "mbid": "",
+    "url": "https://www.last.fm/music/%C3%98neheart"
+  },
+  {
+    "name": "Slayer",
+    "mbid": "bdacc37b-8633-4bf8-9dd5-4662ee651aec",
+    "url": "https://www.last.fm/music/Slayer"
+  },
+  {
+    "name": "King Gizzard & The Lizard Wizard",
+    "mbid": "f58384a4-2ad2-4f24-89c5-c7b74ae1cce7",
+    "url": "https://www.last.fm/music/King+Gizzard+&+The+Lizard+Wizard"
+  },
+  {
+    "name": "Mr.kitty",
+    "mbid": "4be3b2fa-0b31-445c-babf-475944be8971",
+    "url": "https://www.last.fm/music/Mr.kitty"
+  },
+  {
+    "name": "Robbie Williams",
+    "mbid": "db4624cf-0e44-481e-a9dc-2142b833ec2f",
+    "url": "https://www.last.fm/music/Robbie+Williams"
+  },
+  {
+    "name": "Olly Alexander (Years & Years)",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Olly+Alexander+(Years+&+Years)"
+  },
+  {
+    "name": "Tyga",
+    "mbid": "ce09ea31-3d4a-4487-a797-e315175457a0",
+    "url": "https://www.last.fm/music/Tyga"
+  },
+  {
+    "name": "lil tjay",
+    "mbid": "",
+    "url": "https://www.last.fm/music/lil+tjay"
+  },
+  {
+    "name": "Jin",
+    "mbid": "bd9e7f29-d80b-443d-9ce0-6153b8179022",
+    "url": "https://www.last.fm/music/Jin"
+  },
+  {
+    "name": "Miki Matsubara",
+    "mbid": "994c1efe-ab1c-4b1f-a2b7-01758ef963b9",
+    "url": "https://www.last.fm/music/Miki+Matsubara"
+  },
+  {
+    "name": "Lloyd",
+    "mbid": "e9296a90-9c59-4657-9165-1f1b5319de00",
+    "url": "https://www.last.fm/music/Lloyd"
+  },
+  {
+    "name": "Bigbang",
+    "mbid": "ec2bcb77-b9a1-49e2-bfe7-419586bbef48",
+    "url": "https://www.last.fm/music/Bigbang"
+  },
+  {
+    "name": "The Prodigy",
+    "mbid": "4a4ee089-93b1-4470-af9a-6ff575d32704",
+    "url": "https://www.last.fm/music/The+Prodigy"
+  },
+  {
+    "name": "Feid",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Feid"
+  },
+  {
+    "name": "Soft Cell",
+    "mbid": "7fb50287-029d-47cc-825a-235ca28024b2",
+    "url": "https://www.last.fm/music/Soft+Cell"
+  },
+  {
+    "name": "Tainy",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Tainy"
+  },
+  {
+    "name": "King Krule",
+    "mbid": "c0daae21-ec2a-4dd0-a323-4f53f5945d04",
+    "url": "https://www.last.fm/music/King+Krule"
+  },
+  {
+    "name": "Supertramp",
+    "mbid": "d2ff6b6b-fc30-48dc-8952-06f9d8fc64f8",
+    "url": "https://www.last.fm/music/Supertramp"
+  },
+  {
+    "name": "Aaliyah",
+    "mbid": "bc85da58-52d9-457d-ae8d-5d8d4ec870a9",
+    "url": "https://www.last.fm/music/Aaliyah"
+  },
+  {
+    "name": "ThxSoMch",
+    "mbid": "",
+    "url": "https://www.last.fm/music/ThxSoMch"
+  },
+  {
+    "name": "T-Pain",
+    "mbid": "",
+    "url": "https://www.last.fm/music/T-Pain"
+  },
+  {
+    "name": "Oliver Tree",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Oliver+Tree"
+  },
+  {
+    "name": "Modern Talking",
+    "mbid": "98913495-8867-43b3-aa8d-db88ee4d4cdc",
+    "url": "https://www.last.fm/music/Modern+Talking"
+  },
+  {
+    "name": "yung kai",
+    "mbid": "",
+    "url": "https://www.last.fm/music/yung+kai"
+  },
+  {
+    "name": "Coolio",
+    "mbid": "cc30e630-8c75-4d78-b205-8e2edc6bdaa7",
+    "url": "https://www.last.fm/music/Coolio"
+  },
+  {
+    "name": "Yves",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Yves"
+  },
+  {
+    "name": "John Legend",
+    "mbid": "75a72702-a5ef-4513-bca5-c5b944903546",
+    "url": "https://www.last.fm/music/John+Legend"
+  },
+  {
+    "name": "Shaggy",
+    "mbid": "fc63d806-ca89-4ea3-a404-ee6de695743f",
+    "url": "https://www.last.fm/music/Shaggy"
+  },
+  {
+    "name": "Alok",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Alok"
+  },
+  {
+    "name": "Smino",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Smino"
+  },
+  {
+    "name": "Becky G",
+    "mbid": "eb90c8b8-d733-4c14-a293-105c3d1ba9b3",
+    "url": "https://www.last.fm/music/Becky+G"
+  },
+  {
+    "name": "Sir Chloe",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Sir+Chloe"
+  },
+  {
+    "name": "John + Jane Q. Public",
+    "mbid": "",
+    "url": "https://www.last.fm/music/John+%252B+Jane+Q.+Public"
+  },
+  {
+    "name": "Porter Robinson",
+    "mbid": "4ae36ade-1798-48c4-b06b-cc68b7d3d83f",
+    "url": "https://www.last.fm/music/Porter+Robinson"
+  },
+  {
+    "name": "Joe Hisaishi",
+    "mbid": "a7e7b49b-2546-4c6e-b11a-ea3c4326e296",
+    "url": "https://www.last.fm/music/Joe+Hisaishi"
+  },
+  {
+    "name": "Chet Baker",
+    "mbid": "1ba1d493-7114-45e2-b163-a36d49a0c065",
+    "url": "https://www.last.fm/music/Chet+Baker"
+  },
+  {
+    "name": "Misfits",
+    "mbid": "936addc3-91aa-49de-8ec0-0dc186de151f",
+    "url": "https://www.last.fm/music/Misfits"
+  },
+  {
+    "name": "Alphaville",
+    "mbid": "31aa6f87-8d00-4ae9-a5cc-6d7eeea109d2",
+    "url": "https://www.last.fm/music/Alphaville"
+  },
+  {
+    "name": "GOT7",
+    "mbid": "9f6a8346-15f3-4ec4-a632-f5270b0945a3",
+    "url": "https://www.last.fm/music/GOT7"
+  },
+  {
+    "name": "Boney M.",
+    "mbid": "5403bf6e-bc1d-4e62-b31f-926a2bf66a14",
+    "url": "https://www.last.fm/music/Boney+M."
+  },
+  {
+    "name": "Fugazi",
+    "mbid": "233fc3f3-6de2-465c-985e-e721dbabbace",
+    "url": "https://www.last.fm/music/Fugazi"
+  },
+  {
+    "name": "Passion Pit",
+    "mbid": "daeec599-bf5d-4428-994a-e76ba5f86e2f",
+    "url": "https://www.last.fm/music/Passion+Pit"
+  },
+  {
+    "name": "Saint Motel",
+    "mbid": "5c2593bc-1621-4c4d-821b-b7bb6ff213b5",
+    "url": "https://www.last.fm/music/Saint+Motel"
+  },
+  {
+    "name": "David Kushner",
+    "mbid": "",
+    "url": "https://www.last.fm/music/David+Kushner"
+  },
+  {
+    "name": "I DONT KNOW HOW BUT THEY FOUND ME",
+    "mbid": "",
+    "url": "https://www.last.fm/music/I+DONT+KNOW+HOW+BUT+THEY+FOUND+ME"
+  },
+  {
+    "name": "Cassie",
+    "mbid": "4a8ac23a-e27a-44db-814a-f8c31beb68e6",
+    "url": "https://www.last.fm/music/Cassie"
+  },
+  {
+    "name": "Set It Off",
+    "mbid": "823ed9ad-3412-47dc-9caf-b7be02121fcf",
+    "url": "https://www.last.fm/music/Set+It+Off"
+  },
+  {
+    "name": "Kenshi Yonezu",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Kenshi+Yonezu"
+  },
+  {
+    "name": "The Temper Trap",
+    "mbid": "bb6eaced-69dd-4636-829f-9f987acc4fc3",
+    "url": "https://www.last.fm/music/The+Temper+Trap"
+  },
+  {
+    "name": "Tracy Chapman",
+    "mbid": "1129817c-488a-4096-80c1-77fc1b107c93",
+    "url": "https://www.last.fm/music/Tracy+Chapman"
+  },
+  {
+    "name": "Moby",
+    "mbid": "8970d868-0723-483b-a75b-51088913d3d4",
+    "url": "https://www.last.fm/music/Moby"
+  },
+  {
+    "name": "Smash Mouth",
+    "mbid": "944e1036-8a03-4611-8aa0-31515a05c848",
+    "url": "https://www.last.fm/music/Smash+Mouth"
+  },
+  {
+    "name": "grentperez",
+    "mbid": "",
+    "url": "https://www.last.fm/music/grentperez"
+  },
+  {
+    "name": "King Geedorah",
+    "mbid": "343ce4fa-54b3-47b8-bd27-b379cf50f7ff",
+    "url": "https://www.last.fm/music/King+Geedorah"
+  },
+  {
+    "name": "The Wombats",
+    "mbid": "e105c272-b5d7-4135-82ef-d60bded54345",
+    "url": "https://www.last.fm/music/The+Wombats"
+  },
+  {
+    "name": "3OH!3",
+    "mbid": "125948ec-7f91-4d1a-8b83-accbf50fae3d",
+    "url": "https://www.last.fm/music/3OH%213"
+  },
+  {
+    "name": "Ozuna",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Ozuna"
+  },
+  {
+    "name": "AJR",
+    "mbid": "2eb55bd9-cfbf-44fd-a5da-92dd825284c7",
+    "url": "https://www.last.fm/music/AJR"
+  },
+  {
+    "name": "Kansas",
+    "mbid": "69689acf-d9cd-4d20-a972-47db4ed51b1a",
+    "url": "https://www.last.fm/music/Kansas"
+  },
+  {
+    "name": "6ix9ine",
+    "mbid": "",
+    "url": "https://www.last.fm/music/6ix9ine"
+  },
+  {
+    "name": "The Animals",
+    "mbid": "7d2f5f88-5da7-4d94-8be4-b4fadaf5b3f6",
+    "url": "https://www.last.fm/music/The+Animals"
+  },
+  {
+    "name": "Anderson .Paak",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Anderson+.Paak"
+  },
+  {
+    "name": "Waka Flocka Flame",
+    "mbid": "59eda569-b380-4958-b98c-051d1667b3e1",
+    "url": "https://www.last.fm/music/Waka+Flocka+Flame"
+  },
+  {
+    "name": "Victoria Monét",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Victoria+Mon%C3%A9t"
+  },
+  {
+    "name": "Tyler Childers",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Tyler+Childers"
+  },
+  {
+    "name": "Cher",
+    "mbid": "bfcc6d75-a6a5-4bc6-8282-47aec8531818",
+    "url": "https://www.last.fm/music/Cher"
+  },
+  {
+    "name": "Sweet Trip",
+    "mbid": "52fbc948-398c-45f6-833b-dd75164b896a",
+    "url": "https://www.last.fm/music/Sweet+Trip"
+  },
+  {
+    "name": "Ludwig van Beethoven",
+    "mbid": "1f9df192-a621-4f54-8850-2c5373b7eac9",
+    "url": "https://www.last.fm/music/Ludwig+van+Beethoven"
+  },
+  {
+    "name": "Glee Cast",
+    "mbid": "29542149-a818-4167-aa91-439adc9d61f5",
+    "url": "https://www.last.fm/music/Glee+Cast"
+  },
+  {
+    "name": "Lemon Demon",
+    "mbid": "6b014cfd-4927-4187-a741-715998e6d785",
+    "url": "https://www.last.fm/music/Lemon+Demon"
+  },
+  {
+    "name": "Lupe Fiasco",
+    "mbid": "cf15719f-51f9-4db8-a15d-5eed9664ce69",
+    "url": "https://www.last.fm/music/Lupe+Fiasco"
+  },
+  {
+    "name": "Elis Regina",
+    "mbid": "e9e85a54-074c-4d29-a886-bcaaa9d44f9f",
+    "url": "https://www.last.fm/music/Elis+Regina"
+  },
+  {
+    "name": "Russ",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Russ"
+  },
+  {
+    "name": "Michael Bublé",
+    "mbid": "611700cf-27f0-4dc9-ae80-c513a767853e",
+    "url": "https://www.last.fm/music/Michael+Bubl%C3%A9"
+  },
+  {
+    "name": "Galantis",
+    "mbid": "a7229e38-bab7-48c1-9f35-9b4c49738b0f",
+    "url": "https://www.last.fm/music/Galantis"
+  },
+  {
+    "name": "Luísa Sonza",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Lu%C3%ADsa+Sonza"
+  },
+  {
+    "name": "Kero Kero Bonito",
+    "mbid": "5e284bdc-3774-41dc-b5e2-b125d0349acf",
+    "url": "https://www.last.fm/music/Kero+Kero+Bonito"
+  },
+  {
+    "name": "OsamaSon",
+    "mbid": "",
+    "url": "https://www.last.fm/music/OsamaSon"
+  },
+  {
+    "name": "The National",
+    "mbid": "664c3e0e-42d8-48c1-b209-1efca19c0325",
+    "url": "https://www.last.fm/music/The+National"
+  },
+  {
+    "name": "The Shins",
+    "mbid": "6c8b9855-ba8b-48f9-ac1d-42167f7f7b18",
+    "url": "https://www.last.fm/music/The+Shins"
+  },
+  {
+    "name": "88Rising",
+    "mbid": "",
+    "url": "https://www.last.fm/music/88Rising"
+  },
+  {
+    "name": "Carly Simon",
+    "mbid": "c4df30f5-5487-4806-9189-b69c9f27532c",
+    "url": "https://www.last.fm/music/Carly+Simon"
+  },
+  {
+    "name": "Johann Sebastian Bach",
+    "mbid": "24f1766e-9635-4d58-a4d4-9413f9f98a4c",
+    "url": "https://www.last.fm/music/Johann+Sebastian+Bach"
+  },
+  {
+    "name": "Dennis",
+    "mbid": "db262e4c-cdef-45a5-9d3f-652151bf5fab",
+    "url": "https://www.last.fm/music/Dennis"
+  },
+  {
+    "name": "Bullet for My Valentine",
+    "mbid": "d530dbf9-69b1-404f-98f2-0431104f5a1e",
+    "url": "https://www.last.fm/music/Bullet+for+My+Valentine"
+  },
+  {
+    "name": "Stan Getz",
+    "mbid": "8f2422ab-0ec6-4c92-80c4-afe9622fab32",
+    "url": "https://www.last.fm/music/Stan+Getz"
+  },
+  {
+    "name": "FROMIS_9",
+    "mbid": "",
+    "url": "https://www.last.fm/music/FROMIS_9"
+  },
+  {
+    "name": "Macklemore & Ryan Lewis",
+    "mbid": "b6d7ec94-830c-44dd-b699-ce66556b7e55",
+    "url": "https://www.last.fm/music/Macklemore+&+Ryan+Lewis"
+  },
+  {
+    "name": "CHUNG HA",
+    "mbid": "",
+    "url": "https://www.last.fm/music/CHUNG+HA"
+  },
+  {
+    "name": "Tribalistas",
+    "mbid": "a27207ee-a79e-4887-aa65-e644d2702f5e",
+    "url": "https://www.last.fm/music/Tribalistas"
+  },
+  {
+    "name": "Marisa Monte",
+    "mbid": "f81f19b9-c76e-43ac-8656-bb56071785fb",
+    "url": "https://www.last.fm/music/Marisa+Monte"
+  },
+  {
+    "name": "VIOLENT VIRA",
+    "mbid": "",
+    "url": "https://www.last.fm/music/VIOLENT+VIRA"
+  },
+  {
+    "name": "The B-52's",
+    "mbid": "127f591a-7e27-4435-92db-0780f219f3a1",
+    "url": "https://www.last.fm/music/The+B-52%27s"
+  },
+  {
+    "name": "Kool & The Gang",
+    "mbid": "2469950a-f0ca-425a-bfbc-baf55ea3afde",
+    "url": "https://www.last.fm/music/Kool+&+The+Gang"
+  },
+  {
+    "name": "Yung Gravy",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Yung+Gravy"
+  },
+  {
+    "name": "Marilyn Manson",
+    "mbid": "80cadd99-f560-41e3-babd-16292bbd248a",
+    "url": "https://www.last.fm/music/Marilyn+Manson"
+  },
+  {
+    "name": "Motionless in White",
+    "mbid": "1c5b9bd6-76e8-4fe7-a6df-3bc0b5a452cc",
+    "url": "https://www.last.fm/music/Motionless+in+White"
+  },
+  {
+    "name": "Jack Stauber",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Jack+Stauber"
+  },
+  {
+    "name": "Jason Mraz",
+    "mbid": "82eb8936-7bf6-4577-8320-a2639465206d",
+    "url": "https://www.last.fm/music/Jason+Mraz"
+  },
+  {
+    "name": "Wale",
+    "mbid": "e34e41f2-f480-45d3-8190-a3ce5ab34fab",
+    "url": "https://www.last.fm/music/Wale"
+  },
+  {
+    "name": "Pedro Sampaio",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Pedro+Sampaio"
+  },
+  {
+    "name": "Psy",
+    "mbid": "f99b7d67-4e63-4678-aa66-4c6ac0f7d24a",
+    "url": "https://www.last.fm/music/Psy"
+  },
+  {
+    "name": "lil skies",
+    "mbid": "",
+    "url": "https://www.last.fm/music/lil+skies"
+  },
+  {
+    "name": "The Stone Roses",
+    "mbid": "b5fa29f1-6c22-4321-a488-b5f363b06b06",
+    "url": "https://www.last.fm/music/The+Stone+Roses"
+  },
+  {
+    "name": "Julie",
+    "mbid": "c9086e16-ca8a-4d8c-a506-eab460811cdc",
+    "url": "https://www.last.fm/music/Julie"
+  },
+  {
+    "name": "Meryl Streep",
+    "mbid": "eb8b0a8a-dc7d-480c-b83a-70a069150d05",
+    "url": "https://www.last.fm/music/Meryl+Streep"
+  },
+  {
+    "name": "Seether",
+    "mbid": "fbcd7b29-455f-49e6-9c4f-8249d20a055e",
+    "url": "https://www.last.fm/music/Seether"
+  },
+  {
+    "name": "Lou Reed",
+    "mbid": "9d1ebcfe-4c15-4d18-95d3-d919898638a1",
+    "url": "https://www.last.fm/music/Lou+Reed"
+  },
+  {
+    "name": "Berlioz",
+    "mbid": "274774a7-1cde-486a-bc3d-375ec54d552d",
+    "url": "https://www.last.fm/music/Berlioz"
+  },
+  {
+    "name": "Cris Mj",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Cris+Mj"
+  },
+  {
+    "name": "Gojira",
+    "mbid": "1c5efd53-d6b6-4d63-9d22-a15025cf5f07",
+    "url": "https://www.last.fm/music/Gojira"
+  },
+  {
+    "name": "masego",
+    "mbid": "",
+    "url": "https://www.last.fm/music/masego"
+  },
+  {
+    "name": "The Doobie Brothers",
+    "mbid": "588dea29-eea3-456b-a815-3ee04f75c8e7",
+    "url": "https://www.last.fm/music/The+Doobie+Brothers"
+  },
+  {
+    "name": "Sting",
+    "mbid": "7944ed53-2a58-4035-9b93-140a71e41c34",
+    "url": "https://www.last.fm/music/Sting"
+  },
+  {
+    "name": "Yes",
+    "mbid": "c1d4f2ba-cf39-460c-9528-6b827d3417a1",
+    "url": "https://www.last.fm/music/Yes"
+  },
+  {
+    "name": "10cc",
+    "mbid": "f37c537b-3557-4031-bfd6-ab63ced32854",
+    "url": "https://www.last.fm/music/10cc"
+  },
+  {
+    "name": "The Garden",
+    "mbid": "d5c29a92-1043-4cf8-8fef-68a03bf4fbc7",
+    "url": "https://www.last.fm/music/The+Garden"
+  },
+  {
+    "name": "BABYMONSTER",
+    "mbid": "",
+    "url": "https://www.last.fm/music/BABYMONSTER"
+  },
+  {
+    "name": "Eric Clapton",
+    "mbid": "618b6900-0618-4f1e-b835-bccb17f84294",
+    "url": "https://www.last.fm/music/Eric+Clapton"
+  },
+  {
+    "name": "Wolfgang Amadeus Mozart",
+    "mbid": "ee3ec18b-2cc8-4541-801b-26d55b17bbde",
+    "url": "https://www.last.fm/music/Wolfgang+Amadeus+Mozart"
+  },
+  {
+    "name": "Edward Maya",
+    "mbid": "257891db-1f69-4660-894d-075e355431a8",
+    "url": "https://www.last.fm/music/Edward+Maya"
+  },
+  {
+    "name": "GFRIEND",
+    "mbid": "",
+    "url": "https://www.last.fm/music/GFRIEND"
+  },
+  {
+    "name": "Kacey Musgraves",
+    "mbid": "d1393ecb-431b-4fde-a6ea-d769f2f040cb",
+    "url": "https://www.last.fm/music/Kacey+Musgraves"
+  },
+  {
+    "name": "BADBADNOTGOOD",
+    "mbid": "754294d5-d7d2-4ea2-8184-1dcaaf55a56f",
+    "url": "https://www.last.fm/music/BADBADNOTGOOD"
+  },
+  {
+    "name": "Skepta",
+    "mbid": "38474d18-9204-4f60-a137-1fcc6750b869",
+    "url": "https://www.last.fm/music/Skepta"
+  },
+  {
+    "name": "PJ Harvey",
+    "mbid": "e795e03d-b5d5-4a5f-834d-162cfb308a2c",
+    "url": "https://www.last.fm/music/PJ+Harvey"
+  },
+  {
+    "name": "Manchester Orchestra",
+    "mbid": "dd91eb4b-6d08-4c14-9eb2-197a02a35f6c",
+    "url": "https://www.last.fm/music/Manchester+Orchestra"
+  },
+  {
+    "name": "Manu Chao",
+    "mbid": "7570a0dd-5a67-401b-b19a-261eee01a284",
+    "url": "https://www.last.fm/music/Manu+Chao"
+  },
+  {
+    "name": "The xx",
+    "mbid": "c5c2ea1c-4bde-4f4d-bd0b-47b200bf99d6",
+    "url": "https://www.last.fm/music/The+xx"
+  },
+  {
+    "name": "Flawed Mangoes",
+    "mbid": "",
+    "url": "https://www.last.fm/music/Flawed+Mangoes"
+  }
+]

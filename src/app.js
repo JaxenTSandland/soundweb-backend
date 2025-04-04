@@ -1,16 +1,19 @@
-const express = require('express');
-const path = require('path');
-const fs = require('fs');
+import express from 'express';
+import path from 'path';
+import fs from 'fs';
+import cors from 'cors';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const cors = require('cors');
 app.use(cors());
-
 app.use(express.json());
 
 // Health check route
 app.get('/', (req, res) => {
-    res.send('SoundWeb Backend is Running!!');
+    res.send('SoundWeb Backend is Running!');
 });
 
 // Serve artist data from local JSON file
@@ -33,4 +36,4 @@ app.get('/api/artists/all', (req, res) => {
     });
 });
 
-module.exports = app;
+export default app;
