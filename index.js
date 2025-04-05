@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import app from './src/app.js';
 
-const RELOAD_LASTFM_DATA = false;
+const RELOAD_LASTFM_DATA = true;
 const RELOAD_SPOTIFY_DATA = false;
 const RELOAD_COMBINE_DATA = true;
 

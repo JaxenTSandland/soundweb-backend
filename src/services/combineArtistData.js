@@ -74,6 +74,8 @@ export function combineLastfmAndSpotifyData() {
             popularity: spotifyArtist.popularity,
             spotifyId: spotifyArtist.spotifyId,
             spotifyUrl: spotifyArtist.spotifyUrl,
+            lastfmMBID: lastfmArtist.mbid,
+            relatedArtists: lastfmArtist.similar,
             color,
             x,
             y

@@ -17,6 +17,22 @@ function normalizeName(name) {
     return name.toLowerCase().replace(/[^a-z0-9]/g, '').trim();
 }
 
+async function getSimilarArtists(name) {
+    const encodedName = encodeURIComponent(name);
+    const url = `${BASE_URL}?method=artist.getsimilar&artist=${encodedName}&api_key=${API_KEY}&format=json&limit=10`;
+
+    try {
+        const res = await fetch(url);
+        const json = await res.json();
+        const similar = json.similarartists?.artist ?? [];
+
+        return similar.map(artist => artist.name);
+    } catch (err) {
+        console.warn(`⚠️ Failed to fetch similar artists for ${name}: ${err.message}`);
+        return [];
+    }
+}
+
 export async function fetchTopArtistsFromLastFM() {
     const allArtists = [];
 
@@ -74,11 +90,14 @@ export async function fetchArtistDetailsFromLastFM() {
                 .map(tag => tag.name.toLowerCase())
                 .filter(tag => genreMap.hasOwnProperty(tag));
 
+            const similar = await getSimilarArtists(artist.name);
+
             detailedArtists.push({
                 name: artist.name,
                 mbid: artist.mbid,
                 url: artist.url,
-                genres: tags
+                genres: tags,
+                similar
             });
 
             console.log(`(${i++}/${MAX_ARTIST_LOOKUP}) Processed: ${artist.name} (${tags.join(', ')})`);
