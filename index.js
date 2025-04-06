@@ -27,7 +27,6 @@ if (
     const { fetchAndSaveSpotifyArtists } = await import('./src/services/spotifyService.js');
     const { combineLastfmAndSpotifyData } = await import('./src/services/combineArtistData.js');
     const { generateTopGenres } = await import('./src/services/generateTopGenres.js');
-    const { exportTopArtistsToNeo4j } = await import('./src/services/neo4jExportService.js');
 
 
     if (RELOAD_LASTFM_DATA) await fetchTopArtistsFromLastFM();
@@ -36,7 +35,12 @@ if (
     if (RELOAD_SPOTIFY_DATA) await fetchAndSaveSpotifyArtists();
     if (RELOAD_COMBINE_DATA) await combineLastfmAndSpotifyData();
     if (GENERATE_TOP_GENRES) await generateTopGenres();
-    if (EXPORT_TO_NEO4J) await exportTopArtistsToNeo4j();
+    if (EXPORT_TO_NEO4J) {
+        const { exportTopArtistsToNeo4j } = await import('./src/services/neo4jExportService.js');
+        const { exportTopGenresToNeo4j } = await import('./src/services/exportTopGenresToNeo4j.js');
+        await exportTopArtistsToNeo4j();
+        await exportTopGenresToNeo4j();
+    }
 }
 
 app.listen(PORT, () => {

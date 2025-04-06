@@ -13,6 +13,7 @@ const uri = process.env.NEO4J_URI;
 const user = process.env.NEO4J_USER;
 const password = process.env.NEO4J_PASSWORD;
 const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB
+const topGenresDb = process.env.NEO4J_TOPGENRES_DB;
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 const app = express();
@@ -61,23 +62,32 @@ app.get('/api/artists/all', async (req, res) => {
     }
 });
 
-app.get('/api/genres/top', (req, res) => {
-    const dataPath = path.join(__dirname, 'data', 'topGenres.json');
+app.get('/api/genres/top', async (req, res) => {
+    const session = driver.session({ database: topGenresDb });
 
-    fs.readFile(dataPath, 'utf8', (err, data) => {
-        if (err) {
-            console.error('Error reading topGenres.json:', err);
-            return res.status(500).json({ error: 'Failed to load top genres.' });
-        }
+    try {
+        const result = await session.run(`
+            MATCH (g:Genre)
+            RETURN g
+        `);
 
-        try {
-            const genres = JSON.parse(data);
-            res.json(genres);
-        } catch (parseErr) {
-            console.error('Error parsing topGenres.json:', parseErr);
-            res.status(500).json({ error: 'Invalid top genre data format.' });
-        }
-    });
+        const genres = result.records.map(record => {
+            const g = record.get('g').properties;
+            return {
+                name: g.name,
+                x: neo4j.isInt(g.x) ? g.x.toNumber() : g.x ?? 0,
+                y: neo4j.isInt(g.y) ? g.y.toNumber() : g.y ?? 0,
+                color: g.color
+            };
+        });
+
+        res.json(genres);
+    } catch (err) {
+        console.error('❌ Error fetching top genres from Neo4j:', err);
+        res.status(500).json({ error: 'Failed to load top genres from Neo4j' });
+    } finally {
+        await session.close();
+    }
 });
 
 export default app;
