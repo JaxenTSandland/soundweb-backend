@@ -1,12 +1,11 @@
 import dotenv from 'dotenv';
 import app from './src/app.js';
-import {fetchArtistsFromMusicBrainz} from "./src/services/musicBrainzService.js";
 
 const RELOAD_LASTFM_DATA = false;
 const RELOAD_MUSICBRAINZ_DATA = false;
 const RELOAD_SPOTIFY_DATA = false;
-const RELOAD_COMBINE_DATA = false;
-const GENERATE_TOP_GENRES = false;
+const RELOAD_COMBINE_DATA = true;
+const GENERATE_TOP_GENRES = true;
 const EXPORT_TO_NEO4J = true;
 
 dotenv.config();
@@ -21,23 +20,36 @@ if (
     GENERATE_TOP_GENRES ||
     EXPORT_TO_NEO4J
 ) {
-    const { fetchTopArtistsFromLastFM, fetchArtistDetailsFromLastFM } =
-        await import('./src/services/lastfmService.js');
-    const { fetchArtistsFromMusicBrainz } = await import('./src/services/musicBrainzService.js');
-    const { fetchAndSaveSpotifyArtists } = await import('./src/services/spotifyService.js');
-    const { combineLastfmAndSpotifyData } = await import('./src/services/combineArtistData.js');
-    const { generateTopGenres } = await import('./src/services/generateTopGenres.js');
 
+    if (RELOAD_LASTFM_DATA) {
+        const { fetchTopArtistsFromLastFM, fetchArtistDetailsFromLastFM } = await import('./src/services/lastfmService.js');
+        await fetchTopArtistsFromLastFM();
+        await fetchArtistDetailsFromLastFM();
+    }
 
-    if (RELOAD_LASTFM_DATA) await fetchTopArtistsFromLastFM();
-    if (RELOAD_LASTFM_DATA) await fetchArtistDetailsFromLastFM();
-    if (RELOAD_MUSICBRAINZ_DATA) await fetchArtistsFromMusicBrainz();
-    if (RELOAD_SPOTIFY_DATA) await fetchAndSaveSpotifyArtists();
-    if (RELOAD_COMBINE_DATA) await combineLastfmAndSpotifyData();
-    if (GENERATE_TOP_GENRES) await generateTopGenres();
+    if (RELOAD_MUSICBRAINZ_DATA) {
+        const { fetchArtistsFromMusicBrainz } = await import('./src/services/musicBrainzService.js');
+        await fetchArtistsFromMusicBrainz();
+    }
+
+    if (RELOAD_SPOTIFY_DATA) {
+        const { fetchAndSaveSpotifyArtists } = await import('./src/services/spotifyService.js');
+        await fetchAndSaveSpotifyArtists();
+    }
+
+    if (RELOAD_COMBINE_DATA) {
+        const { combineLastfmAndSpotifyData } = await import('./src/services/combineArtistData.js');
+        await combineLastfmAndSpotifyData();
+    }
+
+    if (GENERATE_TOP_GENRES) {
+        const { generateTopGenres } = await import('./src/services/generateTopGenres.js');
+        await generateTopGenres();
+    }
+
     if (EXPORT_TO_NEO4J) {
-        const { exportTopArtistsToNeo4j } = await import('./src/services/neo4jExportService.js');
-        const { exportTopGenresToNeo4j } = await import('./src/services/exportTopGenresToNeo4j.js');
+        const { exportTopArtistsToNeo4j } = await import('./src/services/neo4jExportArtistsService.js');
+        const { exportTopGenresToNeo4j } = await import('./src/services/neo4jExportGenresService.js');
         await exportTopArtistsToNeo4j();
         await exportTopGenresToNeo4j();
     }

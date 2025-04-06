@@ -53,8 +53,8 @@ export async function fetchTopArtistsFromLastFM() {
     }
 
     const outputPath = path.join(__dirname, '../data/lastfmTopArtists.json');
-    fs.writeFileSync(outputPath, JSON.stringify(allArtists, null, 2));
-    console.log(`✅ Saved ${allArtists.length} artists to lastfmTopArtists.json`);
+    fs.writeFileSync(outputPath, JSON.stringify([...allArtists.values()], null, 2));
+    console.log(`✅ Saved ${allArtists.size} artists to lastfmTopArtists.json`);
 }
 
 export async function fetchArtistDetailsFromLastFM() {
@@ -95,12 +95,15 @@ export async function fetchArtistDetailsFromLastFM() {
 
             const similar = await getSimilarArtists(artist.name);
 
+            const imageUrl = artist.image?.find(img => img.size === 'extralarge')?.['#text'] || null;
+
             detailedArtists.push({
                 name: artist.name,
                 mbid: artist.mbid,
                 url: artist.url,
                 genres: tags,
-                similar
+                similar,
+                imageUrl
             });
 
             console.log(`(${i++}/${MAX_ARTIST_LOOKUP}) Processed: ${artist.name} (${tags.join(', ')})`);

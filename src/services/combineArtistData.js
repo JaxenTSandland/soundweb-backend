@@ -78,6 +78,8 @@ export function combineLastfmAndSpotifyData() {
 
         const x = weightTotal > 0 ? xTotal / weightTotal : undefined;
         const y = weightTotal > 0 ? yTotal / weightTotal : undefined;
+        const imageUrl = spotifyArtist.imageUrl || lastfmArtist?.imageUrl || null;
+
 
         merged.push({
             id: `${idCounter++}`,
@@ -87,6 +89,7 @@ export function combineLastfmAndSpotifyData() {
             spotifyId: spotifyArtist.spotifyId,
             spotifyUrl: spotifyArtist.spotifyUrl,
             lastfmMBID: lastfmArtist?.mbid,
+            imageUrl,
             relatedArtists: lastfmArtist?.similar || [],
             color,
             x,

@@ -51,34 +51,42 @@ export async function fetchAndSaveSpotifyArtists() {
         const lastfmData = JSON.parse(fs.readFileSync(lastfmPath, 'utf-8'));
 
         const results = [];
-        var i = 1;
+        let i = 1;
+
         for (const artist of lastfmData) {
             if (i > MAX_ARTIST_LOOKUP) break;
 
             const name = artist.name;
             const listeners = artist.listeners;
             console.log(`(${i++}/${MAX_ARTIST_LOOKUP}) Searching Spotify for: ${name}`);
-            const spotifyArtist = await searchSpotifyArtist(name, accessToken);
 
-            if (spotifyArtist) {
-                results.push({
-                    name: spotifyArtist.name,
-                    spotifyId: spotifyArtist.id,
-                    popularity: spotifyArtist.popularity,
-                    genres: spotifyArtist.genres,
-                    followers: spotifyArtist.followers.total,
-                    listeners: listeners,
-                    spotifyUrl: spotifyArtist.external_urls.spotify
-                });
-            } else {
-                console.warn(`No match found for ${name}`);
+            try {
+                const spotifyArtist = await searchSpotifyArtist(name, accessToken);
+
+                if (spotifyArtist) {
+                    results.push({
+                        name: spotifyArtist.name,
+                        spotifyId: spotifyArtist.id,
+                        popularity: spotifyArtist.popularity,
+                        genres: spotifyArtist.genres,
+                        followers: spotifyArtist.followers.total,
+                        listeners: listeners,
+                        spotifyUrl: spotifyArtist.external_urls.spotify,
+                        imageUrl: spotifyArtist.images?.[0]?.url || null
+                    });
+
+                    // 🔁 Save progress after each artist
+                    fs.writeFileSync(spotifyPath, JSON.stringify(results, null, 2), 'utf-8');
+                } else {
+                    console.warn(`No match found for ${name}`);
+                }
+            } catch (err) {
+                console.warn(`⚠️ Failed to fetch from Spotify for ${name}: ${err.message}`);
+                // Continue to the next artist without crashing
             }
         }
 
-
-        fs.writeFileSync(spotifyPath, JSON.stringify(results, null, 2), 'utf-8');
-        console.log(`✅ Saved ${results.length} artists to spotifyArtists.json`);
-
+        console.log(`✅ Finished processing. Saved ${results.length} artists to spotifyArtists.json`);
     } catch (err) {
         console.error('❌ Error during Spotify artist fetch:', err);
     }
