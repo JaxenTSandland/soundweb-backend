@@ -17,16 +17,23 @@ function normalizeName(name) {
 export function combineLastfmAndSpotifyData() {
     const lastfmPath = path.join(__dirname, '../data/lastfmArtists.json');
     const spotifyPath = path.join(__dirname, '../data/spotifyArtists.json');
+    const musicbrainzPath = path.join(__dirname, '../data/musicBrainzArtists.json');
     const genreMapPath = path.join(__dirname, '../data/genreMap.json');
     const outputPath = path.join(__dirname, '../data/artistData.json');
 
     const lastfmArtists = JSON.parse(fs.readFileSync(lastfmPath, 'utf-8'));
     const spotifyArtists = JSON.parse(fs.readFileSync(spotifyPath, 'utf-8'));
+    const musicbrainzArtists = JSON.parse(fs.readFileSync(musicbrainzPath, 'utf-8'));
     const genreMap = JSON.parse(fs.readFileSync(genreMapPath, 'utf-8'));
 
     const lastfmMap = new Map();
     lastfmArtists.forEach(artist => {
         lastfmMap.set(normalizeName(artist.name), artist);
+    });
+
+    const musicbrainzMap = new Map();
+    musicbrainzArtists.forEach(artist => {
+        musicbrainzMap.set(normalizeName(artist.name), artist);
     });
 
     const seenNames = new Set();
@@ -38,26 +45,31 @@ export function combineLastfmAndSpotifyData() {
         if (seenNames.has(normName)) continue;
 
         const lastfmArtist = lastfmMap.get(normName);
-        if (!lastfmArtist) continue;
+        const musicbrainzArtist = musicbrainzMap.get(normName);
+        if (!lastfmArtist && !musicbrainzArtist) continue;
 
-        const genreSet = new Set([
-            ...(lastfmArtist.genres || []),
-            ...(spotifyArtist.genres || [])
-        ]);
-        const genres = Array.from(genreSet).filter(
-            genre => genreMap.hasOwnProperty(genre.toLowerCase())
-        );
+        const genreFrequency = {};
+        for (const genre of [...(lastfmArtist?.genres || []), ...(spotifyArtist.genres || []), ...(musicbrainzArtist?.genres || [])]) {
+            const g = genre.toLowerCase();
+            if (genreMap.hasOwnProperty(g)) {
+                genreFrequency[g] = (genreFrequency[g] || 0) + 1;
+            }
+        }
+
+        const genres = Object.entries(genreFrequency)
+            .sort((a, b) => b[1] - a[1])
+            .map(entry => entry[0]);
 
         if (genres.length === 0) continue;
 
-        const topGenre = genres[0].toLowerCase();
+        const topGenre = genres[0];
         const color = genreMap[topGenre]?.color || '#cccccc';
 
         let xTotal = 0, yTotal = 0, weightTotal = 0;
         genres.slice(0, 10).forEach((g, index) => {
-            const gData = genreMap[g.toLowerCase()];
+            const gData = genreMap[g];
             if (gData?.x != null && gData?.y != null) {
-                const weight = 1 / (index + 1); // higher weight for earlier genres
+                const weight = 1 / (index + 1);
                 xTotal += ((gData.x / maxX) * graphMaxX) * weight;
                 yTotal += ((gData.y / maxY) * graphMaxY) * weight;
                 weightTotal += weight;
@@ -74,8 +86,8 @@ export function combineLastfmAndSpotifyData() {
             popularity: spotifyArtist.popularity,
             spotifyId: spotifyArtist.spotifyId,
             spotifyUrl: spotifyArtist.spotifyUrl,
-            lastfmMBID: lastfmArtist.mbid,
-            relatedArtists: lastfmArtist.similar,
+            lastfmMBID: lastfmArtist?.mbid,
+            relatedArtists: lastfmArtist?.similar || [],
             color,
             x,
             y

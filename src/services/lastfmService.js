@@ -34,7 +34,7 @@ async function getSimilarArtists(name) {
 }
 
 export async function fetchTopArtistsFromLastFM() {
-    const allArtists = [];
+    const allArtists = new Map();
 
     for (let page = 1; page <= 20; page++) {
         const url = `${BASE_URL}?method=chart.gettopartists&api_key=${API_KEY}&format=json&page=${page}`;
@@ -42,9 +42,12 @@ export async function fetchTopArtistsFromLastFM() {
         const json = await res.json();
         const artists = json.artists?.artist ?? [];
 
-        allArtists.push(...artists.map(({ name, mbid, url }) => ({
-            name, mbid, url
-        })));
+        for (const { name, mbid, url } of artists) {
+            const key = normalizeName(name);
+            if (!allArtists.has(key)) {
+                allArtists.set(key, { name, mbid, url });
+            }
+        }
 
         console.log(`Fetched page ${page} with ${artists.length} artists`);
     }
