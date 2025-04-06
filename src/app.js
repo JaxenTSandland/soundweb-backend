@@ -36,4 +36,23 @@ app.get('/api/artists/all', (req, res) => {
     });
 });
 
+app.get('/api/genres/top', (req, res) => {
+    const dataPath = path.join(__dirname, 'data', 'topGenres.json');
+
+    fs.readFile(dataPath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading topGenres.json:', err);
+            return res.status(500).json({ error: 'Failed to load top genres.' });
+        }
+
+        try {
+            const genres = JSON.parse(data);
+            res.json(genres);
+        } catch (parseErr) {
+            console.error('Error parsing topGenres.json:', parseErr);
+            res.status(500).json({ error: 'Invalid top genre data format.' });
+        }
+    });
+});
+
 export default app;
