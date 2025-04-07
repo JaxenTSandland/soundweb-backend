@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 dotenv.config();
 import neo4j from 'neo4j-driver';
+import mysql from 'mysql2/promise';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,6 +20,13 @@ const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const mysqlPool = mysql.createPool({
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE
+});
 
 // Health check route
 app.get('/', (req, res) => {
@@ -63,30 +71,75 @@ app.get('/api/artists/all', async (req, res) => {
 });
 
 app.get('/api/genres/top', async (req, res) => {
-    const session = driver.session({ database: topGenresDb });
-
     try {
-        const result = await session.run(`
-            MATCH (g:Genre)
-            RETURN g
-        `);
+        const count = parseInt(req.query.count) || 10;
 
-        const genres = result.records.map(record => {
-            const g = record.get('g').properties;
+        // Load genreMap only
+        const genreMap = JSON.parse(fs.readFileSync('./src/data/genreMap.json', 'utf-8'));
+
+        // Filter out genres without a count or missing coordinates
+        const genreEntries = Object.entries(genreMap)
+            .filter(([_, g]) => typeof g.count === 'number' && g.count > 0 && g.x != null && g.y != null);
+
+        // Sort by count descending
+        const sortedGenres = genreEntries
+            .sort((a, b) => b[1].count - a[1].count)
+            .map(([name]) => name);
+
+        // Euclidean distance (using x/y already scaled to 20k graph)
+        const distance = (g1, g2) => {
+            const dx = genreMap[g1].x - genreMap[g2].x;
+            const dy = genreMap[g1].y - genreMap[g2].y;
+            return Math.sqrt(dx * dx + dy * dy);
+        };
+
+        // Scale spacing
+        const baseDistance = 2500;
+        const minDistance = Math.floor(baseDistance * Math.sqrt(10 / count));
+
+        // Select spaced-out top genres
+        const selected = [];
+        for (const genre of sortedGenres) {
+            const isTooClose = selected.some(sel => distance(genre, sel) < minDistance);
+            if (!isTooClose) {
+                selected.push(genre);
+            }
+            if (selected.length === count) break;
+        }
+
+        // Build response
+        const result = selected.map(name => {
+            const g = genreMap[name];
             return {
-                name: g.name,
-                x: neo4j.isInt(g.x) ? g.x.toNumber() : g.x ?? 0,
-                y: neo4j.isInt(g.y) ? g.y.toNumber() : g.y ?? 0,
-                color: g.color
+                name,
+                x: g.x,
+                y: g.y,
+                color: g.color,
+                count: g.count
             };
         });
 
-        res.json(genres);
+        res.json(result);
     } catch (err) {
-        console.error('❌ Error fetching top genres from Neo4j:', err);
-        res.status(500).json({ error: 'Failed to load top genres from Neo4j' });
-    } finally {
-        await session.close();
+        console.error('❌ Error fetching top spaced genres:', err);
+        res.status(500).json({ error: 'Failed to load top genres' });
+    }
+});
+
+
+app.get('/api/genres/all', async (req, res) => {
+    const excludeZero = req.query.excludeZero === 'true';
+
+    try {
+        const query = excludeZero
+            ? 'SELECT name, x, y, color, count FROM genres WHERE count > 0'
+            : 'SELECT name, x, y, color, count FROM genres';
+
+        const [rows] = await mysqlPool.execute(query);
+        res.json(rows);
+    } catch (err) {
+        console.error('❌ Error fetching all genres from MySQL:', err);
+        res.status(500).json({ error: 'Failed to load genres' });
     }
 });
 

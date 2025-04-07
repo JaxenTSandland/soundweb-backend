@@ -18,5 +18,5 @@ node_modules/
 
 .DS_Store
 Thumbs.db
-/src/data/
-/src/data/*
+/src/data
+/src/data

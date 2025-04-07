@@ -1,12 +1,14 @@
 import dotenv from 'dotenv';
 import app from './src/app.js';
+import {analyzeAndUpdateGenreMap} from "./src/services/genreAnalysisService.js";
+import {exportGenresToMySQL} from "./src/services/mysqlExportGenresService.js";
 
 const RELOAD_LASTFM_DATA = false;
 const RELOAD_MUSICBRAINZ_DATA = false;
 const RELOAD_SPOTIFY_DATA = false;
-const RELOAD_COMBINE_DATA = true;
-const GENERATE_TOP_GENRES = true;
-const EXPORT_TO_NEO4J = true;
+const ANALYZE_GENRES = false;
+const RELOAD_COMBINE_DATA = false;
+const EXPORT_DATA_TO_DATABASES = false;
 
 dotenv.config();
 
@@ -17,8 +19,8 @@ if (
     RELOAD_MUSICBRAINZ_DATA ||
     RELOAD_SPOTIFY_DATA ||
     RELOAD_COMBINE_DATA ||
-    GENERATE_TOP_GENRES ||
-    EXPORT_TO_NEO4J
+    ANALYZE_GENRES ||
+    EXPORT_DATA_TO_DATABASES
 ) {
 
     if (RELOAD_LASTFM_DATA) {
@@ -37,21 +39,21 @@ if (
         await fetchAndSaveSpotifyArtists();
     }
 
+    if (ANALYZE_GENRES) {
+        const { analyzeAndUpdateGenreMap } = await import('./src/services/genreAnalysisService.js');
+        await analyzeAndUpdateGenreMap();
+    }
+
     if (RELOAD_COMBINE_DATA) {
-        const { combineLastfmAndSpotifyData } = await import('./src/services/combineArtistData.js');
-        await combineLastfmAndSpotifyData();
+        const { combineAllArtistData } = await import('./src/services/combineArtistData.js');
+        await combineAllArtistData();
     }
 
-    if (GENERATE_TOP_GENRES) {
-        const { generateTopGenres } = await import('./src/services/generateTopGenres.js');
-        await generateTopGenres();
-    }
-
-    if (EXPORT_TO_NEO4J) {
+    if (EXPORT_DATA_TO_DATABASES) {
         const { exportTopArtistsToNeo4j } = await import('./src/services/neo4jExportArtistsService.js');
-        const { exportTopGenresToNeo4j } = await import('./src/services/neo4jExportGenresService.js');
+        const { exportGenresToMySQL } = await import('./src/services/mysqlExportGenresService.js');
         await exportTopArtistsToNeo4j();
-        await exportTopGenresToNeo4j();
+        await exportGenresToMySQL();
     }
 }
 

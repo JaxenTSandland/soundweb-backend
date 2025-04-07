@@ -5,16 +5,11 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const maxX = 1500;
-const maxY = 22500;
-const graphMaxX = 20000;
-const graphMaxY = 20000;
-
 function normalizeName(name) {
     return name.toLowerCase().replace(/[^a-z0-9]/g, '').trim();
 }
 
-export function combineLastfmAndSpotifyData() {
+export function combineAllArtistData() {
     const lastfmPath = path.join(__dirname, '../data/lastfmArtists.json');
     const spotifyPath = path.join(__dirname, '../data/spotifyArtists.json');
     const musicbrainzPath = path.join(__dirname, '../data/musicBrainzArtists.json');
@@ -65,21 +60,22 @@ export function combineLastfmAndSpotifyData() {
         const topGenre = genres[0];
         const color = genreMap[topGenre]?.color || '#cccccc';
 
+        // Use weighted average of top 10 genres using precomputed x/Y
         let xTotal = 0, yTotal = 0, weightTotal = 0;
         genres.slice(0, 10).forEach((g, index) => {
             const gData = genreMap[g];
             if (gData?.x != null && gData?.y != null) {
                 const weight = 1 / (index + 1);
-                xTotal += ((gData.x / maxX) * graphMaxX) * weight;
-                yTotal += ((gData.y / maxY) * graphMaxY) * weight;
+                xTotal += gData.x * weight;
+                yTotal += gData.y * weight;
                 weightTotal += weight;
             }
         });
 
         const x = weightTotal > 0 ? xTotal / weightTotal : undefined;
         const y = weightTotal > 0 ? yTotal / weightTotal : undefined;
-        const imageUrl = spotifyArtist.imageUrl || lastfmArtist?.imageUrl || null;
 
+        const imageUrl = spotifyArtist.imageUrl || lastfmArtist?.imageUrl || null;
 
         merged.push({
             id: `${idCounter++}`,
