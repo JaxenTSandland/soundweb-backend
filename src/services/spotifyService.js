@@ -30,7 +30,7 @@ async function getSpotifyAccessToken() {
 
 async function searchSpotifyArtist(artistName, accessToken) {
     const query = encodeURIComponent(artistName);
-    const url = `https://api.spotify.com/v1/search?q=${query}&type=artist&limit=1`;
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=artist&limit=3`;
 
     const response = await fetch(url, {
         headers: {
@@ -39,7 +39,18 @@ async function searchSpotifyArtist(artistName, accessToken) {
     });
 
     const data = await response.json();
-    return data.artists.items[0]; // return top result
+    const items = data.artists?.items ?? [];
+
+    if (items.length === 0) return null;
+
+    // Try to find an exact (case-insensitive) match
+    const exactMatch = items.find(a => a.name.toLowerCase() === artistName.toLowerCase());
+    if (exactMatch) return exactMatch;
+
+    // Otherwise, return the one with highest popularity
+    return items.reduce((top, artist) => {
+        return artist.popularity > top.popularity ? artist : top;
+    }, items[0]);
 }
 
 export async function fetchAndSaveSpotifyArtists() {
