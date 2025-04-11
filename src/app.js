@@ -53,6 +53,7 @@ app.get('/api/artists/all', async (req, res) => {
                 spotifyId: a.spotifyId,
                 spotifyUrl: a.spotifyUrl,
                 lastfmMBID: a.lastfmMBID,
+                imageUrl: a.imageUrl,
                 genres: a.genres,
                 color: a.color,
                 x: neo4j.isInt(a.x) ? a.x.toNumber() : a.x ?? 0,

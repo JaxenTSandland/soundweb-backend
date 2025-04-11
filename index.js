@@ -8,7 +8,7 @@ const RELOAD_MUSICBRAINZ_DATA = false;
 const RELOAD_SPOTIFY_DATA = false;
 const ANALYZE_GENRES = false;
 const RELOAD_COMBINE_DATA = false;
-const EXPORT_DATA_TO_DATABASES = true;
+const EXPORT_DATA_TO_DATABASES = false;
 
 dotenv.config();
 
