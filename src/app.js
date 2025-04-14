@@ -14,7 +14,6 @@ const uri = process.env.NEO4J_URI;
 const user = process.env.NEO4J_USER;
 const password = process.env.NEO4J_PASSWORD;
 const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB
-const topGenresDb = process.env.NEO4J_TOPGENRES_DB;
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 const app = express();
@@ -34,42 +33,60 @@ app.get('/', (req, res) => {
 });
 
 // Serve artist data from Neo4j
-app.get('/api/artists/all', async (req, res) => {
+app.get('/api/artists/graph', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
 
     try {
         const result = await session.run(`
             MATCH (a:Artist)
-            RETURN a
+            OPTIONAL MATCH (a)-[:RELATED_TO]-(b:Artist)
+            RETURN a, collect(DISTINCT b.id) AS relatedIds
         `);
 
-        const artists = result.records.map(record => {
-            const a = record.get('a').properties;
+        const nodes = [];
+        const links = new Set();
 
-            return {
-                id: a.id,
-                name: a.name,
-                popularity: neo4j.isInt(a.popularity) ? a.popularity.toNumber() : a.popularity ?? 0,
-                spotifyId: a.spotifyId,
-                spotifyUrl: a.spotifyUrl,
-                lastfmMBID: a.lastfmMBID,
-                imageUrl: a.imageUrl,
-                genres: a.genres,
-                color: a.color,
-                x: neo4j.isInt(a.x) ? a.x.toNumber() : a.x ?? 0,
-                y: neo4j.isInt(a.y) ? a.y.toNumber() : a.y ?? 0,
-                relatedArtists: a.relatedArtists || []
-            };
+        for (const record of result.records) {
+            const artist = record.get('a').properties;
+            const relatedIds = record.get('relatedIds').filter(id => id); // Filter out nulls
+
+            // Push artist node
+            nodes.push({
+                id: artist.id,
+                name: artist.name,
+                popularity: neo4j.isInt(artist.popularity) ? artist.popularity.toNumber() : artist.popularity ?? 0,
+                spotifyId: artist.spotifyId,
+                spotifyUrl: artist.spotifyUrl,
+                lastfmMBID: artist.lastfmMBID,
+                imageUrl: artist.imageUrl,
+                genres: artist.genres,
+                color: artist.color,
+                x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? 0,
+                y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0
+            });
+
+            // Push links
+            const sourceId = artist.id;
+            relatedIds.forEach(targetId => {
+                const key = [sourceId, targetId].sort().join('-'); // Prevent duplicate links
+                links.add(key);
+            });
+        }
+
+        const formattedLinks = Array.from(links).map(k => {
+            const [source, target] = k.split('-');
+            return { source, target };
         });
 
-        res.json(artists);
+        res.json({ nodes, links: formattedLinks });
     } catch (err) {
-        console.error('❌ Error fetching from Neo4j:', err);
-        res.status(500).json({ error: 'Failed to load data from Neo4j' });
+        console.error('❌ Error fetching artist graph from Neo4j:', err);
+        res.status(500).json({ error: 'Failed to load artist graph from Neo4j' });
     } finally {
         await session.close();
     }
 });
+
 
 app.get('/api/genres/top', async (req, res) => {
     try {

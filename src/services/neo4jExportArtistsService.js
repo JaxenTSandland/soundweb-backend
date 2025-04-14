@@ -32,7 +32,6 @@ export async function exportTopArtistsToNeo4j() {
                      a.spotifyId = $spotifyId,
                      a.spotifyUrl = $spotifyUrl,
                      a.imageUrl = $imageURL,
-                     a.relatedArtists = $relatedArtists,
                      a.genres = $genres,
                      a.x = $x,
                      a.y = $y,
@@ -44,13 +43,44 @@ export async function exportTopArtistsToNeo4j() {
                     spotifyId: artist.spotifyId,
                     spotifyUrl: artist.spotifyUrl,
                     imageURL: artist.imageUrl,
-                    relatedArtists: artist.relatedArtists,
                     genres: artist.genres,
                     x: artist.x,
                     y: artist.y,
                     color: artist.color
                 }
             );
+        }
+
+        // Map artist names to IDs to match them quickly
+        const nameToId = new Map();
+        for (const artist of artistData) {
+            nameToId.set(artist.name.toLowerCase(), artist.id);
+        }
+
+        // Create relationships
+        const createdLinks = new Set();
+
+        for (const artist of artistData) {
+            const fromId = artist.id;
+            const related = artist.relatedArtists || [];
+
+            for (const relatedName of related) {
+                const toId = nameToId.get(relatedName.toLowerCase());
+                if (!toId || fromId === toId) continue;
+
+                // Ensure order consistency
+                const [id1, id2] = [fromId, toId].sort();
+                const key = `${id1}-${id2}`;
+                if (createdLinks.has(key)) continue;
+
+                createdLinks.add(key);
+
+                await session.run(
+                    `MATCH (a:Artist {id: $id1}), (b:Artist {id: $id2})
+                            MERGE (a)-[:RELATED_TO]-(b)`, // undirected relationship
+                    { id1, id2 }
+                );
+            }
         }
 
         console.log("✅ Imported artists to Neo4j!");
