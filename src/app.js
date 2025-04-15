@@ -14,6 +14,7 @@ const uri = process.env.NEO4J_URI;
 const user = process.env.NEO4J_USER;
 const password = process.env.NEO4J_PASSWORD;
 const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB
+
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 const app = express();
@@ -22,6 +23,7 @@ app.use(express.json());
 
 const mysqlPool = mysql.createPool({
     host: process.env.MYSQL_HOST,
+    port: process.env.MYSQL_PORT,
     user: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
     database: process.env.MYSQL_DATABASE
@@ -32,7 +34,7 @@ app.get('/', (req, res) => {
     res.send('SoundWeb Backend is Running!');
 });
 
-// Serve artist data from Neo4j
+//Serve artist data from Neo4j
 app.get('/api/artists/graph', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
 
@@ -44,13 +46,13 @@ app.get('/api/artists/graph', async (req, res) => {
         `);
 
         const nodes = [];
-        const links = new Set();
+        const linksSet = new Set();
 
         for (const record of result.records) {
             const artist = record.get('a').properties;
-            const relatedIds = record.get('relatedIds').filter(id => id); // Filter out nulls
+            const relatedIds = record.get('relatedIds')
+                ?.filter(id => id && typeof id === 'string') || [];
 
-            // Push artist node
             nodes.push({
                 id: artist.id,
                 name: artist.name,
@@ -65,23 +67,22 @@ app.get('/api/artists/graph', async (req, res) => {
                 y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0
             });
 
-            // Push links
             const sourceId = artist.id;
             relatedIds.forEach(targetId => {
-                const key = [sourceId, targetId].sort().join('-'); // Prevent duplicate links
-                links.add(key);
+                const key = [sourceId, targetId].sort().join("-");
+                linksSet.add(key);
             });
         }
 
-        const formattedLinks = Array.from(links).map(k => {
-            const [source, target] = k.split('-');
+        const links = Array.from(linksSet).map(link => {
+            const [source, target] = link.split("-");
             return { source, target };
         });
 
-        res.json({ nodes, links: formattedLinks });
+        res.json({ nodes, links });
     } catch (err) {
-        console.error('❌ Error fetching artist graph from Neo4j:', err);
-        res.status(500).json({ error: 'Failed to load artist graph from Neo4j' });
+        console.error("❌ Error fetching artist graph from Neo4j:", err);
+        res.status(500).json({ error: "Failed to load artist graph from Neo4j" });
     } finally {
         await session.close();
     }
@@ -92,32 +93,29 @@ app.get('/api/genres/top', async (req, res) => {
     try {
         const count = parseInt(req.query.count) || 10;
 
-        // Load genreMap only
-        const genreMap = JSON.parse(fs.readFileSync('./src/data/genreMap.json', 'utf-8'));
-
-        // Filter out genres without a count or missing coordinates
-        const genreEntries = Object.entries(genreMap)
-            .filter(([_, g]) => typeof g.count === 'number' && g.count > 0 && g.x != null && g.y != null);
+        // Pull all non-zero genres from MySQL
+        const [rows] = await mysqlPool.execute(`
+            SELECT name, x, y, color, count
+            FROM genres
+            WHERE count > 0
+        `);
 
         // Sort by count descending
-        const sortedGenres = genreEntries
-            .sort((a, b) => b[1].count - a[1].count)
-            .map(([name]) => name);
+        const sorted = rows.sort((a, b) => b.count - a.count);
 
-        // Euclidean distance (using x/y already scaled to 20k graph)
+        // Euclidean distance calculation
         const distance = (g1, g2) => {
-            const dx = genreMap[g1].x - genreMap[g2].x;
-            const dy = genreMap[g1].y - genreMap[g2].y;
+            const dx = g1.x - g2.x;
+            const dy = g1.y - g2.y;
             return Math.sqrt(dx * dx + dy * dy);
         };
 
-        // Scale spacing
         const baseDistance = 2500;
         const minDistance = Math.floor(baseDistance * Math.sqrt(10 / count));
 
         // Select spaced-out top genres
         const selected = [];
-        for (const genre of sortedGenres) {
+        for (const genre of sorted) {
             const isTooClose = selected.some(sel => distance(genre, sel) < minDistance);
             if (!isTooClose) {
                 selected.push(genre);
@@ -125,40 +123,28 @@ app.get('/api/genres/top', async (req, res) => {
             if (selected.length === count) break;
         }
 
-        // Build response
-        const result = selected.map(name => {
-            const g = genreMap[name];
-            return {
-                name,
-                x: g.x,
-                y: g.y,
-                color: g.color,
-                count: g.count
-            };
-        });
-
-        res.json(result);
+        res.json(selected);
     } catch (err) {
-        console.error('❌ Error fetching top spaced genres:', err);
+        console.error('❌ Error fetching top spaced genres from MySQL:', err);
         res.status(500).json({ error: 'Failed to load top genres' });
     }
 });
 
 
 app.get('/api/genres/all', async (req, res) => {
-    const excludeZero = req.query.excludeZero === 'true';
-
     try {
-        const query = excludeZero
-            ? 'SELECT name, x, y, color, count FROM genres WHERE count > 0'
-            : 'SELECT name, x, y, color, count FROM genres';
+        const excludeZero = req.query.excludeZero === 'true';
 
-        const [rows] = await mysqlPool.execute(query);
+        const [rows] = await mysqlPool.execute(
+            `SELECT name, x, y, color, count FROM genres ${excludeZero ? 'WHERE count > 0' : ''}`
+        );
+
         res.json(rows);
     } catch (err) {
         console.error('❌ Error fetching all genres from MySQL:', err);
         res.status(500).json({ error: 'Failed to load genres' });
     }
 });
+
 
 export default app;

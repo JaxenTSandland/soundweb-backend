@@ -8,7 +8,8 @@ const RELOAD_MUSICBRAINZ_DATA = false;
 const RELOAD_SPOTIFY_DATA = false;
 const ANALYZE_GENRES = false;
 const RELOAD_COMBINE_DATA = false;
-const EXPORT_DATA_TO_DATABASES = false;
+const EXPORT_DATA_TO_NEO4J = false;
+const EXPORT_DATA_TO_MYSQL = false;
 
 dotenv.config();
 
@@ -20,7 +21,8 @@ if (
     RELOAD_SPOTIFY_DATA ||
     RELOAD_COMBINE_DATA ||
     ANALYZE_GENRES ||
-    EXPORT_DATA_TO_DATABASES
+    EXPORT_DATA_TO_NEO4J ||
+    EXPORT_DATA_TO_MYSQL
 ) {
 
     if (RELOAD_LASTFM_DATA) {
@@ -49,10 +51,13 @@ if (
         await combineAllArtistData();
     }
 
-    if (EXPORT_DATA_TO_DATABASES) {
+    if (EXPORT_DATA_TO_NEO4J) {
         const { exportTopArtistsToNeo4j } = await import('./src/services/neo4jExportArtistsService.js');
-        const { exportGenresToMySQL } = await import('./src/services/mysqlExportGenresService.js');
         await exportTopArtistsToNeo4j();
+    }
+
+    if (EXPORT_DATA_TO_MYSQL) {
+        const { exportGenresToMySQL } = await import('./src/services/mysqlExportGenresService.js');
         await exportGenresToMySQL();
     }
 }
