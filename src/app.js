@@ -21,12 +21,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const mysqlPool = mysql.createPool({
+const sqlPool = mysql.createPool({
     host: process.env.MYSQL_HOST,
     port: process.env.MYSQL_PORT,
     user: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE
+    database: process.env.MYSQL_DATABASE,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
 });
 
 // Health check route
@@ -39,6 +42,7 @@ app.get('/api/artists/graph', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
 
     try {
+        console.log("GET - /api/artists/graph");
         const result = await session.run(`
             MATCH (a:Artist)
             OPTIONAL MATCH (a)-[:RELATED_TO]-(b:Artist)
@@ -91,10 +95,11 @@ app.get('/api/artists/graph', async (req, res) => {
 
 app.get('/api/genres/top', async (req, res) => {
     try {
+        console.log("GET - /api/genres/top");
         const count = parseInt(req.query.count) || 10;
 
         // Pull all non-zero genres from MySQL
-        const [rows] = await mysqlPool.execute(`
+        const [rows] = await sqlPool.execute(`
             SELECT name, x, y, color, count
             FROM genres
             WHERE count > 0
@@ -133,9 +138,10 @@ app.get('/api/genres/top', async (req, res) => {
 
 app.get('/api/genres/all', async (req, res) => {
     try {
+        console.log("GET - /api/genres/all");
         const excludeZero = req.query.excludeZero === 'true';
 
-        const [rows] = await mysqlPool.execute(
+        const [rows] = await sqlPool.execute(
             `SELECT name, x, y, color, count FROM genres ${excludeZero ? 'WHERE count > 0' : ''}`
         );
 
@@ -145,6 +151,5 @@ app.get('/api/genres/all', async (req, res) => {
         res.status(500).json({ error: 'Failed to load genres' });
     }
 });
-
 
 export default app;
