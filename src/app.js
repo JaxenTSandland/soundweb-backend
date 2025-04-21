@@ -92,6 +92,32 @@ app.get('/api/artists/graph', async (req, res) => {
     }
 });
 
+app.get('/api/metadata/last-sync', async (req, res) => {
+    const session = driver.session({ database: topArtistsDb });
+
+    try {
+        console.log("GET - /api/metadata/last-sync");
+
+        const result = await session.run(`
+            MATCH (meta:Metadata {type: "lastSync"})
+            RETURN meta.timestamp AS timestamp
+        `);
+
+        const record = result.records[0];
+        if (record && record.get("timestamp")) {
+            const timestamp = record.get("timestamp");
+            res.json({ lastSync: timestamp });
+        } else {
+            res.status(404).json({ error: "lastSync metadata not found" });
+        }
+
+    } catch (err) {
+        console.error("❌ Error fetching metadata from Neo4j:", err);
+        res.status(500).json({ error: "Failed to fetch lastSync metadata" });
+    } finally {
+        await session.close();
+    }
+});
 
 app.get('/api/genres/top', async (req, res) => {
     try {
