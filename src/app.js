@@ -96,23 +96,22 @@ app.get('/api/metadata/last-sync', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
 
     try {
-        console.log("GET - /api/metadata/last-sync");
-
         const result = await session.run(`
-            MATCH (meta:Metadata {type: "lastSync"})
-            RETURN meta.timestamp AS timestamp
+            MATCH (n:Metadata {name: "lastSync"})
+            RETURN n.updatedAt AS updatedAt
+            LIMIT 1
         `);
 
         const record = result.records[0];
-        if (record && record.get("timestamp")) {
-            const timestamp = record.get("timestamp");
-            res.json({ lastSync: timestamp });
-        } else {
-            res.status(404).json({ error: "lastSync metadata not found" });
+        const updatedAt = record?.get("updatedAt");
+
+        if (!updatedAt) {
+            return res.status(404).json({ error: "lastSync metadata not found" });
         }
 
+        res.json({ lastSync: updatedAt });
     } catch (err) {
-        console.error("❌ Error fetching metadata from Neo4j:", err);
+        console.error("Error fetching lastSync metadata from Neo4j:", err);
         res.status(500).json({ error: "Failed to fetch lastSync metadata" });
     } finally {
         await session.close();
