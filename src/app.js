@@ -8,6 +8,7 @@ import neo4j from 'neo4j-driver';
 import mysql from 'mysql2/promise';
 import {fetchRecentReleases, fetchTopTracks, getSpotifyAccessToken} from "./services/Spotify.js";
 import {fetchArtistBio} from "./services/lastfm.js";
+import {ArtistNode} from "./models/artistNode.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
