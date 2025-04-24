@@ -102,10 +102,9 @@ app.get('/api/artists/graph', async (req, res) => {
 
         for (const record of result.records) {
             const artist = record.get('a').properties;
-            const relatedIds = record.get('relatedIds')
-                ?.filter(id => id && typeof id === 'string') || [];
+            const relatedIds = record.get('relatedIds')?.filter(id => id && typeof id === 'string') || [];
 
-            nodes.push({
+            const node = new ArtistNode({
                 id: artist.id,
                 name: artist.name,
                 popularity: neo4j.isInt(artist.popularity) ? artist.popularity.toNumber() : artist.popularity ?? 0,
@@ -116,8 +115,11 @@ app.get('/api/artists/graph', async (req, res) => {
                 genres: artist.genres,
                 color: artist.color,
                 x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? 0,
-                y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0
+                y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0,
+                relatedArtists: relatedIds
             });
+
+            nodes.push(node.toDict());
 
             const sourceId = artist.id;
             relatedIds.forEach(targetId => {
