@@ -6,6 +6,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 import neo4j from 'neo4j-driver';
 import mysql from 'mysql2/promise';
+import {fetchRecentReleases, fetchTopTracks, getSpotifyAccessToken} from "./services/Spotify.js";
+import {fetchArtistBio} from "./services/lastfm.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -34,6 +36,53 @@ const sqlPool = mysql.createPool({
 // Health check route
 app.get('/', (req, res) => {
     res.send('SoundWeb Backend is Running!');
+});
+
+
+app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
+    const spotifyID = req.params.spotifyid;
+    const market = req.query.market || 'US';
+    const artistName = req.query.name;
+    const lastfmMBID = req.query.mbid;
+
+    try {
+        const spotifyAccessToken = await getSpotifyAccessToken();
+        //console.log(spotifyAccessToken);
+
+
+        // Spotify: Top Tracks
+        const topTracks = await fetchTopTracks({
+            spotifyID: spotifyID,
+            market: market,
+            accessToken: spotifyAccessToken
+        });
+
+        // Spotify: Recent release
+        const recentReleases = await fetchRecentReleases({
+            spotifyID: spotifyID,
+            market: market,
+            accessToken: spotifyAccessToken
+        });
+
+        // // Last.fm: Top Albums
+        // const topAlbums = await fetchTopAlbums({ name: artistName, mbid: lastfmMBID });
+
+        // Last.fm: Artist Bio
+        const bio = await fetchArtistBio({ name: artistName, mbid: lastfmMBID });
+
+        res.json({
+            artistSpotifyId: spotifyID,
+            topTracks,
+            //topAlbums,
+            recentReleases,
+            bio
+        });
+
+    } catch (err) {
+        console.error("Error in /api/artists/expanded:", err);
+        console.log(req.query);
+        res.status(500).json({ error: "Failed to expand artist info" });
+    }
 });
 
 //Serve artist data from Neo4j
@@ -175,5 +224,7 @@ app.get('/api/genres/all', async (req, res) => {
         res.status(500).json({ error: 'Failed to load genres' });
     }
 });
+
+
 
 export default app;
