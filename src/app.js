@@ -93,8 +93,8 @@ app.get('/api/artists/graph', async (req, res) => {
     try {
         console.log("GET - /api/artists/graph");
         const result = await session.run(`
-            MATCH (a:Artist)
-            OPTIONAL MATCH (a)-[:RELATED_TO]-(b:Artist)
+            MATCH (a:TopArtist)
+            OPTIONAL MATCH (a)-[:RELATED_TO]-(b:TopArtist)
             RETURN a, collect(DISTINCT b.id) AS relatedIds
         `);
 
