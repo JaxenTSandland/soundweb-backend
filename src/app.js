@@ -9,6 +9,7 @@ import mysql from 'mysql2/promise';
 import {fetchRecentReleases, fetchTopTracks, getSpotifyAccessToken} from "./services/Spotify.js";
 import {fetchArtistBio} from "./services/lastfm.js";
 import {ArtistNode} from "./models/artistNode.js";
+import req from "express/lib/request.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -89,13 +90,24 @@ app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
 //Serve artist data from Neo4j
 app.get('/api/artists/graph', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
+    const max = Number.isInteger(parseInt(req.query.max)) ? parseInt(req.query.max) : 1000;
+
+    // Proper boolean parsing
+    let onlyTopArtists = true;
+    if (req.query.onlytopartists !== undefined) {
+        onlyTopArtists = req.query.onlytopartists === 'true' || req.query.onlytopartists === '1';
+    }
 
     try {
-        console.log("GET - /api/artists/graph");
+        console.log(`GET - /api/artists/graph?onlytopartists=${onlyTopArtists}&max=${max}`);
+
+        const label = onlyTopArtists ? "TopArtist" : "Artist";
+
         const result = await session.run(`
-            MATCH (a:TopArtist)
-            OPTIONAL MATCH (a)-[:RELATED_TO]-(b:TopArtist)
+            MATCH (a:${label})
+            OPTIONAL MATCH (a)-[:RELATED_TO]-(b:${label})
             RETURN a, collect(DISTINCT b.id) AS relatedIds
+            LIMIT ${max}
         `);
 
         const nodes = [];
@@ -117,7 +129,8 @@ app.get('/api/artists/graph', async (req, res) => {
                 color: artist.color,
                 x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? 0,
                 y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0,
-                relatedArtists: relatedIds
+                relatedArtists: relatedIds,
+                rank: artist.rank,
             });
 
             nodes.push(node.toDict());
