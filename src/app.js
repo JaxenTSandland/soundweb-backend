@@ -9,7 +9,13 @@ import mysql from 'mysql2/promise';
 import {fetchRecentReleases, fetchTopTracks, getSpotifyAccessToken} from "./services/Spotify.js";
 import {fetchArtistBio} from "./services/lastfm.js";
 import {ArtistNode} from "./models/artistNode.js";
-import req from "express/lib/request.js";
+import { createClient } from 'redis';
+
+
+const redis = createClient({
+    url: process.env.REDIS_URL
+});
+await redis.connect();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,6 +23,7 @@ const uri = process.env.NEO4J_URI;
 const user = process.env.NEO4J_USER;
 const password = process.env.NEO4J_PASSWORD;
 const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB
+const REDIS_DATA_EXPIRATION_TIME_LIMIT = 3600; // One hour
 
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
@@ -35,11 +42,18 @@ const sqlPool = mysql.createPool({
     queueLimit: 0
 });
 
+
+
 // Health check route
 app.get('/', (req, res) => {
     res.send('SoundWeb Backend is Running!');
 });
 
+app.get('/api/redis-test', async (req, res) => {
+    await redis.set('testkey', 'hello world');
+    const value = await redis.get('testkey');
+    res.send(`Value from Redis: ${value}`);
+});
 
 app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
     const spotifyID = req.params.spotifyid;
@@ -47,10 +61,19 @@ app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
     const artistName = req.query.name;
     const lastfmMBID = req.query.mbid;
 
-    try {
-        const spotifyAccessToken = await getSpotifyAccessToken();
-        //console.log(spotifyAccessToken);
+    const cacheKey = `expanded:${spotifyID}:${market}`;
 
+    try {
+        console.log(`GET - /api/artists/${spotifyID}/expanded?artistName=${artistName}&market=${market}&lastfmMBID=${lastfmMBID}`);
+        const cached = await redis.get(cacheKey);
+        if (cached) {
+            console.log(`Cache hit for ${cacheKey}`);
+            return res.json(JSON.parse(cached));
+        }
+
+        console.log(`Cache miss for ${cacheKey}. Fetching from APIs.`);
+
+        const spotifyAccessToken = await getSpotifyAccessToken();
 
         // Spotify: Top Tracks
         const topTracks = await fetchTopTracks({
@@ -59,35 +82,37 @@ app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
             accessToken: spotifyAccessToken
         });
 
-        // Spotify: Recent release
+        // Spotify: Recent Release
         const recentReleases = await fetchRecentReleases({
             spotifyID: spotifyID,
             market: market,
             accessToken: spotifyAccessToken
         });
 
-        // // Last.fm: Top Albums
-        // const topAlbums = await fetchTopAlbums({ name: artistName, mbid: lastfmMBID });
-
         // Last.fm: Artist Bio
         const bio = await fetchArtistBio({ name: artistName, mbid: lastfmMBID });
 
-        res.json({
+        const responseData = {
             artistSpotifyId: spotifyID,
             topTracks,
-            //topAlbums,
             recentReleases,
             bio
+        };
+
+        await redis.set(cacheKey, JSON.stringify(responseData), {
+            EX: REDIS_DATA_EXPIRATION_TIME_LIMIT
         });
 
+        res.json(responseData);
+
     } catch (err) {
-        console.error("Error in /api/artists/expanded:", err);
+        console.error("❌ Error in /api/artists/expanded:", err);
         console.log(req.query);
         res.status(500).json({ error: "Failed to expand artist info" });
     }
 });
 
-//Serve artist data from Neo4j
+// Serve artist data from Neo4j
 app.get('/api/artists/graph', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
     const max = Number.isInteger(parseInt(req.query.max)) ? parseInt(req.query.max) : 1000;
@@ -98,8 +123,27 @@ app.get('/api/artists/graph', async (req, res) => {
         onlyTopArtists = req.query.onlytopartists === 'true' || req.query.onlytopartists === '1';
     }
 
+    const cacheKey = `artistGraph:${onlyTopArtists ? 'top' : 'all'}:${max}`;
+    const lastSyncKey = `lastSync`;
+
     try {
         console.log(`GET - /api/artists/graph?onlytopartists=${onlyTopArtists}&max=${max}`);
+
+        const cachedGraph = await redis.get(cacheKey);
+
+        const cachedLastSync = await redis.get(lastSyncKey);
+
+        const currentLastSync = await fetchLastSync();
+
+        if (cachedGraph && cachedLastSync) {
+            if (cachedLastSync.toString() === currentLastSync.toString()) {
+                console.log(`Serving artist graph from Redis cache.`);
+                return res.json(JSON.parse(cachedGraph));
+            } else {
+                await redis.del(cacheKey);
+                await redis.set(lastSyncKey, String(currentLastSync), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+            }
+        }
 
         const label = onlyTopArtists ? "TopArtist" : "Artist";
 
@@ -108,7 +152,7 @@ app.get('/api/artists/graph', async (req, res) => {
             OPTIONAL MATCH (a)-[:RELATED_TO]-(b:${label})
             RETURN a, collect(DISTINCT b.id) AS relatedIds
             LIMIT ${max}
-        `);
+        `, { max });
 
         const nodes = [];
         const linksSet = new Set();
@@ -147,7 +191,16 @@ app.get('/api/artists/graph', async (req, res) => {
             return { source, target };
         });
 
-        res.json({ nodes, links });
+        const responseData = { nodes, links };
+
+        await redis.set(cacheKey, JSON.stringify({
+            lastSync: String(currentLastSync),
+            nodes,
+            links
+        }), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+
+
+        res.json({ lastSync: currentLastSync, ...responseData });
     } catch (err) {
         console.error("❌ Error fetching artist graph from Neo4j:", err);
         res.status(500).json({ error: "Failed to load artist graph from Neo4j" });
@@ -156,18 +209,13 @@ app.get('/api/artists/graph', async (req, res) => {
     }
 });
 
+
+
 app.get('/api/metadata/last-sync', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
 
     try {
-        const result = await session.run(`
-            MATCH (n:Metadata {name: "lastSync"})
-            RETURN n.updatedAt AS updatedAt
-            LIMIT 1
-        `);
-
-        const record = result.records[0];
-        const updatedAt = record?.get("updatedAt");
+        const updatedAt = await fetchLastSync(session);
 
         if (!updatedAt) {
             return res.status(404).json({ error: "lastSync metadata not found" });
@@ -240,6 +288,29 @@ app.get('/api/genres/all', async (req, res) => {
         res.status(500).json({ error: 'Failed to load genres' });
     }
 });
+
+async function fetchLastSync(session) {
+    let ownSession = false;
+    if (!session) {
+        session = driver.session({ database: topArtistsDb });
+        ownSession = true;
+    }
+
+    try {
+        const lastSyncResult = await session.run(`
+            MATCH (n:Metadata {name: "lastSync"})
+            RETURN n.updatedAt AS updatedAt
+            LIMIT 1
+        `);
+        const record = lastSyncResult.records[0];
+        return record?.get('updatedAt');
+    } finally {
+        if (ownSession) {
+            await session.close();
+        }
+    }
+}
+
 
 
 
