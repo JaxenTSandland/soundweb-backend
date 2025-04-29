@@ -113,7 +113,7 @@ app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
 });
 
 // Serve artist data from Neo4j
-app.get('/api/artists/graph', async (req, res) => {
+app.get('/api/artists/top', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
     const max = Number.isInteger(parseInt(req.query.max)) ? parseInt(req.query.max) : 1000;
 
@@ -127,7 +127,7 @@ app.get('/api/artists/graph', async (req, res) => {
     const lastSyncKey = `lastSync`;
 
     try {
-        console.log(`GET - /api/artists/graph?onlytopartists=${onlyTopArtists}&max=${max}`);
+        console.log(`GET - /api/artists/top?onlytopartists=${onlyTopArtists}&max=${max}`);
 
         const cachedGraph = await redis.get(cacheKey);
 
@@ -208,7 +208,132 @@ app.get('/api/artists/graph', async (req, res) => {
         await session.close();
     }
 });
+// Get all artists with a specific user tag
+app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
+    const session = driver.session({ database: topArtistsDb });
+    const userTag = req.params.userTag;
+    const cacheKey = `artists:by-usertag:${userTag}`;
 
+    try {
+        console.log(`GET - /api/artists/by-usertag/${userTag}`);
+
+        const cached = await redis.get(cacheKey);
+        if (cached) {
+            console.log(`Serving /by-usertag/${userTag} from Redis cache.`);
+            return res.json(JSON.parse(cached));
+        }
+
+        const result = await session.run(`
+            MATCH (a:Artist)
+            WHERE $userTag IN a.userTags
+            RETURN a
+        `, { userTag });
+
+        const nodes = result.records.map(record => {
+            const artist = record.get('a').properties;
+            return new ArtistNode({
+                id: artist.id,
+                name: artist.name,
+                popularity: neo4j.isInt(artist.popularity) ? artist.popularity.toNumber() : artist.popularity ?? 0,
+                spotifyId: artist.spotifyId ?? null,
+                spotifyUrl: artist.spotifyUrl ?? null,
+                lastfmMBID: artist.lastfmMBID ?? null,
+                imageUrl: artist.imageUrl ?? null,
+                genres: artist.genres ?? [],
+                x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? null,
+                y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? null,
+                color: artist.color ?? null,
+                userTags: artist.userTags ?? [],
+                relatedArtists: [],
+                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0
+            }).toDict();
+        });
+
+        const responseData = { nodes };
+        await redis.set(cacheKey, JSON.stringify(responseData), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+
+        res.json(responseData);
+    } catch (err) {
+        console.error("❌ Error fetching artists by userTag:", err);
+        res.status(500).json({ error: "Failed to fetch artists by userTag" });
+    } finally {
+        await session.close();
+    }
+});
+
+// Get all artists without the TopArtist label
+app.get('/api/artists/custom', async (req, res) => {
+    const session = driver.session({ database: topArtistsDb });
+    const max = Number.isInteger(parseInt(req.query.max)) ? parseInt(req.query.max) : 1000;
+    const cacheKey = `artists:custom:no-topartist-with-links:${max}`;
+
+    try {
+        console.log(`GET - /api/artists/custom?max=${max}`);
+
+        const cached = await redis.get(cacheKey);
+        if (cached) {
+            console.log(`Serving /custom from Redis cache.`);
+            return res.json(JSON.parse(cached));
+        }
+
+        const result = await session.run(`
+            MATCH (a:Artist)
+            WHERE NOT a:TopArtist
+            OPTIONAL MATCH (a)-[:RELATED_TO]-(b:Artist)
+            WHERE NOT b:TopArtist
+            RETURN a, collect(DISTINCT b.id) AS relatedIds
+            LIMIT ${max}
+        `, { max });
+
+        const nodes = [];
+        const linksSet = new Set();
+
+        for (const record of result.records) {
+            const artist = record.get('a').properties;
+            const relatedIds = record.get('relatedIds')?.filter(id => id && typeof id === 'string') || [];
+
+            const node = new ArtistNode({
+                id: artist.id,
+                name: artist.name,
+                popularity: neo4j.isInt(artist.popularity) ? artist.popularity.toNumber() : artist.popularity ?? 0,
+                spotifyId: artist.spotifyId ?? null,
+                spotifyUrl: artist.spotifyUrl ?? null,
+                lastfmMBID: artist.lastfmMBID ?? null,
+                imageUrl: artist.imageUrl ?? null,
+                genres: artist.genres ?? [],
+                x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? null,
+                y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? null,
+                color: artist.color ?? null,
+                userTags: artist.userTags ?? [],
+                relatedArtists: relatedIds,
+                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0
+            });
+
+            nodes.push(node.toDict());
+
+            const sourceId = artist.id;
+            relatedIds.forEach(targetId => {
+                const key = [sourceId, targetId].sort().join("-");
+                linksSet.add(key);
+            });
+        }
+
+        const links = Array.from(linksSet).map(link => {
+            const [source, target] = link.split("-");
+            return { source, target };
+        });
+
+        const responseData = { nodes, links };
+        await redis.set(cacheKey, JSON.stringify(responseData), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+
+        res.json(responseData);
+    } catch (err) {
+        console.error("❌ Error fetching custom artist graph:", err);
+        res.status(500).json({ error: "Failed to fetch custom artist graph" });
+    } finally {
+        await session.close();
+    }
+});
 
 
 app.get('/api/metadata/last-sync', async (req, res) => {
