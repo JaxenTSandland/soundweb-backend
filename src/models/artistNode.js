@@ -13,7 +13,7 @@ export class ArtistNode {
                     color = null,
                     userTags = [],
                     relatedArtists = [],
-                    rank = 0
+                    rank = null
                 }) {
         this.id = id;
         this.name = name;

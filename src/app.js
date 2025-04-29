@@ -130,21 +130,20 @@ app.get('/api/artists/top', async (req, res) => {
         console.log(`GET - /api/artists/top?onlytopartists=${onlyTopArtists}&max=${max}`);
 
         const cachedGraph = await redis.get(cacheKey);
-
         const cachedLastSync = await redis.get(lastSyncKey);
-
         const currentLastSync = await fetchLastSync();
 
-        if (cachedGraph && cachedLastSync) {
+        if (cachedGraph && cachedLastSync && currentLastSync) {
             if (cachedLastSync.toString() === currentLastSync.toString()) {
                 console.log(`Serving artist graph from Redis cache.`);
                 return res.json(JSON.parse(cachedGraph));
             } else {
+                console.log(`Cache invalidated. lastSync mismatch.`);
                 await redis.del(cacheKey);
-                await redis.set(lastSyncKey, String(currentLastSync), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
             }
         }
 
+// If cache doesn't exist or is invalid, rebuild
         const label = onlyTopArtists ? "TopArtist" : "Artist";
 
         const result = await session.run(`
@@ -193,12 +192,15 @@ app.get('/api/artists/top', async (req, res) => {
 
         const responseData = { nodes, links };
 
+
         await redis.set(cacheKey, JSON.stringify({
             lastSync: String(currentLastSync),
             nodes,
             links
         }), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
 
+
+        await redis.set(lastSyncKey, String(currentLastSync), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
 
         res.json({ lastSync: currentLastSync, ...responseData });
     } catch (err) {
@@ -208,6 +210,8 @@ app.get('/api/artists/top', async (req, res) => {
         await session.close();
     }
 });
+
+
 // Get all artists with a specific user tag
 app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
