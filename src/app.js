@@ -143,7 +143,7 @@ app.get('/api/artists/top', async (req, res) => {
             }
         }
 
-// If cache doesn't exist or is invalid, rebuild
+        // If cache doesn't exist or is invalid, rebuild
         const label = onlyTopArtists ? "TopArtist" : "Artist";
 
         const result = await session.run(`
@@ -202,7 +202,7 @@ app.get('/api/artists/top', async (req, res) => {
 
         await redis.set(lastSyncKey, String(currentLastSync), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
 
-        res.json({ lastSync: currentLastSync, ...responseData });
+        res.json({ lastSync: String(currentLastSync), ...responseData });
     } catch (err) {
         console.error("❌ Error fetching artist graph from Neo4j:", err);
         res.status(500).json({ error: "Failed to load artist graph from Neo4j" });
