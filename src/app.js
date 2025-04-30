@@ -408,7 +408,7 @@ app.get('/api/genres/all', async (req, res) => {
         const excludeZero = req.query.excludeZero === 'true';
 
         const [rows] = await sqlPool.execute(
-            `SELECT name, x, y, color, count FROM genres ${excludeZero ? 'WHERE count > 0' : ''}`
+            `SELECT name, x, y, color FROM genres`
         );
 
         res.json(rows);
