@@ -174,6 +174,7 @@ app.get('/api/artists/top', async (req, res) => {
                 y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0,
                 relatedArtists: relatedIds,
                 rank: artist.rank,
+                lastUpdated: artist.lastUpdated
             });
 
             nodes.push(node.toDict());
@@ -249,7 +250,8 @@ app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
                 color: artist.color ?? null,
                 userTags: artist.userTags ?? [],
                 relatedArtists: [],
-                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0
+                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0,
+                lastUpdated: artist.lastUpdated
             }).toDict();
         });
 
@@ -310,7 +312,8 @@ app.get('/api/artists/custom', async (req, res) => {
                 color: artist.color ?? null,
                 userTags: artist.userTags ?? [],
                 relatedArtists: relatedIds,
-                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0
+                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0,
+                lastUpdated: artist.lastUpdated
             });
 
             nodes.push(node.toDict());

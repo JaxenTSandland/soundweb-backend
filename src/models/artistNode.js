@@ -13,7 +13,8 @@ export class ArtistNode {
                     color = null,
                     userTags = [],
                     relatedArtists = [],
-                    rank = null
+                    rank = null,
+                    lastUpdated = null
                 }) {
         this.id = id;
         this.name = name;
@@ -29,6 +30,7 @@ export class ArtistNode {
         this.userTags = userTags;
         this.relatedArtists = relatedArtists;
         this.rank = rank;
+        this.lastUpdated = lastUpdated;
     }
 
     toDict() {
@@ -46,7 +48,8 @@ export class ArtistNode {
             color: this.color,
             userTags: this.userTags,
             relatedArtists: this.relatedArtists,
-            rank: this.rank
+            rank: this.rank,
+            lastUpdated: this.lastUpdated
         };
     }
 }
