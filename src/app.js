@@ -9,7 +9,13 @@ import mysql from 'mysql2/promise';
 import {fetchRecentReleases, fetchTopTracks, getSpotifyAccessToken} from "./services/Spotify.js";
 import {fetchArtistBio} from "./services/lastfm.js";
 import {ArtistNode} from "./models/artistNode.js";
-import {checkAndReturnLastSyncCached, getFromCache, setLastSync, setToCache} from "./services/redis.js";
+import {
+    checkAndReturnLastSyncCached,
+    deleteFromCache,
+    getFromCache,
+    setLastSync,
+    setToCache
+} from "./services/redis.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -200,14 +206,21 @@ app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
         if (cached) return res.json(cached);
 
         const result = await session.run(`
-            MATCH (a:Artist)
-            WHERE $userTag IN a.userTags
-            RETURN a
-        `, { userTag });
+    MATCH (a:Artist)
+    WHERE $userTag IN a.userTags
+    OPTIONAL MATCH (a)-[:RELATED_TO]-(b:Artist)
+    WHERE $userTag IN b.userTags
+    RETURN a, collect(DISTINCT b.id) AS relatedIds
+`, { userTag });
 
-        const nodes = result.records.map(record => {
+        const nodes = [];
+        const linksSet = new Set();
+
+        for (const record of result.records) {
             const artist = record.get('a').properties;
-            return new ArtistNode({
+            const relatedIds = record.get('relatedIds')?.filter(id => id && typeof id === 'string') || [];
+
+            const node = new ArtistNode({
                 id: artist.id,
                 name: artist.name,
                 popularity: neo4j.isInt(artist.popularity) ? artist.popularity.toNumber() : artist.popularity ?? 0,
@@ -220,15 +233,27 @@ app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
                 y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? null,
                 color: artist.color ?? null,
                 userTags: artist.userTags ?? [],
-                relatedArtists: [],
+                relatedArtists: relatedIds,
                 rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0,
                 lastUpdated: artist.lastUpdated
-            }).toDict();
+            });
+
+            nodes.push(node.toDict());
+
+            const sourceId = artist.id;
+            relatedIds.forEach(targetId => {
+                const key = [sourceId, targetId].sort().join("-");
+                linksSet.add(key);
+            });
+        }
+
+        const links = Array.from(linksSet).map(link => {
+            const [source, target] = link.split("-");
+            return { source, target };
         });
 
-        const responseData = { nodes };
+        const responseData = { nodes, links };
         await setToCache(cacheKey, responseData);
-
         res.json(responseData);
     } catch (err) {
         console.error("❌ Error fetching artists by userTag:", err);
@@ -405,6 +430,7 @@ export async function fetchLastSync(session) {
         ownSession = true;
     }
 
+
     try {
         const lastSyncResult = await session.run(`
             MATCH (n:Metadata {name: "lastSync"})
@@ -419,6 +445,20 @@ export async function fetchLastSync(session) {
         }
     }
 }
+
+// DELETE endpoint to clear a Redis cache key
+app.delete('/api/cache/:key', async (req, res) => {
+    const { key } = req.params;
+    console.log(`DELETE - /api/cache/${key}`);
+
+    try {
+        await deleteFromCache(key);
+        res.json({ success: true, message: `Deleted Redis key: ${key}` });
+    } catch (err) {
+        console.error(`Failed to delete Redis key: ${key}`, err);
+        res.status(500).json({ success: false, error: 'Redis delete failed' });
+    }
+});
 
 
 
