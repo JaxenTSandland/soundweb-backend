@@ -9,21 +9,14 @@ import mysql from 'mysql2/promise';
 import {fetchRecentReleases, fetchTopTracks, getSpotifyAccessToken} from "./services/Spotify.js";
 import {fetchArtistBio} from "./services/lastfm.js";
 import {ArtistNode} from "./models/artistNode.js";
-import { createClient } from 'redis';
-
-
-const redis = createClient({
-    url: process.env.REDIS_URL
-});
-await redis.connect();
+import {checkAndReturnLastSyncCached, getFromCache, setLastSync, setToCache} from "./services/redis.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const uri = process.env.NEO4J_URI;
 const user = process.env.NEO4J_USER;
 const password = process.env.NEO4J_PASSWORD;
-const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB
-const REDIS_DATA_EXPIRATION_TIME_LIMIT = 3600; // One hour
+const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB;
 
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
@@ -65,13 +58,8 @@ app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
 
     try {
         console.log(`GET - /api/artists/${spotifyID}/expanded?artistName=${artistName}&market=${market}&lastfmMBID=${lastfmMBID}`);
-        const cached = await redis.get(cacheKey);
-        if (cached) {
-            console.log(`Cache hit for ${cacheKey}`);
-            return res.json(JSON.parse(cached));
-        }
-
-        console.log(`Cache miss for ${cacheKey}. Fetching from APIs.`);
+        const cached = await getFromCache(cacheKey);
+        if (cached) return res.json(cached);
 
         const spotifyAccessToken = await getSpotifyAccessToken();
 
@@ -99,14 +87,12 @@ app.get('/api/artists/:spotifyid/expanded', async (req, res) => {
             bio
         };
 
-        await redis.set(cacheKey, JSON.stringify(responseData), {
-            EX: REDIS_DATA_EXPIRATION_TIME_LIMIT
-        });
+        await setToCache(cacheKey, responseData);
 
         res.json(responseData);
 
     } catch (err) {
-        console.error("❌ Error in /api/artists/expanded:", err);
+        console.error("Error in /api/artists/expanded:", err);
         console.log(req.query);
         res.status(500).json({ error: "Failed to expand artist info" });
     }
@@ -124,24 +110,13 @@ app.get('/api/artists/top', async (req, res) => {
     }
 
     const cacheKey = `artistGraph:${onlyTopArtists ? 'top' : 'all'}:${max}`;
-    const lastSyncKey = `lastSync`;
+
 
     try {
         console.log(`GET - /api/artists/top?onlytopartists=${onlyTopArtists}&max=${max}`);
 
-        const cachedGraph = await redis.get(cacheKey);
-        const cachedLastSync = await redis.get(lastSyncKey);
-        const currentLastSync = await fetchLastSync();
-
-        if (cachedGraph && cachedLastSync && currentLastSync) {
-            if (cachedLastSync.toString() === currentLastSync.toString()) {
-                console.log(`Serving artist graph from Redis cache.`);
-                return res.json(JSON.parse(cachedGraph));
-            } else {
-                console.log(`Cache invalidated. lastSync mismatch.`);
-                await redis.del(cacheKey);
-            }
-        }
+        const cached = await checkAndReturnLastSyncCached(cacheKey, res);
+        if (cached) return;
 
         // If cache doesn't exist or is invalid, rebuild
         const label = onlyTopArtists ? "TopArtist" : "Artist";
@@ -192,20 +167,19 @@ app.get('/api/artists/top', async (req, res) => {
         });
 
         const responseData = { nodes, links };
-
-
-        await redis.set(cacheKey, JSON.stringify({
+        const currentLastSync = await fetchLastSync();
+        const data = {
             lastSync: String(currentLastSync),
             nodes,
             links
-        }), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+        };
 
-
-        await redis.set(lastSyncKey, String(currentLastSync), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+        await setToCache(cacheKey, data);
+        await setLastSync(String(currentLastSync));
 
         res.json({ lastSync: String(currentLastSync), ...responseData });
     } catch (err) {
-        console.error("❌ Error fetching artist graph from Neo4j:", err);
+        console.error("Error fetching artist graph from Neo4j:", err);
         res.status(500).json({ error: "Failed to load artist graph from Neo4j" });
     } finally {
         await session.close();
@@ -222,11 +196,8 @@ app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
     try {
         console.log(`GET - /api/artists/by-usertag/${userTag}`);
 
-        const cached = await redis.get(cacheKey);
-        if (cached) {
-            console.log(`Serving /by-usertag/${userTag} from Redis cache.`);
-            return res.json(JSON.parse(cached));
-        }
+        const cached = await getFromCache(cacheKey);
+        if (cached) return res.json(cached);
 
         const result = await session.run(`
             MATCH (a:Artist)
@@ -256,7 +227,7 @@ app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
         });
 
         const responseData = { nodes };
-        await redis.set(cacheKey, JSON.stringify(responseData), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+        await setToCache(cacheKey, responseData);
 
         res.json(responseData);
     } catch (err) {
@@ -271,16 +242,13 @@ app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
 app.get('/api/artists/custom', async (req, res) => {
     const session = driver.session({ database: topArtistsDb });
     const max = Number.isInteger(parseInt(req.query.max)) ? parseInt(req.query.max) : 1000;
-    const cacheKey = `artists:custom:no-topartist-with-links:${max}`;
+    const cacheKey = `artists:custom:no-topartist:${max}`;
 
     try {
         console.log(`GET - /api/artists/custom?max=${max}`);
 
-        const cached = await redis.get(cacheKey);
-        if (cached) {
-            console.log(`Serving /custom from Redis cache.`);
-            return res.json(JSON.parse(cached));
-        }
+        const cached = await getFromCache(cacheKey);
+        if (cached) return res.json(cached);
 
         const result = await session.run(`
             MATCH (a:Artist)
@@ -331,7 +299,7 @@ app.get('/api/artists/custom', async (req, res) => {
         });
 
         const responseData = { nodes, links };
-        await redis.set(cacheKey, JSON.stringify(responseData), { EX: REDIS_DATA_EXPIRATION_TIME_LIMIT });
+        await setToCache(cacheKey, responseData);
 
         res.json(responseData);
     } catch (err) {
@@ -367,6 +335,10 @@ app.get('/api/genres/top', async (req, res) => {
         console.log("GET - /api/genres/top");
         const count = parseInt(req.query.count) || 10;
 
+        const cacheKey = `genres:top:${count}`;
+        const cached = await getFromCache(cacheKey);
+        if (cached) return res.json(cached);
+
         // Pull all non-zero genres from MySQL
         const [rows] = await sqlPool.execute(`
             SELECT name, x, y, color, count
@@ -397,9 +369,10 @@ app.get('/api/genres/top', async (req, res) => {
             if (selected.length === count) break;
         }
 
+        await setToCache(cacheKey, selected);
         res.json(selected);
     } catch (err) {
-        console.error('❌ Error fetching top spaced genres from MySQL:', err);
+        console.error('Error fetching top spaced genres from MySQL:', err);
         res.status(500).json({ error: 'Failed to load top genres' });
     }
 });
@@ -408,20 +381,24 @@ app.get('/api/genres/top', async (req, res) => {
 app.get('/api/genres/all', async (req, res) => {
     try {
         console.log("GET - /api/genres/all");
-        const excludeZero = req.query.excludeZero === 'true';
+
+        const cacheKey = `genres:all`;
+        const cached = await getFromCache(cacheKey);
+        if (cached) return res.json(cached);
 
         const [rows] = await sqlPool.execute(
             `SELECT name, x, y, color FROM genres`
         );
 
+        await setToCache(cacheKey, rows);
         res.json(rows);
     } catch (err) {
-        console.error('❌ Error fetching all genres from MySQL:', err);
+        console.error('Error fetching all genres from MySQL:', err);
         res.status(500).json({ error: 'Failed to load genres' });
     }
 });
 
-async function fetchLastSync(session) {
+export async function fetchLastSync(session) {
     let ownSession = false;
     if (!session) {
         session = driver.session({ database: topArtistsDb });
