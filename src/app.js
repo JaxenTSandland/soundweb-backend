@@ -447,8 +447,9 @@ export async function fetchLastSync(session) {
 }
 
 // DELETE endpoint to clear a Redis cache key
-app.delete('/api/cache/:key', async (req, res) => {
-    const { key } = req.params;
+app.delete('/api/cache', async (req, res) => {
+    const key = req.query.key;
+    if (!key) return res.status(400).json({ error: "Missing cache key" });
     console.log(`DELETE - /api/cache/${key}`);
 
     try {
