@@ -151,6 +151,7 @@ app.get('/api/artists/top', async (req, res) => {
                 imageUrl: artist.imageUrl,
                 genres: artist.genres,
                 color: artist.color,
+                userTags: artist.userTags ?? [],
                 x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? 0,
                 y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0,
                 relatedArtists: relatedIds,
