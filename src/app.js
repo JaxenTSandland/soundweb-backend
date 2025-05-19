@@ -462,6 +462,99 @@ app.delete('/api/cache', async (req, res) => {
     }
 });
 
+app.post('/api/spotify/callback', async (req, res) => {
+    const { code, code_verifier } = req.body;
+    console.log(`POST - /api/spotify/callback`);
+
+    if (!code || !code_verifier) {
+        return res.status(400).json({ error: 'Missing code or code_verifier' });
+    }
+
+    try {
+        // 1. Exchange code for access token
+        const tokenResponse = await fetch('https://accounts.spotify.com/api/token', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                client_id: process.env.SPOTIFY_CLIENT_ID,
+                grant_type: 'authorization_code',
+                code,
+                redirect_uri: process.env.SPOTIFY_REDIRECT_URI,
+                code_verifier
+            })
+        });
+
+        if (!tokenResponse.ok) {
+            const errorText = await tokenResponse.text();
+            console.error('Token exchange failed:', errorText);
+            return res.status(500).json({ error: 'Token exchange failed' });
+        }
+
+        const tokenJson = await tokenResponse.json();
+        const accessToken = tokenJson.access_token;
+        if (!accessToken) return res.status(500).json({ error: 'Missing access token' });
+
+        // 2. Get user profile
+        const profileRes = await fetch('https://api.spotify.com/v1/me', {
+            headers: { Authorization: `Bearer ${accessToken}` }
+        });
+
+        if (!profileRes.ok) {
+            console.error('Failed to fetch profile:', await profileRes.text());
+            return res.status(500).json({ error: 'Failed to fetch user profile' });
+        }
+
+        const userProfile = await profileRes.json();
+        const userId = userProfile.id;
+        const redisKey = `spotify:user:${userId}`;
+
+        // 3. Check Redis for cached user + top artists
+        const cached = await getFromCache(redisKey);
+        if (cached) {
+            return res.json(cached);
+        }
+
+        // 4. Fetch user's top artists from Spotify
+        const topArtistIds = [];
+        let offset = 0;
+        const limit = 50;
+
+        while (true) {
+            const topRes = await fetch(`https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=${limit}&offset=${offset}`, {
+                headers: { Authorization: `Bearer ${accessToken}` }
+            });
+
+            if (!topRes.ok) {
+                console.error('Failed to fetch top artists:', await topRes.text());
+                break;
+            }
+
+            const topJson = await topRes.json();
+            const items = topJson.items || [];
+
+            topArtistIds.push(...items.map(artist => artist.id));
+            if (items.length < limit) break;
+            offset += limit;
+        }
+
+        const userData = {
+            id: userId,
+            display_name: userProfile.display_name,
+            email: userProfile.email,
+            images: userProfile.images,
+            topSpotifyIds: topArtistIds
+        };
+
+        // 5. Cache it
+        await setToCache(redisKey, userData, 86400);
+        res.json(userData);
+
+    } catch (err) {
+        console.error('Error in /api/spotify/callback:', err);
+        res.status(500).json({ error: 'Spotify login failed' });
+    }
+});
+
 
 
 
