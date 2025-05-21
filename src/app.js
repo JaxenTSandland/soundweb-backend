@@ -555,6 +555,165 @@ app.post('/api/spotify/callback', async (req, res) => {
     }
 });
 
+app.post('/api/graph/user/:userTag', async (req, res) => {
+    const userTag = String(req.params.userTag);
+    const spotifyIds = req.body.spotify_ids;
+    console.log(`POST - /api/graph/user/:userTag`);
+
+
+    if (!userTag || !Array.isArray(spotifyIds) || spotifyIds.length === 0) {
+        return res.status(400).json({ error: 'Missing user_tag or spotify_ids array' });
+    }
+
+    const cacheKey = `userGraph:${userTag}`;
+    const cached = await getFromCache(cacheKey);
+    if (cached) return res.json(cached);
+
+    const session = driver.session({ database: topArtistsDb });
+
+    try {
+        const result = await session.run(`
+            MATCH (a:Artist)
+            WHERE a.spotifyId IN $ids AND $userTag IN a.userTags
+            OPTIONAL MATCH (a)-[:RELATED_TO]-(b:Artist)
+            RETURN a, collect(DISTINCT b.id) AS relatedIds
+        `, {
+            ids: spotifyIds,
+            userTag
+        });
+
+        const nodes = [];
+        const linksSet = new Set();
+
+        for (const record of result.records) {
+            const artist = record.get('a').properties;
+            const relatedIds = record.get('relatedIds')?.filter(id => id && typeof id === 'string') || [];
+
+            const node = new ArtistNode({
+                id: artist.id,
+                name: artist.name,
+                popularity: neo4j.isInt(artist.popularity) ? artist.popularity.toNumber() : artist.popularity ?? 0,
+                spotifyId: artist.spotifyId,
+                spotifyUrl: artist.spotifyUrl,
+                lastfmMBID: artist.lastfmMBID,
+                imageUrl: artist.imageUrl,
+                genres: artist.genres ?? [],
+                color: artist.color ?? null,
+                x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? 0,
+                y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0,
+                userTags: artist.userTags ?? [],
+                relatedArtists: relatedIds,
+                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0,
+                lastUpdated: artist.lastUpdated
+            });
+
+            nodes.push(node.toDict());
+
+            const sourceId = artist.id;
+            for (const targetId of relatedIds) {
+                const key = [sourceId, targetId].sort().join("-");
+                linksSet.add(key);
+            }
+        }
+
+        const links = Array.from(linksSet).map(link => {
+            const [source, target] = link.split("-");
+            return { source, target };
+        });
+
+        const foundCount = nodes.length;
+        const totalCount = spotifyIds.length;
+        const progress = totalCount > 0 ? foundCount / totalCount : 0;
+
+        const responseData = {
+            nodes,
+            links,
+            foundCount,
+            totalCount,
+            progress
+        };
+
+        if (foundCount >= totalCount) {
+            await setToCache(cacheKey, responseData);
+        }
+
+    } catch (err) {
+        console.error("Error in /api/graph/user/:userTag:", err);
+        res.status(500).json({ error: "Failed to load user graph" });
+    } finally {
+        await session.close();
+    }
+});
+
+
+app.get('/api/progress/user/:userTag', async (req, res) => {
+    const session = driver.session({ database: topArtistsDb });
+    const userTag = req.params.userTag;
+
+    try {
+        const result = await session.run(`
+            MATCH (a:Artist)
+            WHERE $userTag IN a.userTags
+            RETURN count(a) AS artistCount
+        `, { userTag });
+
+        const record = result.records[0];
+        const count = record?.get('artistCount')?.toNumber?.() ?? -1;
+
+        res.json({ artistCount: count });
+    } catch (err) {
+        console.error("Error counting user-tagged artists:", err);
+        res.status(500).json({ error: "Failed to count user-tagged artists" });
+    } finally {
+        await session.close();
+    }
+});
+
+app.post('/api/users', async (req, res) => {
+    const { user_tag, spotify_ids } = req.body;
+
+    if (!user_tag || !Array.isArray(spotify_ids)) {
+        return res.status(400).json({ error: "Missing user_tag or spotify_ids array" });
+    }
+
+    try {
+        // 1. Check if user exists
+        const [rows] = await sqlPool.execute(
+            `SELECT * FROM users WHERE user_tag = ?`,
+            [user_tag]
+        );
+
+        if (rows.length > 0) {
+            return res.json({ success: true, message: "User already initialized", alreadyExists: true });
+        }
+
+        // 2. Save new user
+        await sqlPool.execute(
+            `INSERT INTO users (user_tag, spotify_id_count) VALUES (?, ?)`,
+            [user_tag, spotify_ids.length]
+        );
+
+        // 3. Trigger ingestor ingestion
+        fetch(`${process.env.INGESTOR_API_URL}/api/custom-artist/bulk`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user_tag, spotify_ids })
+        }).then(res => {
+            console.log(`Ingestor accepted request for user ${user_tag} (${res.status})`);
+        }).catch(err => {
+            console.warn(`Ingestor request failed for user ${user_tag}:`, err.message);
+        });
+
+        return res.json({
+            success: true,
+            message: "User created and ingestor triggered in background."
+        });
+    } catch (err) {
+        console.error("Error in /api/users:", err);
+        res.status(500).json({ error: "Failed to create user" });
+    }
+});
+
 
 
 
