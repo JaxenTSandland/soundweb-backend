@@ -520,7 +520,7 @@ app.post('/api/spotify/callback', async (req, res) => {
         const topArtistIdsSet = new Set();
 
         while (true) {
-            const topRes = await fetch(`https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=${limit}&offset=${offset}`, {
+            const topRes = await fetch(`https://api.spotify.com/v1/me/top/artists?time_range=medium_term&limit=${limit}&offset=${offset}`, {
                 headers: { Authorization: `Bearer ${accessToken}` }
             });
 
@@ -558,14 +558,12 @@ app.post('/api/spotify/callback', async (req, res) => {
     }
 });
 
-app.post('/api/graph/user/:userTag', async (req, res) => {
+app.get('/api/graph/user/:userTag', async (req, res) => {
     const userTag = String(req.params.userTag);
-    console.log(`POST - /api/graph/user/:userTag`);
-    const spotifyIds = Array.from(new Set(req.body.spotify_ids));
+    console.log(`GET - /api/graph/user/:userTag`);
 
-
-    if (!userTag || !Array.isArray(spotifyIds) || spotifyIds.length === 0) {
-        return res.status(400).json({ error: 'Missing user_tag or spotify_ids array' });
+    if (!userTag) {
+        return res.status(400).json({ error: 'Missing user_tag' });
     }
 
     const cacheKey = `userGraph:${userTag}`;
@@ -577,13 +575,10 @@ app.post('/api/graph/user/:userTag', async (req, res) => {
     try {
         const result = await session.run(`
             MATCH (a:Artist)
-            WHERE a.spotifyId IN $ids AND $userTag IN a.userTags
+            WHERE $userTag IN a.userTags
             OPTIONAL MATCH (a)-[:RELATED_TO]-(b:Artist)
             RETURN a, collect(DISTINCT b.id) AS relatedIds
-        `, {
-            ids: spotifyIds,
-            userTag
-        });
+        `, { userTag });
 
         const nodeMap = new Map();
         const linksSet = new Set();
@@ -624,23 +619,12 @@ app.post('/api/graph/user/:userTag', async (req, res) => {
             return { source, target };
         });
 
-        const nodes = Array.from(nodeMap.values());
-        const foundCount = nodes.length;
-        const totalCount = spotifyIds.length;
-        const progress = totalCount > 0 ? foundCount / totalCount : 0;
-
         const responseData = {
-            nodes,
-            links,
-            foundCount,
-            totalCount,
-            progress
+            nodes: Array.from(nodeMap.values()),
+            links
         };
 
-        if (foundCount >= totalCount) {
-            await setToCache(cacheKey, responseData);
-        }
-
+        await setToCache(cacheKey, responseData);
         res.json(responseData);
     } catch (err) {
         console.error("Error in /api/graph/user/:userTag:", err);
@@ -650,29 +634,54 @@ app.post('/api/graph/user/:userTag', async (req, res) => {
     }
 });
 
-
 app.get('/api/progress/user/:userTag', async (req, res) => {
-    const session = driver.session({ database: topArtistsDb });
     const userTag = req.params.userTag;
+    const session = driver.session({ database: topArtistsDb });
+
+    console.log(`GET - /api/progress/user/:userTag`);
 
     try {
+        // Get how many Spotify IDs were originally submitted
+        const [rows] = await sqlPool.execute(
+            `SELECT spotify_id_count FROM users WHERE user_tag = ?`,
+            [userTag]
+        );
+        const totalCount = rows[0]?.spotify_id_count ?? 0;
+
+        // Count how many artists were successfully ingested
         const result = await session.run(`
             MATCH (a:Artist)
             WHERE $userTag IN a.userTags
-            RETURN count(a) AS artistCount
+            RETURN count(a) AS foundCount
         `, { userTag });
+        const foundCount = result.records[0]?.get('foundCount')?.toNumber() ?? 0;
 
-        const record = result.records[0];
-        const count = record?.get('artistCount')?.toNumber?.() ?? -1;
+        // Count how many were marked as failed
+        const [incompleteRows] = await sqlPool.execute(
+            `SELECT COUNT(*) AS count FROM incomplete_artists WHERE user_tag = ?`,
+            [userTag]
+        );
+        const incompleteCount = incompleteRows[0]?.count ?? 0;
 
-        res.json({ artistCount: count });
+        // Adjusted total: only count those that are either found or still pending
+        const adjustedTotal = totalCount - incompleteCount;
+        const progress = adjustedTotal > 0 ? foundCount / adjustedTotal : 0;
+
+        res.json({
+            foundCount,
+            incompleteCount,
+            totalCount,
+            adjustedTotal,
+            progress
+        });
     } catch (err) {
-        console.error("Error counting user-tagged artists:", err);
-        res.status(500).json({ error: "Failed to count user-tagged artists" });
+        console.error("Progress check failed:", err);
+        res.status(500).json({ error: "Progress check failed" });
     } finally {
         await session.close();
     }
 });
+
 
 app.post('/api/users', async (req, res) => {
     const { user_tag, spotify_ids } = req.body;
@@ -681,45 +690,177 @@ app.post('/api/users', async (req, res) => {
         return res.status(400).json({ error: "Missing user_tag or spotify_ids array" });
     }
 
+    const uniqueSpotifyIds = Array.from(new Set(spotify_ids));
+
     try {
-        // 1. Check if user exists
         const [rows] = await sqlPool.execute(
-            `SELECT * FROM users WHERE user_tag = ?`,
+            `SELECT spotify_id_count FROM users WHERE user_tag = ?`,
             [user_tag]
         );
 
         if (rows.length > 0) {
-            return res.json({ success: true, message: "User already initialized", alreadyExists: true });
+            const existingIdsCount = rows[0].spotify_id_count;
+
+
+            if (existingIdsCount !== uniqueSpotifyIds.length) {
+                await sqlPool.execute(
+                    `UPDATE users SET spotify_id_count = ? WHERE user_tag = ?`,
+                    [uniqueSpotifyIds.length, user_tag]
+                );
+
+                fetch(`${process.env.INGESTOR_API_URL}/api/custom-artist/bulk`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ user_tag, spotify_ids: uniqueSpotifyIds })
+                }).then(res => {
+                    console.log(`Re-triggered ingestion for user ${user_tag} (${res.status})`);
+                }).catch(err => {
+                    console.warn(`Ingestor re-request failed for user ${user_tag}:`, err.message);
+                });
+
+                return res.json({
+                    success: true,
+                    message: "User existed, but data changed. Count updated and ingestion retriggered.",
+                    alreadyExists: true,
+                    reingested: true
+                });
+            }
+
+            return res.json({
+                success: true,
+                message: "User already initialized with up-to-date data.",
+                alreadyExists: true,
+                reingested: false
+            });
         }
 
-        // 2. Save new user
+        // New user: insert and trigger ingestion
         await sqlPool.execute(
             `INSERT INTO users (user_tag, spotify_id_count) VALUES (?, ?)`,
-            [user_tag, spotify_ids.length]
+            [user_tag, uniqueSpotifyIds.length]
         );
 
-        // 3. Trigger ingestor ingestion
         fetch(`${process.env.INGESTOR_API_URL}/api/custom-artist/bulk`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ user_tag, spotify_ids })
+            body: JSON.stringify({ user_tag, spotify_ids: uniqueSpotifyIds })
         }).then(res => {
-            console.log(`Ingestor accepted request for user ${user_tag} (${res.status})`);
+            console.log(`Ingestor accepted request for new user ${user_tag} (${res.status})`);
         }).catch(err => {
-            console.warn(`Ingestor request failed for user ${user_tag}:`, err.message);
+            console.warn(`Ingestor request failed for new user ${user_tag}:`, err.message);
         });
 
         return res.json({
             success: true,
-            message: "User created and ingestor triggered in background."
+            message: "New user created and ingestion triggered.",
+            alreadyExists: false
         });
     } catch (err) {
         console.error("Error in /api/users:", err);
-        res.status(500).json({ error: "Failed to create user" });
+        res.status(500).json({ error: "Failed to create or update user" });
     }
 });
 
+app.post('/api/debug/user/:userTag', async (req, res) => {
+    const userTag = String(req.params.userTag);
+    const spotifyIds = Array.from(new Set(req.body.spotify_ids));
 
+    if (!userTag || !Array.isArray(spotifyIds) || spotifyIds.length === 0) {
+        return res.status(400).json({ error: 'Missing user_tag or spotify_ids array' });
+    }
 
+    const session = driver.session({ database: topArtistsDb });
+
+    try {
+        const result = await session.run(`
+            MATCH (a:Artist)
+            WHERE a.spotifyId IN $ids AND $userTag IN a.userTags
+            RETURN a.spotifyId AS spotifyId
+        `, {
+            ids: spotifyIds,
+            userTag
+        });
+
+        const ingestedIds = result.records.map(r => r.get('spotifyId'));
+        const missingIds = spotifyIds.filter(id => !ingestedIds.includes(id));
+
+        res.json({
+            summary: {
+                ingested: ingestedIds.length,
+                missing: missingIds.length,
+                total: spotifyIds.length
+            },
+            ingestedIds,
+            missingIds
+        });
+    } catch (err) {
+        console.error("Error in /api/debug/user/:userTag:", err);
+        res.status(500).json({ error: "Debug check failed" });
+    } finally {
+        await session.close();
+    }
+});
+
+app.delete('/api/usertags/:userTag', async (req, res) => {
+    const userTag = req.params.userTag;
+    const session = driver.session({ database: topArtistsDb });
+
+    console.log(`DELETE - /api/usertags/${userTag}`);
+
+    try {
+        // 🧠 Remove user tag from Neo4j artist nodes
+        const result = await session.run(`
+            MATCH (a:Artist)
+            WHERE $userTag IN a.userTags
+            SET a.userTags = [tag IN a.userTags WHERE tag <> $userTag]
+            RETURN count(a) AS updatedCount
+        `, { userTag });
+
+        const updatedCount = result.records[0].get('updatedCount').toNumber();
+
+        // 🧹 Delete from Redis
+        const keysToDelete = [
+            `userGraph:${userTag}`,
+            `artists:by-usertag:${userTag}`,
+            `userTop:${userTag}`
+        ];
+        await Promise.all(keysToDelete.map(key => deleteFromCache(key)));
+
+        // 🗃️ Delete from MySQL
+        const mysqlConn = await sqlPool.getConnection();
+        try {
+            await mysqlConn.beginTransaction();
+
+            await mysqlConn.execute(
+                `DELETE FROM incomplete_artists WHERE user_tag = ?`,
+                [userTag]
+            );
+
+            await mysqlConn.execute(
+                `DELETE FROM users WHERE user_tag = ?`,
+                [userTag]
+            );
+
+            await mysqlConn.commit();
+        } catch (sqlErr) {
+            await mysqlConn.rollback();
+            throw sqlErr;
+        } finally {
+            mysqlConn.release();
+        }
+
+        res.json({
+            success: true,
+            updatedCount,
+            clearedCacheKeys: keysToDelete,
+            removedFromMySQL: true
+        });
+    } catch (err) {
+        console.error(`❌ Failed to fully delete userTag "${userTag}":`, err);
+        res.status(500).json({ error: 'Failed to remove userTag from Neo4j, Redis, or MySQL' });
+    } finally {
+        await session.close();
+    }
+});
 
 export default app;
