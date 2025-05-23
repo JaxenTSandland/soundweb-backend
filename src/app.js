@@ -515,9 +515,9 @@ app.post('/api/spotify/callback', async (req, res) => {
         }
 
         // 4. Fetch user's top artists from Spotify
-        const topArtistIds = [];
         let offset = 0;
         const limit = 50;
+        const topArtistIdsSet = new Set();
 
         while (true) {
             const topRes = await fetch(`https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=${limit}&offset=${offset}`, {
@@ -532,10 +532,13 @@ app.post('/api/spotify/callback', async (req, res) => {
             const topJson = await topRes.json();
             const items = topJson.items || [];
 
-            topArtistIds.push(...items.map(artist => artist.id));
+            items.forEach(artist => topArtistIdsSet.add(artist.id));
+
             if (items.length < limit) break;
             offset += limit;
         }
+
+        const topArtistIds = Array.from(topArtistIdsSet);
 
         const userData = {
             id: userId,
@@ -557,8 +560,8 @@ app.post('/api/spotify/callback', async (req, res) => {
 
 app.post('/api/graph/user/:userTag', async (req, res) => {
     const userTag = String(req.params.userTag);
-    const spotifyIds = req.body.spotify_ids;
     console.log(`POST - /api/graph/user/:userTag`);
+    const spotifyIds = Array.from(new Set(req.body.spotify_ids));
 
 
     if (!userTag || !Array.isArray(spotifyIds) || spotifyIds.length === 0) {
@@ -582,7 +585,7 @@ app.post('/api/graph/user/:userTag', async (req, res) => {
             userTag
         });
 
-        const nodes = [];
+        const nodeMap = new Map();
         const linksSet = new Set();
 
         for (const record of result.records) {
@@ -607,7 +610,7 @@ app.post('/api/graph/user/:userTag', async (req, res) => {
                 lastUpdated: artist.lastUpdated
             });
 
-            nodes.push(node.toDict());
+            nodeMap.set(artist.id, node.toDict());
 
             const sourceId = artist.id;
             for (const targetId of relatedIds) {
@@ -621,6 +624,7 @@ app.post('/api/graph/user/:userTag', async (req, res) => {
             return { source, target };
         });
 
+        const nodes = Array.from(nodeMap.values());
         const foundCount = nodes.length;
         const totalCount = spotifyIds.length;
         const progress = totalCount > 0 ? foundCount / totalCount : 0;
@@ -637,6 +641,7 @@ app.post('/api/graph/user/:userTag', async (req, res) => {
             await setToCache(cacheKey, responseData);
         }
 
+        res.json(responseData);
     } catch (err) {
         console.error("Error in /api/graph/user/:userTag:", err);
         res.status(500).json({ error: "Failed to load user graph" });
