@@ -109,3 +109,62 @@ export async function fetchRecentReleases({ spotifyID, market = 'US', limit = 10
     }));
 }
 
+export async function fetchTopSpotifyIdsForUser(accessToken) {
+    let offset = 0;
+    const limit = 50;
+    const ids = new Set();
+
+    while (true) {
+        const res = await fetch(`https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=${limit}&offset=${offset}`, {
+            headers: { Authorization: `Bearer ${accessToken}` }
+        });
+
+        if (!res.ok) {
+            const errorText = await res.text();
+            throw new Error(`Spotify fetch failed: ${errorText}`);
+        }
+
+        const json = await res.json();
+        const items = json.items || [];
+        items.forEach(artist => ids.add(artist.id));
+
+        if (items.length < limit) break;
+        offset += limit;
+    }
+    return Array.from(ids);
+}
+
+export async function getAccessTokenFromRefresh(refreshToken) {
+    console.log("[TOKEN] Attempting to refresh access token with:", refreshToken);
+
+    const res = await fetch("https://accounts.spotify.com/api/token", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams({
+            grant_type: "refresh_token",
+            refresh_token: refreshToken,
+            client_id: process.env.SPOTIFY_CLIENT_ID
+        })
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+        console.error("[TOKEN] Refresh failed:", data);
+        throw new Error(`Failed to refresh access token: ${JSON.stringify(data)}`);
+    }
+
+    console.log("[TOKEN] Received access token:", data.access_token);
+    if (data.refresh_token) {
+        console.log("[TOKEN] Received NEW refresh token:", data.refresh_token);
+    } else {
+        console.log("[TOKEN] No new refresh token received, keeping existing one.");
+    }
+
+    return {
+        access_token: data.access_token,
+        new_refresh_token: data.refresh_token || null
+    };
+}
