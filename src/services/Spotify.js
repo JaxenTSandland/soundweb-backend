@@ -113,9 +113,10 @@ export async function fetchTopSpotifyIdsForUser(accessToken) {
     let offset = 0;
     const limit = 50;
     const ids = new Set();
+    const term_range = "long_term"; // "short_term", "medium_term", "long_term"
 
     while (true) {
-        const res = await fetch(`https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=${limit}&offset=${offset}`, {
+        const res = await fetch(`https://api.spotify.com/v1/me/top/artists?time_range=${term_range}&limit=${limit}&offset=${offset}`, {
             headers: { Authorization: `Bearer ${accessToken}` }
         });
 

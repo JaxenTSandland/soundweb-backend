@@ -666,7 +666,7 @@ app.get('/api/progress/user/:userTag', async (req, res) => {
 
         // Adjusted total: only count those that are either found or still pending
         const adjustedTotal = totalCount - incompleteCount;
-        const progress = adjustedTotal > 0 ? foundCount / adjustedTotal : 0;
+        const progress = adjustedTotal > 0 ? foundCount / adjustedTotal : 1;
 
 
         console.log(`(F:${foundCount} I:${incompleteCount} T:${totalCount} P:${progress.toFixed(2) * 100}%)`);
