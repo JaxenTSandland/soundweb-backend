@@ -639,6 +639,9 @@ app.get('/api/progress/user/:userTag', async (req, res) => {
     console.log(`GET - /api/progress/user/:userTag`);
 
     try {
+        const latestIngestKey = `ingest:latest:${userTag}`;
+        const importingNow = await getFromCache(latestIngestKey);
+
         // Get how many Spotify IDs were originally submitted
         const [rows] = await sqlPool.execute(
             `SELECT spotify_id_count FROM users WHERE user_tag = ?`,
@@ -676,7 +679,8 @@ app.get('/api/progress/user/:userTag', async (req, res) => {
             incompleteCount,
             totalCount,
             adjustedTotal,
-            progress
+            progress,
+            importingNow
         });
     } catch (err) {
         console.error("Progress check failed:", err);
