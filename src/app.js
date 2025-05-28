@@ -198,6 +198,52 @@ app.get('/api/artists/top', async (req, res) => {
     }
 });
 
+// Get all artist nodes (no links, no filters)
+app.get('/api/artists/all', async (req, res) => {
+    const session = driver.session({ database: topArtistsDb });
+
+    try {
+        console.log("GET - /api/artists/all");
+
+        const result = await session.run(`
+            MATCH (a:Artist)
+            RETURN a
+        `);
+
+        const nodes = [];
+
+        for (const record of result.records) {
+            const artist = record.get('a').properties;
+
+            const node = new ArtistNode({
+                id: artist.id,
+                name: artist.name,
+                popularity: neo4j.isInt(artist.popularity) ? artist.popularity.toNumber() : artist.popularity ?? 0,
+                spotifyId: artist.id,
+                spotifyUrl: artist.spotifyUrl ?? null,
+                lastfmMBID: artist.lastfmMBID ?? null,
+                imageUrl: artist.imageUrl ?? null,
+                genres: artist.genres ?? [],
+                color: artist.color ?? null,
+                userTags: artist.userTags ?? [],
+                x: neo4j.isInt(artist.x) ? artist.x.toNumber() : artist.x ?? 0,
+                y: neo4j.isInt(artist.y) ? artist.y.toNumber() : artist.y ?? 0,
+                relatedArtists: [],
+                rank: neo4j.isInt(artist.rank) ? artist.rank.toNumber() : artist.rank ?? 0,
+                lastUpdated: artist.lastUpdated
+            });
+
+            nodes.push(node.toDict());
+        }
+
+        res.json({ nodes });
+    } catch (err) {
+        console.error("Error fetching all artist nodes:", err);
+        res.status(500).json({ error: "Failed to load all artist nodes" });
+    } finally {
+        await session.close();
+    }
+});
 
 // Get all artists with a specific user tag
 app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
@@ -268,6 +314,8 @@ app.get('/api/artists/by-usertag/:userTag', async (req, res) => {
         await session.close();
     }
 });
+
+
 
 // Get all artists without the TopArtist label
 app.get('/api/artists/custom', async (req, res) => {
