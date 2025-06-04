@@ -38,13 +38,20 @@ const allowedOrigins = process.env.NODE_ENV === "production" ? [
 ] : [
     "http://localhost:5173"
 ];
+app.use((req, res, next) => {
+    console.log(`[${new Date().toISOString()}] ${req.method} ${req.path}`);
+    next();
+});
 
 app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
+    origin: function (origin, callback) {
+        // Allow requests with no origin (Postman, curl, SSR)
+        if (!origin) return callback(null, true);
+
+        if (allowedOrigins.includes(origin)) {
+            return callback(null, true);
         } else {
-            callback(new Error("Not allowed by CORS: " + origin));
+            return callback(new Error("Not allowed by CORS: " + origin));
         }
     },
     credentials: true
