@@ -32,7 +32,7 @@ const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB;
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 const app = express();
-const allowedOrigins = process.env.RAILWAY_ENVIRONMENT_NAME === "production" ? [
+const allowedOrigins = process.env.NODE_ENV === "production" ? [
     "https://soundweb.app",
     "https://soundweb.up.railway.app"
 ] : [
