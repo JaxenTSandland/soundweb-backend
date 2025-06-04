@@ -3,12 +3,11 @@ import path from 'path';
 import cors from 'cors';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-dotenv.config();
 import neo4j from 'neo4j-driver';
 import mysql from 'mysql2/promise';
 import {
     fetchRecentReleases,
-    fetchTopSpotifyIdsForUser,
+    fetchTopSpotifyIdsForUser, fetchTopSpotifyTrackIds,
     fetchTopTracks, getAccessTokenFromRefresh,
     getSpotifyAccessToken
 } from "./services/Spotify.js";
@@ -22,6 +21,7 @@ import {
     setToCache
 } from "./services/redis.js";
 
+dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const uri = process.env.NEO4J_URI;
@@ -32,7 +32,24 @@ const topArtistsDb = process.env.NEO4J_TOPARTISTS_DB;
 const driver = neo4j.driver(uri, neo4j.auth.basic(user, password));
 
 const app = express();
-app.use(cors());
+const allowedOrigins = process.env.NODE_ENV === "production" ? [
+    "https://soundweb.app",
+    "https://soundweb.up.railway.app"
+] : [
+    "http://localhost:5173"
+];
+
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS: " + origin));
+        }
+    },
+    credentials: true
+}));
+
 app.use(express.json());
 
 const sqlPool = mysql.createPool({
@@ -556,7 +573,7 @@ app.post('/api/spotify/callback', async (req, res) => {
 
         if (!profileRes.ok) {
             console.error('Failed to fetch profile:', await profileRes.text());
-            return res.status(500).json({ error: 'Failed to fetch user profile' });
+            return res.status(profileRes.status).json({ error: 'Failed to fetch user profile' });
         }
 
         const userProfile = await profileRes.json();
@@ -814,7 +831,6 @@ app.post("/api/users/ping", async (req, res) => {
             `SELECT refresh_token FROM users WHERE user_tag = ?`,
             [user_tag]
         );
-        console.log("[DB BEFORE] Refresh token in DB:", rows[0]?.refresh_token);
 
         const storedRefreshToken = rows[0]?.refresh_token;
         if (!storedRefreshToken) {
@@ -834,7 +850,6 @@ app.post("/api/users/ping", async (req, res) => {
             return res.status(401).json({ error: "Refresh token invalid. Please re-login." });
         }
 
-        console.log(`[TOKEN] Writing final refresh token to DB: ${finalRefreshToken}`);
         await sqlPool.execute(
             `UPDATE users SET refresh_token = ?, last_logged_in = NOW() WHERE user_tag = ?`,
             [finalRefreshToken, user_tag]
@@ -853,6 +868,14 @@ app.post("/api/users/ping", async (req, res) => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ user_tag, spotify_ids: uniqueSpotifyIds })
         });
+
+        // Fetch top track IDs
+        //const topTrackIds = await fetchTopSpotifyTrackIds(accessToken);
+        // res.json({
+        //     reingested: true,
+        //     spotify_ids: uniqueSpotifyIds,
+        //     top_track_ids: topTrackIds
+        // });
 
         res.json({
             reingested: true,

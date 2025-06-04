@@ -169,3 +169,30 @@ export async function getAccessTokenFromRefresh(refreshToken) {
         new_refresh_token: data.refresh_token || null
     };
 }
+
+export async function fetchTopSpotifyTrackIds(accessToken) {
+    const limit = 1000;
+    let offset = 0;
+    const trackIdSet = new Set();
+
+    while (true) {
+        const res = await fetch(`https://api.spotify.com/v1/me/top/tracks?limit=${limit}&offset=${offset}&time_range=long_term`, {
+            headers: { Authorization: `Bearer ${accessToken}` }
+        });
+
+        if (!res.ok) {
+            const errText = await res.text();
+            throw new Error(`Failed to fetch top tracks: ${res.status} - ${errText}`);
+        }
+
+        const json = await res.json();
+        const items = json.items || [];
+
+        items.forEach(track => trackIdSet.add(track.id));
+
+        if (items.length < limit) break;
+        offset += limit;
+    }
+
+    return Array.from(trackIdSet);
+}
