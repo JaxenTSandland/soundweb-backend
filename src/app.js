@@ -36,7 +36,8 @@ const allowedOrigins = process.env.NODE_ENV === "production" ? [
     "https://soundweb.app",
     "https://soundweb.up.railway.app"
 ] : [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "http://127.0.0.1:5173"
 ];
 
 app.use(cors({
@@ -867,6 +868,8 @@ app.post("/api/users/ping", async (req, res) => {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ user_tag, spotify_ids: uniqueSpotifyIds })
+        }).catch(err => {
+            console.error(`[INGEST] Failed to reach ingestor at ${process.env.INGESTOR_API_URL}:`, err.message);
         });
 
         // Fetch top track IDs
